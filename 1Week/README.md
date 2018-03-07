@@ -27,13 +27,10 @@ Script 태그 안에서 명령어를 적어봅시다.
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/reset.css">
-    <script type="text/javascript">
-        이 부분에 JavaScript 코드를 기입합니다.
-    </script>
     <title>1WEEK</title>
+    <script type="text/javascript">
+        //이 부분에 JavaScript 코드를 기입합니다.
+    </script>
 </head>
 <body>
     <h1>1WEEK - 03/08</h1>
