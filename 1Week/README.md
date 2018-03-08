@@ -1,6 +1,6 @@
 # 1 WEEK
 
-1주차 과제입니다.
+1주차 과제입니다.(수정)
 
 
 수업시간에 진행했던 Visual Studio Code 를 익혀보고 처음으로 SourceTree 를 이용하여 git 에 업데이트(commit/push)합니다.
@@ -28,12 +28,12 @@ Script 태그 안에서 명령어를 적어봅시다.
 <head>
     <meta charset="UTF-8">
     <title>1WEEK</title>
-    <script type="text/javascript">
-        //이 부분에 JavaScript 코드를 기입합니다.
-    </script>
 </head>
 <body>
     <h1>1WEEK - 03/08</h1>
+<script type="text/javascript">
+    //이 부분에 JavaScript 코드를 기입합니다.
+</script>
 </body>
 </html>
 ```
