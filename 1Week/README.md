@@ -20,7 +20,7 @@ Script 태그 안에서 명령어를 적어봅시다.
 
 3월 14일 (수) 23:00 까지 업로드
 
-## javaScript 사용하기
+## JavaScript 사용하기
 
 ```
 <!DOCTYPE html>
