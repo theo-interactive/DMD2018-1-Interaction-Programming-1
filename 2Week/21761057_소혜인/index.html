@@ -7,6 +7,184 @@
 <body>
     <h1>1WEEK - 03/15</h1>
 <script type="text/javascript">
+    alert("21761057 소혜인_인터랙션 프로그래밍 2주차 과제입니다, 감사합니다. :)");
+
+/*---------------- 1. JavaScript 연습하기 ----------------*/
+
+    console.log("21761057 소혜인"); //문자 그대로 21761057 소혜인이 출력됩니다.
+    
+    console.log("1+1"); //기입한 문자 그대로 1+1이 출력됩니다.
+    console.log(1+"1"); //숫자 1 뒤에 문자 1이 더해져 11이 출력됩니다.
+    console.log(1+1); //숫자  값 1+1인 2가 출력됩니다.
+
+
+    console.log(5+5); //더하기, 10
+    console.log(-7+2); //더하기, -5
+
+    console.log(5-5); //빼기, 0
+    console.log(5-8); //빼기-3
+
+    console.log(8*4); //곱하기, 32
+    console.log(-8*-4); //곱하기, 32
+
+    console.log(50/2); //나누기, 25
+    console.log(31/2); //나누기, 15.5
+
+    console.log(10%2); //10/2의 나머지, 0
+    console.log(17%5); //17/5의 나머지, 2
+
+
+    //Math.pow(a, b) a의 b제곱
+    console.log(Math.pow(4, 2)); //4*4= 16
+    console.log(Math.pow(9, 3)); //9*9*9= 729
+
+    //Math.round(a.b) 반올림, b가 5 이상일 때 값이 큰 가까운 정수로 표시
+    console.log(Math.round(3.52)); //4
+    console.log(Math.round(-3.5)); //-3 (음수이기 때문에 -4보다 큰 값인 -3) 
+
+    //Math.ceil(a.b) 올림, b의 값이 1이상이면 올림한 정수로 표시
+    console.log(Math.ceil(3.2)); //4
+    console.log(Math.ceil(-4.8)); //-4 (음수이기 때문에 -5보다 큰 값인 -4)
+
+    //Math.floor(a.b) 내림, b에 입력된 값을 내림해 a를 내림한 값의 정수로 표시
+    console.log(Math.floor(7.7)); //7
+    console.log(Math.floor(-9.8)); //-10 (음수이기 때문에 -9보다 작은 값인 -10)
+
+    //Math.sqrt(a) a의 제곱근
+    console.log(Math.sqrt(9)); //3
+    console.log(Math.sqrt(36)); //6
+
+    //Math.random(a) 0 <= a < 1 해당 범위에서 랜덤으로 표시
+    console.log(Math.random());
+
+    ///Math.random 응용 Math.round을 이용해 정수가 나오도록 만든다.
+    console.log(Math.round (Math.random())); //0 또는 1
+    console.log(Math.round (Math.random()*10)); //0에서 10까지의 정수
+    console.log(Math.round (Math.random()*100)); //0에서 100까지의 정수
+
+
+    var a = 50; //변수 a는 숫자 50
+    var b = 50; //변수 b는 숫자 50
+    console.log(a+b); //숫자+숫자 50+50= 100
+
+    //변수 선언은 한번만 해도 됨
+    a = 50; //변수 a는 숫자 50
+    b = "50"; //변수 b는 문자 50
+    console.log(a+b); //숫자+문자 50+"50"= 5050
+
+    a = "So";
+    b = "Hye";
+    var c = "In";
+    console.log(a+b+c); //문자+문자+문자 SoHyeIn
+    console.log(a+" "+b+c); //공백추가 So HyeIn
+
+    a = a + " ";
+    c = c + ";P";
+    console.log(a+b+c); //마지막(73)의 a값에 공백 추가, c(75)값에 문자 추가 So HyeIn;P
+
+    var sum = (1+2+3)*4;
+    console.log(sum) //24
+
+    a=1; b=2; c=3; d=4;
+    sum = (a+b+c)*d; //(1+2+3)*4
+    console.log(sum) //24
+
+    var animal = 
+    {
+        Land : "강아지, 고양이, 사슴, 캥거루, 코끼리",
+        Sea : "해파리, 고등어, 해마, 문어",
+        Sky : "독수리, 참새, 비둘기, 앵무새, 까치"
+    };
+    console.log(animal); //위 내용
+    console.log("새 종류: "+animal.Sky+", 까마귀"); //새 종류: 독수리, 참새, 비둘기, 앵무새, 까치, 까마귀
+
+
+    //비교연산자 true or false _ T/F로 주석 기입
+    
+    console.log(1==1); //숫자 1은 숫자 1과 동등하다. T
+    console.log(1>1); //숫자 1은 숫자 1보다 크다. F
+    console.log(1>=1); //숫자 1은 숫자 1보다 크거나 같다. T
+
+    console.log(1=="1"); //숫자 1은 문자 1과 '동등'하다. T
+    console.log(1==="1"); //숫자 1은 문자 1과 '일치'한다. F
+
+    var d = 3;
+    var e = 4;
+    var f = 2;
+    var g = 5;
+    console.log(d+e===f+g) //T
+    console.log(e===f) //F  
+    console.log(d>g) //F
+    console.log(d<=g) //T
+
+    d = "1";
+    e = 1;
+    f = 11;
+    g = "11";
+    console.log(d+e==f); //T
+    console.log(d+e==g); //T
+    console.log(d+e===f); //F
+    console.log(d+e===g); //F가 아니라 T, 숫자에 문자가 들어가면 문자로 인식하는것 같습니다.
+
+
+
+    /*---------------- 2. 자기소개하기 ----------------*/
+
+
+    var A = "1"; var B = "2"; var C = "3"; var D = "4"; var E = "5";
+    var F = "6"; var G = "7"; var H = "8"; var I = "9"; var J = "0";
+
+    var Aboutme = 
+    {
+        Name : "소혜인",
+        Born : "1998년 04월 27일",
+        Age : "21",
+        HP : "010-7793-4148",
+        Gender : "여자",
+        Email : "shi980427@gmail.com",
+        Hobby : "영화보기와 잠자기",
+        School : "계원예술대학교",
+        Major : "디지털미디어디자인",
+        Year : "2",
+        Class : "D",
+        ID : "21761057",
+        Portfolio : "http://shi98.dothome.co.kr/"
+
+    }
+
+    var Ilove =
+    {
+        Actor1 : "신하균",
+        Actor2 : "김윤석",
+        Actor3 : "조정석",
+        Animation : "핀과 제이크의 어드벤쳐타임",
+        Food : "치킨이랑 연어"
+    }
+
+    var Hi = "안녕하세요."
+    var Goodbye = "감사합니다."
+
+    console.log
+    (
+        Hi + " 저는 " + Aboutme.School + " " + Aboutme.Major + "과에 다니는 " + Aboutme.Name + "입니다. \
+저는 " + Aboutme.Year + "학년 " + Aboutme.Class + "반이고, " + "나이는 " + Aboutme.Age + "살 입니다. \
+제 이메일 주소는 " + Aboutme.Email + ", " + "휴대폰 번호는 " + Aboutme.HP + " 입니다. \
+저의 포트폴리오 주소는" + Aboutme.Portfolio + " 입니다. \
+저는 " + Aboutme.Hobby + "를 좋아합니다. \
+좋아하는 배우는 " + Ilove.Actor1 + "과 " + Ilove.Actor2 + ", " + Ilove.Actor3 + " 입니다. \
+좋아하는 만화는 " + Ilove.Animation + " 입니다. \
+그리고 음식은 " + Ilove.Food + "를 가장 좋아합니다. \
+저는 " + Aboutme.Gender + "이고, 이것은 " + (G===G) + " 입니다. \
+저의 출생일은 " + (1000+900+90+7) + "년 " + Math.sqrt(0) + Math.round(5.5) + "월 " + A + Math.pow(3, 2) + "일 입니다. 는 " + (C>F) + " 입니다. \
+사실 " + Aboutme.Born + " 입니다.\
+인터랙션프로그래밍 수업 열심히 듣겠습니다. \
+하루에 " + Math.round (Math.random()*10) + "시간만큼 공부하겠습니다 :).. 몇시간인지는 모르겠지만 최대한 " + (J==0) + " 에 가깝게 \
+노력하겠습니다. " + Aboutme.School + " " + Aboutme.Major + " " + Aboutme.ID + " " + Aboutme.Name + " 과제 제출합니다. " + Goodbye + ":)"
+    )
+
+    // \하면 그냥 이 안에서만 중간에 줄바꿈되는거고 consolelog에서는 원래 안되는건가요??
+        
+
     
 </script>
 </body>
