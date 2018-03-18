@@ -1,0 +1,252 @@
+<!doctype>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>2week 3/15</title>
+        <style>
+            h1{
+                margin: 0;
+                padding: 0;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>2Week 3/15</h1>
+        <!-- 이거 자주 쓰자 >>> ul>li*3>a>span -->
+
+
+        <!-- javascript 준비 -->
+        <script type="text/javascript">
+            /*console.log("안녕하세요");
+            alert("안녕하세요.");
+
+            alert("21761034_명진웅");
+            console.log("명진웅짱짱");
+            console.log(1+1);
+            console.log(2+1);
+            console.log(2*2);
+            console.log(4/2);
+            console.log(9/3);
+            console.log(9%2);
+            console.log(-10/2);
+            console.log(8%2);*/
+           
+            /*Math
+            //제곱
+            console.log(Math.pow(4, 2));
+            //반올림
+            console.log(Math.round(1.4));
+            console.log(Math.round(2.5));
+            //올림
+            console.log(Math.ceil(4.5));
+            //내림
+            console.log(Math.floor(4.5));
+            //제곱근
+            console.log(Math.sqrt(9));
+            //0~1.0 랜덤한 숫자.
+            console.log(Math.random());
+            console.log(Math.random()*100);
+            //0~100중 랜덤 숫자를 구할 때
+            console.log(Math.round(Math.random()*100));
+            
+            //string은 " " 사이에 작성한다.
+            // " ' 성립되지 않음.
+            console.log('작따작따');
+            console.log("큰따큰따");
+            
+            // \ escape
+            console.log('명진웅\s');
+            console.log('명진웅\n짱짱맨');
+
+            console.log("1");
+            console.log(1);
+            console.log(1+1);
+            console.log("1"+1);
+
+            console.log(typeof 1);
+            console.log(typeof "1");
+            // []는 array이나 object로 출력된다.
+            console.log(typeof []);
+            console.log(typeof {});
+            */
+            
+            // 변수선언 변수명 = 변수값;
+            //var variable = value;
+            // 변수 - 바꿀 수 있는 형태의 바꿀 수 있는 값.(대명사 같은..)
+            // var 선언 이후에는 다음 호출시에는 var를 사용하지 않아도 된다.
+            // 의도해 사용하는 경우에는 해당 변수를 버리고 다시 만들어 사용한다.
+            
+            /* var a = 1;
+            var b = 2;
+            console.log(a + b);
+
+            var a = 2;
+            var b = "1";
+            console.log(a + b);
+
+            a = "Hello";
+            b = " ";
+            var c = "World";
+
+            console.log(a+b+c);
+            
+            var a = "hello";
+            console.log(a);
+            a = "HELLO~";
+            console.log(a);
+            a = a + " World";
+            console.log(a);
+            a += ":^)";
+            console.log(a);
+            
+
+            var sum = (((100+10)/10-10))*10;
+            console.log(sum);
+            var sum = (((200+20)/20-20))*20;
+            console.log(sum);
+            var sum = (((300+20)/10-30))*40;
+            console.log(sum);
+            
+            var a = 100;
+            var b = 10;
+            var sum = (((a+b)/b-b))*b;
+            console.log(sum);
+            
+            var a = 200;
+            var b = 20;
+            var sum = (((a+b)/b-b))*b;
+            console.log(sum);
+
+            var a = 300, b = 20, c = 10, d = 30, e = 40;
+            var sum = (((a+b)/c-d))*e;
+            console.log(sum);
+            
+
+            // 산술연산자 : - + * / %
+            // 대입연산자 : variable = value;
+            // 비교연산자 : Boolean, true/false, == > < >= <=
+            // 주의사항 => 는 사용하지 않는다. 비교할 땐 꺽새가 먼저 나와야함.
+            // 동등연산자 : == 
+            // 일치연산자 : ===
+
+            var a = 1;
+            var b = 1;
+            console.log (a == b);
+            var a = 1;
+            var b = 2;
+            console.log (a == b);
+            var a = 1;
+            var b = 2;
+            console.log (a < b);
+            var a = 2;
+            var b = 1;
+            console.log (a > b);
+            var a = 2;
+            var b = 1;
+            console.log (b < a);
+            console.log (a < b);
+            var a = 2;
+            var b = 2;
+            console.log ( a <= b );
+            console.log ( a >= b );
+            var a = 30;
+            var b = 20;
+            console.log ( a == b );
+            
+            var a = 1;
+            var b = "1";
+            console.log ( a == b ); 
+            var a = 1;
+            var b = "1";
+            console.log ( a === b ); 
+            */
+
+            //Data type.
+            /* Boolean : true | false
+            Number : - 0 1 2 3 4 5 6 ..
+            String : "a" "b"
+            Undefined : 아직까지 정의 되지 않은. 
+            null : 비어있는 값.
+            1 : Boolean의 true로 간주
+            1이 아닌 수 : Boolean의 false로 간주
+            NaN : 성립이 되지 않는 수, 계산할 수 없음을 의미.
+            
+            var a = null; 값을 넣어야하나 빈 값을 넣어둠.
+            var a; 값을 정의하지 않고 선언만 되어있음
+            
+            
+
+           var a, b, c, d;
+           console.log(a, b, c, d);
+
+            var a = null;
+            console.log(a);
+            // 의도해서 변수에 값을 넣은 상태.
+            //console.log(typeof a); : null
+
+            var a = null;
+            var b; 
+            console.log(a==b);
+            console.log(a===b);
+            
+
+            console.log(0===-0);
+            console.log(0==-0); // 0은 0밖에 없음.
+            console.log(true==1); // 참값을 찾을 때는 == 을 이용함.
+            console.log(true===1); 
+            console.log(NaN===NaN); //같은 값으로 인식하지않음. 어떤 수식이 사용되어있는지 모르기 때문.
+            
+            //부정 : !=, !==(strict)
+            var a = 1;
+            var b = 1;
+            console.log(a != b);
+
+            var a = 1;
+            var b = 2;
+            console.log(a != b);
+            console.log(a !== b);
+
+            var a = 1;
+            var b = "1";
+            console.log(a != b);
+            console.log(a !== b);
+
+            */
+
+            // var object("객체") = { key(키 또는 프로퍼티) : value };
+            // _(언더바)는 프로퍼티에 사용이 가능합니다. 값에는 사용 불가능합니다.
+            var person = {};
+            console.log(typeof person);
+            
+            var _good = {
+                babo : "babo"
+            };
+            
+            var person = {
+                name : "명진웅",
+                job : "학생",
+                phone : "010-8789-2818",
+                
+            };
+            person.email = "ophayan@naver.com"; //이렇게 객체정보 가공(추가)할 수 있다.
+            person["email"] = "ophayan@naver.com"; // 이렇게도 가능함.
+            person.greeting = "반갑습니다.";
+            person._birth = "91.3.22";
+
+            console.log(person);
+            console.log(person.name);
+            console.log(person.job);
+            console.log(person.phone);
+
+            console.log(person.greeting + "저는" + person.name + "입니다.ㅎㅎ :) 제 생일은 " + person._birth + "입니다");
+            
+            //data type - object, 문자의 연산, [Object Object]
+            console.log("바보" + _good);
+            console.log(_good.babo);
+            </script>
+        <!-- 외부 javascript 연결 -->
+        <script src="./js/script.js" type="text/javascript"></script>
+      </body>
+</html>
