@@ -1,0 +1,278 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>2Week - Park Hye Jin</title>
+        <style>
+            h1 {margin:0; padding:0; font-size:20px; line-height:20px}
+        </style>
+    </head>
+    <body>
+        <h1>2Week - Park Hye Jin</h1>
+    </body>
+    <!-- JavaScript 준비 -->
+    <script type="text/javascript">
+
+       alert("안녕하세요! 박혜진입니다 :)");
+
+       // JavaScript 연습
+
+       // String (문자열) : " ", ' ' - 시작과 끝이 같아야 된다. (" ' - 성립이 안 된다.)
+       console.log("안녕하세요! 박혜진입니다 :)");
+       console.log('계원예대 디지털미디어디자인과에 재학 중입니다!');
+       console.log('Hye Jin\'s'); // escape
+       console.log("2D\n21761048\n:)"); // 문자열 줄바꿈
+       console.log("my".length); // 2
+       console.log("my".indexOf('y')); // 1
+    
+       // 문자와 숫자 구분
+       console.log(7); // 7
+       console.log("6"); // 6 (문자)
+       // " " : 문자로 인식
+       console.log(0 + 1); // 1
+       console.log(0); // 0
+       console.log("4" + (4 + 4)); // 48
+       
+       console.log("1998.04.03 AM 11:14")
+
+       // 산술 연산자 : JavaScript에서는 정수와 실수 구분이 중요하지 않지만, 다른 스크립트에선 구분해야 한다.
+       console.log(0 + 1); // 1
+       console.log(200 - 191); // 9
+       console.log(3 * 3); // 9
+       console.log(32 / 4); // 8
+       console.log(500 % 2); // 0
+       // % : 나머지
+       console.log(2 * 2); // 4
+       console.log(40 % 4); // 0
+       console.log(33 / 11); // 3
+       console.log("AM" + " " + 55 / 5); // AM 11
+       console.log(":" + " " + 2 * 7); // : 14
+
+
+       /* Math
+       Math.pow(); : 제곱
+       Math.round(); : 반올림
+       Math.ceil(); : 올림
+       Math.floor(); : 내림
+       Math.sqrt(); : 제곱근
+       Math.random(); : 0 ~ 1.0 까지의 랜덤한 수
+       */
+       console.log("10의 2제곱은 " + Math.pow(10,2)); // 100
+       console.log("20의 2제곱은 " + Math.pow(20,2)); // 400
+       console.log("9.1를 반올림하면 " + Math.round(9.1)); // 9
+       console.log("-8.3를 반올림하면 " + Math.round(-8.3)); // -8
+       console.log("3.5를 올리면 " + Math.ceil(3.5)); // 4
+       console.log("-3.1를 올리면 " + Math.ceil(-3.1)); // -3
+       console.log("51.5를 내리면 " + Math.floor(51.5)); // 51
+       console.log("-20.3를 내리면 " + Math.floor(-20.3)); // -21
+       console.log("25의 제곱근은 " + Math.sqrt(25)); // 5
+       console.log("81의 제곱근은 " + Math.sqrt(81)); // 9
+       console.log("0 ~ 1.0 중 랜덤한 수는 " + Math.random()); // 0 ~ 1.0 중의 랜덤한 수
+       console.log("0 ~ 500 중 랜덤한 수는 " + Math.round(Math.random() * 500)); // 0 ~ 500 중의 랜덤한 수
+       
+
+       // 대입 연산자 : var variable = value;
+       var a = 12;
+       var b = 8;
+       console.log(a + b); // 20
+
+       a = 1;
+       b = "8";
+       // var 선언 이후에는 var를 사용하지 않아도 된다.
+       console.log(a + b); // 18
+
+       a = "Hello~ ";
+       b = "I am ";
+       var c = "Hye Jin.";
+       console.log(a + b + c); // Hello~ I am Hye Jin.
+
+       var a = "I";
+       a = "I am";
+       console.log(a); // I am
+       // 최종적으로 선언한 변수가 출력된다.
+
+       a = a + " always ";
+       a += "positive minded :-)";
+       // += : 끝난 지점에서 붙여쓰기
+       console.log(a); // I am always positive minded :-)
+       // 변수는 무수히 재활용이 가능하다.
+
+
+       console.log((((20 - 18) / 10) * 5) - 22); // -21
+       
+       var sum = (((20 - 18) / 10) * 5) - 22;
+       console.log(sum); // -21
+
+       var a = 20, b = 18, c = 10, d = 5, e = 22;
+       var sum = (((a - b) / c) * d) - e;
+       console.log(sum); // -21
+
+       // 변할 수 있는 영역과 변하지 않는 영역으로 구분할 수 있다. (유지보수)
+
+
+       /* 비교 연산자
+       == , > , < , <= , >=
+       주의 : => 는 다른 명령어
+       대입 연산자 (이항 연산자) : =
+       동등 연산자 : ==
+       일치 연산자 : === (정확하게 하기 위해 권장)
+       */
+       var a = 21;
+       var b = 21;
+       console.log(a == b); // true
+
+       var a = 20;
+       var b = 18;
+       console.log(a == b); // false
+
+       var a = 98;
+       var b = 43;
+       console.log(a > b); // true
+
+       var a = 51;
+       var b = 21;
+       console.log(a < b); // false
+
+       var a = 20;
+       var b = 18;
+       console.log(a <= b); // false
+       console.log(a >= b); // true
+
+       var a = 21;
+       var b = "21";
+       console.log(a == b); // true (값이 같으면 true)
+
+       var a = 21;
+       var b = "21";
+       console.log(a === b); // false (값과 타입이 같으면 true)
+       // 정확히 일치하는 지를 비교, Strict (엄격한) 동등 연산자는 버그를 발생시킬 위험이 있다.
+       
+       var hi, hello, bye; // 정의되지 않은. undefined
+       console.log(hi, hello, bye); // undefined undefined undefined
+       
+
+       /* Data Type
+       Number : -1, 0, 1, 2, 3 …
+       String : "a", "b", "c" …
+       undefined : undefined
+       null : null
+       1 : Boolean의 trun로 간주
+       1이 아닌 수 : Boolean의 false로 간주
+       NaN : 성립이 되지 않는 수, 계산할 수 없음을 의미함
+       */
+       console.log(typeof 1); // Number
+       console.log(typeof "1"); // String
+       console.log(typeof []); // Object로 출력되지만 정의는 Array
+       console.log(typeof {}); // Object
+
+       var a = null;
+       console.log(a); // null (빈 값을 넣은 상태. 의도해서 변수에 값을 넣은 상태)
+       console.log(typeof a); // null - 질문 : 교수님! 제가 이걸 null로 적어두었는데 출력을 하면 object로 나와서요.. 왜 그러는지 이유가 궁금합니다...
+
+       var A = null;
+       var B; // 값이 정의되지 않은 상태
+       console.log(A == B); // true 
+
+       var A = null;
+       var B;
+       console.log(A === B); // false (var hye = null은 의도해서 변수에 빈 값을 넣은 상태이지만, var jin은 값이 정의되지 않았기 때문)
+       
+       var a = 0;
+       var b = -0;
+       console.log(a === b); // true
+
+       var a = true;
+       var b = 1;
+       console.log(a == b); // true
+       
+       var a = true;
+       var b = 1;
+       console.log(a === b); // false
+
+       var a = NaN;
+       var b = NaN;
+       console.log(a === b); // false (어떤 수식이 성립되어 있는지 모르기 때문)
+
+       var a = 1;
+       var b = 1;
+       console.log(a != b); // false
+       // !는 부정을 의미. != : 값이 다르면 true
+
+       var a = 1;
+       var b = "1";
+       console.log(a != b); // false
+       console.log(a !== b); // true
+       // !== : 값과 타입이 다르면 true
+
+
+       /* Object 객체. 정보를 가공할 수 있다.
+          var object = {};
+          var object = {key : value};
+       */
+       var subject = {};
+       console.log(typeof subject); // object
+
+       subject = {
+           tuesday : "프로젝트 스튜디오 1",
+           wednesday : "미디어 프로그래밍 1",
+           thursday : "인터랙션 프로그래밍 1",
+           friday : "웹 표준 퍼블리싱"
+       }
+       subject.wednesday_culture = "생활영어";
+       subject.friday_culture = "문제해결능력";
+       // _는 프로퍼티에 사용이 가능하다.
+       subject["friday_culture"] = "문화예술";
+       console.log("저는 2학년 1학기를 다니면서,\n화요일은 " + subject.tuesday + ",\n수요일은 " + subject.wednesday + "과 "
+                   + subject.wednesday_culture + ",\n목요일은 " + subject.thursday + ",\n금요일은 " + subject.friday
+                   + "과 " + subject.friday_culture + "을 듣습니다.");
+       // Data type - Object, 문자의 연산.
+       
+
+       // 자기소개
+
+       var A = 1, B = "1";
+
+       var profile = {
+           name : "박혜진",
+           birth : "4월 3일",
+           age : "21살",
+           school : "계원예술대학교",
+           major : "디지털미디어디자인",
+           myyear : "2",
+           myclass : "D",
+           live : "수원",
+           personality : "명랑한",
+           homepage : "hjhjs2.dothome.co.kr",
+           instagram : "instagram.com/hjhjs2"
+       }
+       
+       var specialty = {
+           first : "Plan",
+           second : "Talk",
+           third : "Sympathy",
+       }
+
+       var favorite = {
+           hobby : "음악, 드라마, 영화 감상",
+           music : "CHEESE - Be There, Amanda Seyfried - Thank You For The Music, Red Velvet - Would U",
+           drama : "힐러, 수상한 파트너, 낭만닥터 김사부",
+           movie : "비밀의 화원, 플립, 어바웃 타임"
+       }
+
+       console.log("안녕하세요! 긍정의 힘을 믿는 " + profile.personality + " " + profile.age + " " + profile.name + "입니다 :)\n"
+                    + "\n저는 " + A + (3*3) + (27/3) + Math.pow(2,3) + "년 " + profile.birth + " AM "
+                    + Math.ceil(10.5) + ":" + Math.floor(14.5) + " 에 태어났어요.\n" + "현재 " + profile.school + " "
+                    + profile.major + "과에 재학 중이고, " + profile.myyear + "학년 " + profile.myclass + "반에 있습니다."
+                    + "\n저는 의왕에 살고 있어요. " + "사실 이건 " + (A===B) + " 이고, " + profile.live + "에 살고 있어요."
+                    + "\n제 포트폴리오는 " + profile.homepage + "에서, 일상은 " + profile.instagram + "에서 볼 수 있어요."
+                    + "\n\n제 장점을 " + Math.round(2.8) + "가지 키워드로 설명해볼게요!\n" + ("first".indexOf('i')) + "번째, "
+                    + specialty.first + ". 계획을 효율적으로 잘 짭니다.\n" + ("my".length) + "번째, " + specialty.second
+                    + ". 말을 조리 있게 잘 합니다.\n" + Math.sqrt(9) + "번째, " + specialty.third + ". 함께 울고, 함께 웃으며 공감을 합니다.\n"
+                    + "\n제 인생에서 빼놓을 수 없는 취미는 " + favorite.hobby + "입니다." + "\n가장 좋아하는 음악은 " + favorite.music
+                    + " 입니다.\n" + "인생 드라마는 " + favorite.drama + "예요. \n" + "영화는 " + favorite.movie + "을 제일 좋아해요."
+                    + "\n\n지금까지 참새처럼 " + Math.round(Math.random() * 24) + "시간 동안 쫑알대는 제 이야기를 들어주셔서 감사합니다 :D"
+                    + "\n정말 "+ (A!==B) + " 입니다!"
+                     );
+
+    </script>
+</html>
