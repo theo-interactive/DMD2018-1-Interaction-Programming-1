@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>2WEEK</title>
+</head>
+<body>
+    <h1>1WEEK - 03/15</h1>
+<script type="text/javascript">
+    // 연습, 문자와 숫자 
+    console.log("21761034"+"명진웅");//문자,콘솔 창에 학번과 이름이 같이 나옴.
+    console.log(132+111);//숫자,더하기, 콘솔창에 243 출력
+    console.log(1132-10);//숫자,빼기, 콘솔창에 1122 출력
+    console.log(322/12);//숫자,나누기, 콘솔창에 26.8 출력? 아니였음.... 소수점 15자리까지 출력됨.
+    console.log(-50%2);//숫자,나머지, 콘솔창에 0 출력, -0출력됨.
+
+
+    // 수학
+    console.log(Math.pow(2, 3)); //제곱, 8 출력됨
+    console.log(Math.round(3.4)); //반올림, 3 출력됨
+    console.log(Math.ceil(4.1)); //올림, 5 출력됨
+    console.log(Math.floor(2.8));//내림, 2 출력됨
+    console.log(Math.sqrt(4));//제곱근, 2 출력됨
+
+
+    // 변수
+    var num = 1;
+    console.log(num); // 숫자 출력, 1 출력됨.
+
+    var sum1 = 1;
+    var sum2 = 2;
+    console.log(sum1 + sum2) // 숫자 더하기 출력, 3 출력됨.
+
+    var str = "문자";
+    console.log(str); // 문자 출력, "문자" 출력
+
+    var strSum1 = "안녕";
+    var strSum2 = "하세요";
+    console.log(strSum1 + strSum2); // 문자 더하기 출력, 안녕하세요 출력
+
+    var strSum3 = "반갑";
+    var sum3 = "3";
+    console.log(strSum3 + sum3); // 문자와 숫자 더하기 출력, 반갑3 출력
+
+    var strSum4 = "저는";
+    console.log(strSum4); // 문자 중첩, 저는 출력
+    strSum4 += "명진웅"; 
+    console.log(strSum4); // 문자 중첩, 저는명진웅 출력
+    strSum4 += "입니다";
+    console.log(strSum4); // 문자 중첩, 저는명진웅입니다 출력
+
+    var a = 10, b = 0, c = 4.5, d = 2, e = 0;
+    var sum = (((a+b)/c-d))*e;
+    console.log(sum); // 복잡한 산수, 0 출력
+
+    // 연산자
+    
+    var a = 13;
+    var b = -13;
+    console.log (a == b);// false, -를 인식해 false가 된다.
+
+    a = 1;
+    b = 2;
+    console.log (a == b);// false, 1과 2는 같지 않기 때문에 false가 된다.
+           
+    a = 1;
+    b = 2;
+    console.log (a < b);// true, 1보다 2가 크기 때문에 true가 된다.
+
+    a = 2;
+    b = 2;
+    console.log ( a <= b ); // true, 2는 2보다 크거나 같기 때문에 true가 된다.
+    console.log ( a >= b ); // ture, 2는 2보다 작거나 같기 때문에 true가 된다.
+    
+    a = 1;
+    b = "1";
+    console.log ( a == b ); // true, ==는 생김새만 보고 계산한다? 엄격하지 않아서 패스한다.
+    
+    a = 1;
+    b = "1";
+    console.log ( a === b ); // false, ===(strict)는 엄격하게 계산하기 때문에 문자와 숫자를 구분한다. 
+
+    // 데이터 타입
+    a = null;
+    b; 
+    console.log(a==b); // true, 엄격하지 않아서 통과??, 안됨... null이 아닌것같음.
+    console.log(a===b);// false, 엄격하게 계산하면
+            
+    console.log(0===-0);// true.
+    console.log(0==-0); // 0은 0밖에 없기 때문에 true.
+
+    console.log(true==1); // 1 은 true이기때문에 true로 나옴.
+    console.log(true===1); // false.
+    console.log(NaN===NaN); //false 같은 값으로 인식하지않음. 어떤 수식이 사용되어있는지 모르기 때문이라고 함.
+
+    // 부정
+    a= 1;
+    b = 1;
+    console.log(a != b); // false, 1과 1은 같은 수 이기 때문에 부정이 맞지 않음.
+
+    a = 1;
+    b = "1";
+    console.log(a != b); // 문자와 숫자를 구분하지 못하기때문에 false라 나올 것 같음.
+    console.log(a !== b); // 반대로 문자와 숫자를 구별하기 때문에 true라고 나올 것 같음.
+    
+    //--------------------------------------------------------------------------------------------------------
+    
+    var person = {};
+    console.log(typeof person);
+   
+
+    // 자기소개
+
+    var myInfo = {
+        name : "명진웅",
+        school : "계원예술대학교",
+        job : "학생",
+        phone : "010-8789-2818",
+        age : 27.9,
+        birth : "3월22일",
+        email : "ophayan@naver.com",
+        bloodType : "AO RH+",
+        myFaborite : "밥먹고 눕기,노래 부르기, 세차,영화 보기,게임",
+        interast : "생활코딩, 트위치, 어벤져스 등",
+        addr : "안양시 비산동",
+        greeting : "안녕하세요",
+        cham : 1 == 1
+        };
+
+        console.log(myInfo.greeting + "저는" + myInfo.name + "입니다.ㅎㅎ :) 저는 " +myInfo.school + "에 다니는" + myInfo.job +
+        "입니다. \n제 나이는 올해로 만" + Math.floor(myInfo.age)  + "세 입니다. 제 생일은 언제냐면 바로 '\오늘'\ " + myInfo.birth + "입니다\n 이것은 "+ myInfo.cham +"입니다. 저는" 
+        + myInfo.addr + "에 살고 있으며 저의 혈액형은 " + myInfo.bloodType +"입니다 ^^~* 제가 좋아하는 것은 "+myInfo.myFaborite+"이구요\n 요즘 관심사는 "
+        +myInfo.interast+"입니다. 제 연락처는"+myInfo.phone+", email주소는 "+myInfo.email+"입니다. 감사합니다.");
+</script>
+</body>
+</html>
