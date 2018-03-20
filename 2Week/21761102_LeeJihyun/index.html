@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>2Week 3/15</title>
+        <style>
+           h1{margin:0; padding:0;font-size:14px;line-height:20px;}
+        </style>      
+    </head>
+    <body>
+        <h1>2Week - 3/15</h1>
+        <script type="text/javascript">
+    
+            //JavaScript 연습
+
+            //주석 처리 1) 여러줄 주석: /* */ 2) 한 줄 주석: //
+
+            alert("안녕하세요\n:)"); //경고창
+                                    //alert창 내에서 줄바꿈을 하고싶을때는 '\n'
+
+            //문자(String)
+
+            console.log('안녕하세요'); //'',"" 안에 써진 텍스트 그대로 출력, console.log(""), console.log('') 시작과 끝이 같게 
+            console.log("jihyun\'s"); // = jihyun's
+            console.log("hello\nworld\n:)"); // = hello 줄바꿈 world 줄바꿈 :)
+
+            //숫자(Number)
+            console.log(2); // 숫자 = 2 
+            console.log("3"); //"",'' 안에 써진 숫자는 문자로 취급 = 3
+            console.log(1); // = 1
+            console.log("1"); // = 1
+            console.log(1+1); // = 2
+            console.log(1+"1"); // 11
+             
+            //수학(Math)
+            console.log(2*2); // 곱하기 = 4
+            console.log(1+1); // 더하기 = 2
+            console.log(8%2); // 나머지 = 0
+            console.log(5-2); // 빼기 = 3
+            console.log(4/3); // 나누기 = 1.3333333333333332
+
+            console.log(Math.pow(4,2)); // 제곱 - 4*4 = 16
+            console.log(Math.round(2.5)); // 반올림 = 3
+            console.log(Math.ceil(4.5)); // 올림 = 5
+            console.log(Math.floor (4.5)); // 내림 = 4
+            console.log(Math.sqrt(9)); // 제곱근 = 3
+            console.log(Math.random()); // 0.1 ~ 0 사이에서 랜덤으로 출력
+            console.log(Math.round (Math.random()*100)); //0 ~ 100 중에서 랜덤으로 출력
+           
+            //연산자
+            console.log(typeof 1); // 숫자 = number
+            console.log(typeof "안녕하세요"); // 문자 = string
+            console.log(typeof {}); // 오브젝트 = object
+            console.log(typeof[]); // 오브젝트 = object
+
+            var a = 1;
+            var b = 1;
+            console.log(a==b); // = true
+
+            var a = 1;
+            var b = 2;
+            console.log(a==b); // = false
+
+            var a = 1;
+            var b = 1;
+            console.log(a>b); // = false
+
+            var a = 2;
+            var b = 1;
+            console.log(a>b); // = true
+
+            var a = 3;
+            var b = 2;
+            console.log(b>a); // = false
+            console.log(a>=b); // = true
+
+            var a= 1;
+            var b= 1;
+            console.log(a==b); // = true
+
+            var a= 1;
+            var b = "1";
+            console.log(a===b); // = false
+
+            //변수(Variable)
+            var a = 1;
+            var b = 2;
+            console.log(a+b); // = 3
+
+            var a = "Hello"; 
+            var b = " "; // = 공백
+            var c = "World";
+            console.log(a +b +c); // = Hello World
+
+            var a= "Hello";
+            console.log(a); // = Hello
+
+            a="Hello~";
+            console.log(a); // = Hello~
+            a = a + "World";
+            console.log(a); // = Hello~World
+            a += a+ ":)";
+            console.log(a); // = Hello~WorldHello~World:)
+
+            var sum = (((100 +10) /10) - 10) *10;
+            console.log(sum); // = 10
+
+            var sum = (((300 +20)/10)-30)*40;
+            console.log(sum); // = 80
+           
+            //데이터 타입(Data Type)
+            var a= null; //값이 없는 상태
+            console.log(a); // 의도해서 값을 넣은 상태
+            var a, b, c, d; //선언만 된 상태
+            console.log(a, b, c, d);
+
+            var a = null;
+            var b;
+            console.log(a==b); // = false
+
+            var a = null;
+            var b;
+            console.log(a===b); // = false
+
+            var a = 0;
+            var b = -0;
+            console.log(a===b); // = true
+
+            var a = NaN;
+            var b = NaN;
+            console.log(NaN===NaN); // = false
+ 
+            //부정
+            var a=1;
+            var b=1;
+            console.log(a != b); // = false
+            
+            var a=1;
+            var b="1";
+            console.log(a != b); // = false
+            console.log(a !== b); // = true
+
+            //오브젝트(Object)
+            //정보를 가공할 수 있다.
+            //_(언더바)는 프로퍼티(Property)에 사용이 가능하다.
+            var person = {};
+            console.log(typeof person);
+            person = {
+            greeting : "hello",
+            name : "이지현",
+            _job : "학생"      
+            };
+            console.log(person); // = {greeting: "hello", name: "이지현", _job: "학생"}
+            person.name = "라이언";
+            person._job = "카카오"
+            console.log(person); // = {greeting: "hello", name: "라이언", _job: "카카오"}
+            console.log(person.greeting); // = hello
+            console.log(person.name); // = 라이언
+            console.log(person.greeting + '. I am') // = hello. I am    
+
+                //자기소개
+                var me =
+                {
+                greeting : "안녕하세요 :)",
+                name : "이지현", 
+                year : Math.ceil(21.5),
+                month : Math.sqrt(9),
+                date : Math.round(5.5),
+                death : Math.round (Math.random()*36500)
+                };
+
+                var a= "(Moon";
+                a = a + "Moon";
+
+                console.log(me.greeting + " " + me.name + "입니다." +
+                "\n저는 2018.03.19 기준으로 태어난 지" + " 만 " + me.year + "년 " + me.month + "개월 " + me.date + "일 되었고,\n" +
+                "제 남은 생은 " + (200/2) + "년을 기준으로 " + me.death + "일입니다.\n" +
+                "제가 지금까지 살아오면서 본 영화는 " + (1180+1) + "편이고,\n" + 
+                "영화보다 드라마가 더 좋아진 지는 " + (15*4+30) + "일" + " 되었습니다." +
+                "\n프로그래밍은 언제쯤 좋아질지는 미지수지만 노력하도록 하겠습니다. " +
+                "\n이 정도로 자기 소개를 간단히 마무리하고, 노래를 추천해드리겠습니다.\n" +
+                (9%6) + "일 전에 나온 문문" + a + ")의 '에덴'이란 곡이 정말 좋더군요." +
+                "\n이 노래는 " + (0===-0) + "입니다.");
+
+        </script>
+    </body>    
+</html>
