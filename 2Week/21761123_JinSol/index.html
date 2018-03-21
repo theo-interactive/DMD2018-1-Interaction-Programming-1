@@ -1,0 +1,288 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Jin Sol</title>
+        <style>
+            h1{margin: 0;padding: 0; font-size: 14px;line-height: 20px}
+        </style>
+      
+    </head>
+    <body>
+        <h1>Jin Sol</h1>
+       
+        <script type="text/javascript">
+            //body끝나는 부분에 넣는게 가장 좋음//
+            /* 긴 문장 주석처리 방법 */
+            //정수_1+1; 딱 떨어지는 숫자 실수_1.5+1.5; 소수점이 있는 수. 현실을 반영한 수 자바에선 딱히 구분짓지 않음 유니티에서는 구분을 해야함 꼭//
+            alert('안녕하세요');
+            
+           /* console.log("안녕하세요");
+            console.log(1+1);
+            console.log(2+1);
+            console.log(2*1);
+            console.log(4/1);
+            console.log(-10/2);
+            console.log(8%3);*/
+
+            /*math
+            console.log(Math.pow(4, 2));_pow는 n의m승
+            console.log(Math.round(1.4));_반올림
+            console.log(Math.round(2.5));_올림
+            console.log(Math.ceil(4.5));_내림
+            console.log(Math.floor(4.5));_제곱근
+            console.log(Math.sqrt(9));
+            console.log(Math.random());
+            //0~1.0사이의 랜덤한 숫자
+            console.log(Math.round(Math.random() * 100));
+            //0~100 중의 랜덤한 숫자를 구할 때.
+            console.log("안녕하세요.");
+            console.log('12345');
+            console.log("abcde");
+            //" ", ' ', " '_이것은 성립이 안됨 시작과 끝이 같아야 함.
+            console.log('yongson\'s')
+            escape. "tkdldp \'작성\' 키보드Backspace밑에 역슬레시 있음"
+            console.log("hello\nWorld\n:)");
+            console.log("1");
+            //문자로 인식이 됨
+            console.log(1);
+            //숫자로 인식이 됨
+            console.log(1+1);
+            console.log(12+"1");
+            console.log(typeof 1); 
+            //숫자타입
+            console.log(typeof "안녕하세요");
+            //문자타입
+            console.log(typeof []);
+            console.log(typeof {});
+            "Hello World";
+            "Hello" + "World";_콘솔창에다가 쓰면됨*/
+            //var variable;(변수)= dffdfdf;(변수값)
+            //var a = 1;
+            //var b = 2;
+            //a + b
+            /*var a ="hello";
+            a = "hello~";
+            //var선언 한다음에는 다시 안해도됨
+            a = a + "WORLD!";
+            a += ":^)";
+            var a = 1;
+            var b = 2;
+            console.log(a+b);
+
+            a = 2;
+            b = "1";
+            console.log(a+b);
+            
+            a = "Hello";
+            b = " ";
+            var c = "Wolrd";
+            console.log(a+b+c);*/
+
+            /*var a = 'hello';
+           // console.log(a);
+            a = "Hello~";
+           // console.log(a);
+           a = a + "World";
+           a += ":^)";
+           a += ":^)";
+           a += ":^)";
+           //변수는 무수히 재활용이 가능하다
+           console.log(a);*/
+           //100에 10을 더한 후, 10으로 나누고, 10을 뺀 후. 10을 곱한다.
+          /* var sum = ( ( (100+10) / 10 ) - 10 ) * 10;
+           //console.log(sum);
+           var sum = ( ( (200+20) / 20 ) - 20 ) * 20;
+          // console.log(sum);
+           var sum = ( ( (300+20) / 10 ) - 30 ) * 40;
+          // console.log(sum);
+
+           var a = 200;
+           var b = 20;
+           var sum = ( ( (a+b) / b ) - b ) * b;
+           console.log(sum);
+
+           var a = 200;, b = 20, c = 10, d = 30, e = 40;
+           var sum = ( ( (a+b) / c ) - d ) * e;
+           console.log(sum); */
+
+          /* var a = 1;
+           var b = 1;
+           console.log(a == b);
+
+           var a = 1;
+           var b = 2;
+           console.log(a == b );
+
+           var a = 1;
+           var b = 2;
+           console.log(a > b);
+
+
+           var a = 2;
+           var b = 1;
+           console.log(a > b);
+
+           var a = 2;
+           var b = 1;
+           console.log(b < a);
+           console.log(a < b);
+
+           var a = 3;
+           var b = 2;
+           console.log(a <= b);
+           console.log(a <= b);
+           //>= <=ㅇ이건 비교연산자 =>이거는 다른 명령어 주의
+           
+           //동등 연산자
+           var a = 1;
+           var b = 2;
+           a == b
+           //동등 연산자는 문자도 판별 가능
+
+           var a = "문자";
+           var b = "문자";
+
+           var a = 1;
+           var b = "1";
+           console.log(a == b);
+
+           var a = 1;
+           var b = "1";
+           console.log(a === b);
+           //=을 하나 더 붙이면 됨 정확히 일치하는지를 비교 동등연사자는 버그를 발생시킬 위험이 있다
+           //= 대입연산자(이항 연산자) ==동등연산자 ===일치연산자
+           //Data type
+           Bollean       true / false
+           Number        -1 0 1 2 3 4 5 ....
+           String        "a" "b" "c".....
+           underfined    underfined
+           null          null
+           1             boolean 의 true로 간주
+           1이 아닌 수    boolean 의 false로 간주
+           NaN           성립이 되지 않는 수, 계산할 수 없음을 의미*/
+           /*var a, b, c, d;
+           console.log(a, b, c, d);
+           //정의되지 않은 상태 underfined*/
+           /*var a = null;
+           console.log(a);
+           //빈 값을 넣은 상태, 언디파인드가 뜨기싫어서 / 의도해서 변수에 값을 넣은 상태
+           // console.log(typeof a); //null */
+           /*var a = null;
+           var b;
+           a == b
+           console.log(a == b);
+
+           var a = null;
+           var b;
+           a === b
+           console.log(a === b);
+
+           0 === -0
+           console.log(0 === -0);
+
+           true == 1
+           console.log(ture == 1);
+
+           //true === 1
+           //console.log(ture === 1);*/
+
+           /*NaN === NaN
+           console.log(NaN === NaN);
+           //둘 다 NaN이라도 false가 된다
+
+           //부정
+           !=
+           !==
+           //~가 같지 않을 때*/
+
+          /* var a = 1;
+           var b = 1;
+           console.log(a != b);
+
+           var a = 1;
+           var b = 2;
+           console.log(a != b);
+           console.log(a !== b);
+
+            var a = 1;
+           var b = "1";
+           console.log(a != b);
+           console.log(a !== b);*/
+
+           //Object / 객체
+           //정보를 가공할 수 있다.
+           //var object = {};
+           //브레이스 상자 자체가 변수 내가넣고싶은 변수를 다 넣어놓고 뽑을 수 있음
+
+           
+           var person = {};
+           console.log(typeof person);
+           //여기까지 그릇을 세팅한 것
+           //언더바는 프로퍼티에 사용이 가능하다
+           person = {
+               greering : "안녕하세요",
+               birthday : "11월 11일",
+               age : "22",
+               name : "진솔",
+               jop : "학생",
+               phone : "01075133331",
+               school : "계원예술대학교",
+               major : "디지털미디어디자인",
+               email : "jheer12233@naver.com",
+               billing_address : "수원시",
+               
+               
+           };
+           person.year = "1997";
+           person.nowyear = "2018";
+           person["age"] = "22";
+           person.greering + '.저는 '+ person.name+"입니다.";
+           
+           person.level = 2.34;
+           person.number = "01075133331"
+          //var sum = ( ( (100+10) / 10 ) - 10 ) * 10;
+          //100에 10을 더한 후, 10으로 나누고, 10을 뺀 후. 10을 곱한다.
+          // console.log(sum);
+           var date = new Date();
+
+            var y = date.getFullYear()-1997;
+            //var m = date.getMonth()+1+8;
+            //var d = date.getDate();
+
+            //var day = "만 "+y.toString()+"살 입니다.";
+            //\n은 줄바꿈
+            //alert(day);
+            // var a = 2;
+            //var b = 1;
+            // var all = b > a;
+            function message(){
+ 
+            var message = "저의 생일은 언제일까요?";
+            
+            var result = prompt(message); 
+            alert("정답입니다!"); 
+            }
+
+            console.log(person.greering + "," + " 저는" + person.name + "이고 \n" 
+            + "만"+y.toString() + "살입니다" + person.year + "년생이고" + person.birthday + "에 태어났습니다.\n"
+            + person.school + "재학중이고" + person.major + "배우고 있습니다.\n" + Math.floor(2.34) + "학년입니다."
+             + Math.min(3, 1) + "학기에 다니고있습니다." + "디지털 미디어디자인 학과에서 프로그래밍 전공을 하고있습니다."
+              + person.number + "휴대폰 번호입니다"  );
+            
+            console.log("Q.제 키는 160이상일까요?")
+            var a = 155;
+            var b = 160;
+           
+           console.log(a > b);
+
+          
+
+
+
+        
+        </script>
+        
+    </body>
+</html>
+
