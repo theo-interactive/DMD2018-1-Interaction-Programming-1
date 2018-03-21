@@ -189,6 +189,7 @@
     
     
     var person = {};//이렇게 입력하면 object라고 뜨는데, 상태를 표시하는건가요?
+    // rh : object({}) 는 데이터 형식 중 하나입니다.
     console.log(typeof person);
     var A = "입니다";
     person ={name : "강민주", job : "학생", school : "계원예술대학교",  mail : "lapiz1334@naver.com", greeting : "안녕하세요"};
@@ -203,6 +204,12 @@
     console.log ("만으로는 " + a + "살이며, " + "한국 나이로 " + b + "살" + A +"." );
     console.log  ("대략" + (Math.ceil(21.6)) + "년쯤 살았습니다.");
     console.log ("앞으로 " + (Math.random()*30)/*여기에 Math.pow는 같이 쓰지 못하나요?*/ + "살정도 더 살지 않을까요");
+    // rh : 사용 가능합니다. Math.pow() 는 제곱이고 Math.pow(number, number); 의 형식으로 두개의 매개변수를 사용합니다.
+    console.log('rh : -------');
+    console.log(Math.pow(2, 3));//2의 3승. - 8
+    console.log(Math.pow(3, 3));//3의 3승. - 9
+    console.log('------------');
+
     console.log ("요리는" + Math.round(Math.random()*30) + "년 안에 배울 것 같습니다.")
     console.log ("네, 모든것은 랜덤입니다.")
     var c = "Unity";
@@ -210,10 +217,13 @@
     
     var sum = (((300)/100)*999)%5;
     console.log ("마치 익숙해지기까지" + (Math.round(Math.random(/*여기안에 숫자가 들어가면 무엇을 제어하게 되나요?*/)*30)) + "년 정도 남지 않았을까요" );
+    // rh : Math.random() 은 함수에 매개변수를 가지고 있지 않아요. 숫자는 무시하고 원래 그대로의 기능으로 출력됩니다. 0 ~ 1.0 사이의 랜덤 숫자.
 
     console.log(a>b);//이거는 실제 페이지에서 어떻게 활용이 되나요?
+    // rh : 조건문을 다룰 때 사용합니다.
     
     console.log(person);//아래로 내리는 바에서 왜 역순으로 표시되나요? __proro__:object는 무엇을 표시하는건가요?
+    // rh : __proro__:object 는 웹 브라우저에서 가지고 있는 자체 내장 객체이기 때문에 안의 내용은 따로 사용하지 않습니다.
     
     </script>
 </body>
