@@ -168,7 +168,9 @@
        var a = null;
        console.log(a); // null (빈 값을 넣은 상태. 의도해서 변수에 값을 넣은 상태)
        console.log(typeof a); // null - 질문 : 교수님! 제가 이걸 null로 적어두었는데 출력을 하면 object로 나와서요.. 왜 그러는지 이유가 궁금합니다...
-
+       // rh : null, Array([]) 은 출력할 때, object 로 나오는게 정상입니다.
+       // 정확한 데이터 타입으로 object 지만, 조건식을 사용할 때, undefined 와 구분하기 위해 많이 활용됩니다.
+       
        var A = null;
        var B; // 값이 정의되지 않은 상태
        console.log(A == B); // true 
