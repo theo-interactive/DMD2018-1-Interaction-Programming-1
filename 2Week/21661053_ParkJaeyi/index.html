@@ -1,8 +1,66 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head> 
-<meta charset="utf-8" /> 
-<title>임시</title>  
-<script>        alert("임시");    </script>
-</head><body>
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>2WEEK</title>
+</head>
+<body>
+    <h1>자기 소개</h1>
+    <script type="text/javascript">
+
+        alert("안녕하세요");
+        var I;
+        console.log(typeof l);
+        I = {
+            name:"박재이",
+            school:"계원예술대학교",
+            age:"22",
+            birth:"02월26일",
+            addr:"경기도 수원시",
+            phone:"01044559164",
+            interast:"게임,코딩,총&밀리터리,가끔 그림그리기,행사장 구경가기 등"
+        }
+        I.email = "pwodl2@gmail.com";
+
+        var ST_A = "2";
+        var ST_B = "1";
+        var ST_C = "6";
+        var ST_D = "1053";
+        var e = ST_A + ST_B + ST_C + ST_C + ST_D;
+        console.log(typeof e);
+
+        //학번21661053
+        console.log(e + ',' + I.name + '입니다.');
+        console.log("나이는" + ST_A + ST_A + "입니다.");
+        console.log("저의 연락처는 \n" + "전화번호_" + I.phone + "\n이메일_" + I.email + "입니다.");
+
+        var Bir = 2;
+        var Bir_2 = 13;
+        console.log("제 생일은" + Bir + "월" + (Bir * Bir_2) + "일 입니다.");//값은 2.26
+        console.log(typeof Bir_2);
+
+        console.log("제가 좋아하는 것은\n"+I.interast + "입니다.");
+        console.log("현재 살고있는 곳은" + I.addr + '이며,');
+        var f = (5 * 5 * 3) / 60;//f_75/60=1.25 즉 1시간 25분정도,
+        console.log("학교에 가는 시간은" + f + "시간 정도.");
+        var g = (360 / 6) / 60;//g_60/60=1시간
+        console.log("학교 오는 시간은" + g + "시간 정도 걸립니다.");
+
+        console.log("통학 시간은" + (f == g) + "(다릅니다.)");
+        console.log("잠을 자는 시간은" + Math.round(5.5) + "시간입니다");
+
+        console.log("지난번 수업에 배운 것을 활용하여 자기소개를 써봤습니다.\n감사합니다.")
+
+
+        //질문_ Mach는 변수에 써넣으면 NaN 값으로 나오는데,타입이 '오브젝트'이기 때문인가요?? 그외 다른 활용도 알고싶어요.
+
+        // rh : Math 에 변수를 써넣으면이 어떤 걸 의미하나요?
+        // Math 는 JavaScript 가 가지고 있는 고유 내장 함수이며, Math 라는 오브젝트 객체 안에 여러가지 수학 식들이 있습니다.
+        // Object 리터럴 형식으로 보면 맞지만, 문법이 가능한 범위에서 기능이 실행 가능하기 때문에 다른 함수나, 내부 변수를 사용해도 값이 변하지 않습니다.
+        // Math 자체를 출력해보면 많은 기능들이 있으니 하나씩 실행해보세요. ex) Math.abs(-2); 절대값. 출력시 2.
+        // Math 에 접근하여 Math 자체에 추가적으로 새로운 기능을 만들기 위한 방법으로 prototype 을 활용할 수 있습니다.
+
+    </script>
 </body>
 </html>

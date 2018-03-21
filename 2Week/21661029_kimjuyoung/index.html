@@ -1,0 +1,179 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title>2Week Kim JuYoung</title>
+
+</head>
+
+<body>
+
+    <h1>2Week Kim JuYoung</h1>
+    <script type="text/javascript">
+
+        alert("안녕하세요 교수님 과제 제출합니다 :)");
+
+        
+        // 연산자
+
+        console.log(1+1); // 2 (덧셈)
+        console.log(2+1); // 3
+        console.log(2*2); // 4 (곱셈)
+        console.log(4/2); // 2 (나눗셈)
+        console.log(9/2); // 4.5
+        console.log(8%2); // 0 (나머지를 구한 값)
+
+
+        // math
+
+       console.log(Math.pow(4,2)); // 제곱
+       console.log(Math.round(2,5)); // 반올림
+       console.log(Math.ceil(4.5)); // 올림
+       console.log(Math.floor(4.5)); // 내림
+       console.log(Math.sqrt(9)); // 제곱근
+       console.log(Math.random()); // 0-1.0 중에 랜덤한 숫자
+       console.log(Math.random()*100); // 0-100 중에 랜덤한 숫자
+       console.log(Math.round(Math.random()*100)); // 0-100 중에 랜덤한 숫자를 구할 때, 반드시 정수
+
+
+        // string
+
+       console.log("안녕하세요");
+       console.log("abcde");
+
+       console.log("young\'s"); // escape \
+       console.log("Hello\nWorld"); // 줄바꿈 처리 \n
+       console.log(1); // 숫자
+       console.log("1"); // 문자
+
+
+       // typeof
+
+       console.log(typeof 1); // 숫자로 출력
+       console.log(typeof "1"); // 문자로 출력 
+       console.log(typeof [ ]); // 오브젝트 출력
+
+
+       // 변수
+
+       var a = 1;
+       var b = 2;
+       console.log(a+b); // 3
+
+       var a = 2;
+       var b = "1";
+       console.log(a+b) // 21
+
+       a="hello"
+       b=" "
+       c="world"
+       console.log(a+b+c) // hello world
+
+       var a="hello"
+       a="hello~"
+       a=a+"world"
+       a+=":^)" // += 끝난 지점에 계속 더해주는 것
+       console.log(a) // hello~world:^)
+       
+
+
+        var sum=( ((100+10)/10-10)*10 )
+        console.log(sum) // 10
+
+        var a=100;
+        var b=10;
+        var sum=(((a+b)/b-b)*b);
+        console.log(sum) //10
+    
+
+        var a =1;
+        var b =1;
+        console.log(a==b) // ==는 동등(true)
+
+        var a =1;
+        var b =2;
+        console.log(a==b) // false
+
+        var a=1
+        var b="1"
+        console.log(a===b) // ===는 일치(false) _ number 1과 string 1을 비교하는 것이기 때문에
+
+        var a=null; // 값이 없는 상태 (의도적)
+        console.log(a)
+
+        var b;
+        console.log(b) // undefined
+
+        console.log(NaN===NaN) // 둘다 NaN 이라도 false가 된다
+
+
+
+
+        //부정
+
+        var a=1
+        var b=1
+        console.log(a!=b) // 다른 값이면 false 같은 값이면 true, 동등/일치의 반대
+  
+
+
+        // object
+
+
+        /*
+        Var object = { key : value }
+        */
+    
+        var person ={}
+        console.log(typeof person)
+        person = {
+            greeting : "안녕하세요",
+            name : "김주영",
+            job : "대학생",
+            address : "강원도 홍천"
+        };
+        person.email="romant_ico@naver.com"
+        person["email"]="romant_ico@naver.com"
+        console.log(person)
+
+        console.log(person.name+"입니다")
+
+        console.log(person.greeting+"저는"+person.job+"입니다.")
+
+
+
+        // 2week 자기소개 과제
+
+        var greeting="안녕하세요!";  
+
+        var A="1", B="2", C="44";
+
+
+        var me={
+            name: "김주영",
+            birth: "1997년 8월 6일",
+            school: "계원예술대학교",
+            grade: "2학년",
+            hometown: "강원도 홍천"
+        };
+
+        
+        var favorite={
+            food: "마요네즈",
+            character: "쿠마몬"
+        };
+        
+
+        console.log(
+            greeting+" "+"저는 "+me.name+"입니다."+" "+"제 나이는 "+(C/B)+"살입니다.\n"
+            +"현재 "+me.school+"에 "+me.grade+"으로 다니고 있습니다.\n"
+            +"저는 "+me.birth+"에 "+me.hometown+"에서 태어났습니다."+" 자취 "+B+"년차입니다!\n"
+            +"제가 좋아하는 음식은 "+favorite.food+"이고, "+"좋아하는 캐릭터는 "+favorite.character+"입니다."
+        );
+
+
+    </script>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>

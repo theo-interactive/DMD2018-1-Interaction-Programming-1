@@ -1,12 +1,230 @@
-<!DOCTYPE>
-<html>
-    <head>
-        <title></title>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>2WEEK</title>
+</head>
+<body>
+    <h1>1WEEK - 03/15</h1>
+<script type="text/javascript">
+    
+    
+    //code. 한줄짜리 주석이다
+    /*여러줄로 되어있는 자바 스크립트
+    주석이다*/
+       /* alert ('서브웨이 콜드포크 에그마요 샌드위치');//""랑 '차이 없지 않을까.
+        alert ("안녕하세요");//경고창, 안내창 내용
+        console.log('반갑습니다');
+        console.log("안녕하세요");console.log("0");//console창에 뜨는 내용 
+        console.log("2 + 1");*/
+        /*console.log(3 / 2);
+        console.log(Math.pow(4.1));//반올림
+        console.log(Math.ceil(4.5));//
+        console.log(Math.floor(4.5));//
+        console.log(Math.sqrt());//
+        console.log(Math.random());//1~10까지의 랜덤한 숫자
+        console.log(Math.round(Math.random()*100));*/
+        //0에서 100중의 랜덤한 숫자를 구할때
+        /*console.log("aaaaa");
+        console.log('aaaaa');
+        console.log("aaaaa");*/
+        //"", ''->시작과 끝이 성립이 안된다
+        //시작과 끝이 같아야 한다.
+            //escape
+        /*console.log("dddddddd\'s");
+        console.log("hello\nworld");*/
+        /*console.log(1+1);//숫자, 연산됨
+        console.log("1+1");//문자로 받아들임
+        console.log(10+"20");//오른쪽만 문자로 받아들여짐*/
 
-    </head>
+       /* console.log(typeof 1);//number
+        console.log(typeof "1");//string
+        console.log(typeof "안녕하세요");
+        console.log(typeof []);//array
+        console.log(typeof {});//object*/
+        
+        //.length //뮨자 길이
+        //index.of(h)//문자 갯수?
+        
+        //변수 선언
+        //var variable = value;//var 변수명=변수값
+       /* var a = 1;
+        var b = 2;
+        var c = "10";
+        var d = "Hello";
+        var e = "World"; //var 선언 이후에는 var 사용하지 않아도 된다.
+       // console.log(a+b);
 
-    <body>
-        <h1>Test</h1>
+        a =2;
+        b = "1";
+        //console.log(a+b);
 
-    </body>
+        a = "Hello";
+        b = "";
+        var c = "World"
+        //console.log(a+b+c);
+
+        var a = "hello"
+        a = "Hello~"
+        //console.log(a);
+        a = a + "World!";
+        a +='":^';
+        console.log(a);*/
+
+       /* (((100+10)/10)-10)*10
+
+        var sum = (((100+10)/10)-10)*10;
+        console.log(sum);
+        var sum = (((200+20)/20)-20)*20;
+        console.log(sum);
+        var sum = (((300+30)/30)-30)*40;
+        console.log(sum);
+
+        var a = 100;
+        var b = 10;
+        var sum = ((((a+b)/b)-b)*b);
+        console.log(sum);
+        
+        var a = 200;
+        var b = 20, c = 10, d = 30, e = 40;
+        var sum = ((((a+b)/c)-d)*e*a/d)-a;
+        console.log(sum);   */
+
+        //비교연산자
+
+        /*var a = 1;
+        var b = 1;
+        console.log(a==b);
+
+        var a = 1;
+        var b = 2;
+        console.log(a==b);
+
+        var a = 2;
+        var b = 1;
+        console.log(a>b);
+       
+        var a = 2;
+        var b = 1;
+        console.log(a<b);              
+        console.log(a<=b);
+        console.log(a>=b);    
+
+        var a = 1;
+        var b = "1";
+        console.log(a==b);//true가 니온다. 동등 연산자. 버그 발생의 위험이 있음
+
+        var a = 1;
+        var b = "1";
+        console.log(a===b);//false가 니온다. 일치 연산자. 엄격함.
+
+        undefined // 아직까지 정해지지 않은
+        null//비어있는
+        1//Boolean의 true로 간주
+        1 아님//Boolean의 false로 간주
+        Nan//이게 뭐지
+        var a = null; //값이 없는 상태. 의도로 값을 만들지 않음.
+        */
+        //var a, b, c, d;
+        //console.log(a, b, c, d);//값이 정해지지 않아서 정의되지 않은 undefined 출력
+
+        /*var a = null;
+        var b;
+        console.log(a==b);//true
+        console.log(a===b);//false
+        //빈값을 넣은 상태. 의도해서 변수에 값은 넣은 상태.
+        //  
+        console.log(0===-0);//0은 0밖에 없어서 0이다
+        console.log(true == 1);//true
+        console.log(true===1);//false
+        console.log(NaN===NaN);//false 같은 값으로 인식하지 않는다. 어떤 수식이 성립되어 있는지 모르기 때문에 둘다 NAN이라도 거짓이 된다.
+        
+        //!= //부정 1이나 문자 1이나 같다고 뜬다
+        //!== 엄격한 구분, 타입까지 같은지 구분한다
+        
+        var a = 1;
+        var b = 1;
+        console.log(a != b);//f
+
+        var a = 1;
+        var b = 2;
+        console.log(a != b);//t
+        console.log(a !== b);//t
+
+        var a = 1;
+        var b = "1";
+        console.log(a != b);//f
+        console.log(a !== b);//t 
+
+
+        //object /객체
+        //정보를 가공할수 있다
+
+        var object = {key : value};//수납공간
+        var person = {name: 강민주}; //상기 예제 {"name : "강민주"}도 가능
+        //person.name;
+        //person["name"] 이런식으로도 출력 가능. 
+        //_ 언더바는 프로퍼티에 사용이 가능하다.
+
+
+        var person = {}; >>여기는 왜 비워놓는건가요. {}안에 있는 것이  person 이라고 말하는건가요?
+        console.log(typeof person);
+        person = {
+            name : "강민주",_job : "학생", phone : "01099996666", greeting : "안녕하세요"
+            };
+        console.log(person);
+        person.email = "lapiz1334@naver.com";
+        person.billing_address = "서울시 수면동"
+        console.log(person);
+        person["email"] = "lapiz1334@naver.com";
+        console.log(person);//여기에만 이메일이 나온다.
+        person.name = "홍길동";
+        console.log(person);//여기부터는 이름이 바뀌어서 나온다 
+        
+        console.log(person.greeting);
+        console.log(person,name);
+
+        console.log(person.greeting + ". 저는 " + person.name + "입니다");
+        console.log(person.name);*/
+    
+    
+    var person = {};//이렇게 입력하면 object라고 뜨는데, 상태를 표시하는건가요?
+    // rh : object({}) 는 데이터 형식 중 하나입니다.
+    console.log(typeof person);
+    var A = "입니다";
+    person ={name : "강민주", job : "학생", school : "계원예술대학교",  mail : "lapiz1334@naver.com", greeting : "안녕하세요"};
+    person.attend = "디지털미디어디자인";
+    console.log (person.greeting + " 저는" + person.name + A)
+    console.log ("저의 이메일은" + person.mail + "입니다.")
+    var a = 21;
+    var b = 23;
+    var c = 19;
+    var d = "96"
+    console.log ("저는" + c+d + "년에 태어났습니다.");
+    console.log ("만으로는 " + a + "살이며, " + "한국 나이로 " + b + "살" + A +"." );
+    console.log  ("대략" + (Math.ceil(21.6)) + "년쯤 살았습니다.");
+    console.log ("앞으로 " + (Math.random()*30)/*여기에 Math.pow는 같이 쓰지 못하나요?*/ + "살정도 더 살지 않을까요");
+    // rh : 사용 가능합니다. Math.pow() 는 제곱이고 Math.pow(number, number); 의 형식으로 두개의 매개변수를 사용합니다.
+    console.log('rh : -------');
+    console.log(Math.pow(2, 3));//2의 3승. - 8
+    console.log(Math.pow(3, 3));//3의 3승. - 9
+    console.log('------------');
+
+    console.log ("요리는" + Math.round(Math.random()*30) + "년 안에 배울 것 같습니다.")
+    console.log ("네, 모든것은 랜덤입니다.")
+    var c = "Unity";
+    console.log ("지금 제일 어려운건 "+c+A+".");
+    
+    var sum = (((300)/100)*999)%5;
+    console.log ("마치 익숙해지기까지" + (Math.round(Math.random(/*여기안에 숫자가 들어가면 무엇을 제어하게 되나요?*/)*30)) + "년 정도 남지 않았을까요" );
+    // rh : Math.random() 은 함수에 매개변수를 가지고 있지 않아요. 숫자는 무시하고 원래 그대로의 기능으로 출력됩니다. 0 ~ 1.0 사이의 랜덤 숫자.
+
+    console.log(a>b);//이거는 실제 페이지에서 어떻게 활용이 되나요?
+    // rh : 조건문을 다룰 때 사용합니다.
+    
+    console.log(person);//아래로 내리는 바에서 왜 역순으로 표시되나요? __proro__:object는 무엇을 표시하는건가요?
+    // rh : __proro__:object 는 웹 브라우저에서 가지고 있는 자체 내장 객체이기 때문에 안의 내용은 따로 사용하지 않습니다.
+    
+    </script>
+</body>
 </html>
