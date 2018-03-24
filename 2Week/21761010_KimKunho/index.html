@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>2WEEK_KimKunho</title>
+    <style>
+        h1{margin: 0;padding: 0;font-size: 20px;line-height: 40px;}
+    </style>
+</head>
+
+<body>
+
+    <h1>2WEEK 3/15</h1>
+
+    <!-- javascript -->
+
+    <script type="text/javascript">
+
+        alert('오늘 점심은 뭘 먹을지 같이 고민하죠.');
+
+
+
+        //연산자
+
+        console.log(1 + 1);
+        //2
+        console.log(2 + 2.5);
+        //4.5
+        console.log(9 - 1); 
+        //8
+        console.log(5 * 5);
+        //25
+        console.log(6 / 2);
+        //3
+        console.log(8 % 3);
+        //2
+
+        console.log("5" + 5);
+        //55
+        console.log("6 / 2");
+        //6 / 2
+        console.log(8 + "3");
+        //83       
+        
+
+
+        //Math
+        
+        console.log("제곱=" + Math.pow(6,2));
+        //제곱 = 36
+        console.log("반올림" + Math.round(6.4));
+        //반올림 = 6
+        console.log("올림 = " + Math.ceil(5.4));
+        //올림 = 6
+        console.log("내림 = " + Math.floor(6.6));
+        //내림 = 6
+        console.log("제곱근 = " + Math.sqrt(36));
+        //제곱근 = 6
+        
+        console.log("랜덤 = " + Math.random()*100);
+        //랜덤 = ??.?
+        console.log("랜덤*1000 = " + Math.round(Math.random()*10000));
+        //랜덤*1000 = ????.?
+        
+
+
+        //string
+
+        console.log('Kunho\'s');
+        //Kunho's
+        console.log("Hello\n:)");
+        /*Hello
+          :)*/
+        console.log ("글자수 = " + "HELLO Kunho!".length);
+        // 글자수 = 12
+        console.log ("해당 (K) 순번 = " + "HELLO Kunho!".indexOf("K"));
+        //해당 (K) 순번 = 
+
+
+
+        //Data Type
+
+        console.log(typeof 1);
+        //Number
+        console.log(typeof "15");
+        //String
+        console.log(typeof "안녕하세요.");
+        //String
+        console.log(typeof {});
+        //Object
+
+
+
+       //대입 연산자
+
+        var a = 3;
+        var b = 2;
+        console.log(a+b);
+        //5
+
+        var a = 5;
+        var b = "2";
+        console.log(a+b);
+        //52
+
+        var a = "Hello";
+        var b = " ";
+        var c = "Kunho";
+        console.log(a+c);
+        //HelloKunho
+        console.log(a+b+c);
+        //Hello Kunho
+        
+        var a = "hello";
+        console.log(a);
+        //hello
+        a = "HELLO!";
+        console.log(a);
+        //HELLO!
+        a = a + "Kunho.";
+        console.log(a);
+        //HELLO!Kunho.
+
+        a = a + " Kim";
+        a +=":)"
+        a +=":<"
+        a +=":)"
+        console.log(a);
+        //HELLO!Kunho. Kim:):<:)
+
+        var sum = (((100+50)/30)-2)*10;
+        console.log(sum);
+        //30
+
+        var a = 500;
+        var b = 5;
+        var sum = (((a+b)/b)-b)*b;
+        console.log(sum);
+        //480
+
+        var a = 300, b = 30, c=10, d=3, e=40;
+        var sum = ( ( ( a + b ) / c ) - d ) * e;
+        console.log(sum);
+        //1200
+        
+
+
+        //비교연산자
+
+        var a = 1;
+        var b = 1;
+        console.log("1과 1은 같다 = " + (a == b));
+        //1과 1은 같다 = true
+
+        var a = 5;
+        var b = 3;
+        console.log("5와 3은 같다 = " + (a == b));
+        //5와 3은 같다 = false
+
+        var a = 3;
+        var b = "5";
+        console.log("3(number)과 5(string)은 같다 = " + (a == b));
+        //3(number)과 5(string)은 같다 = true
+
+        var a = 5;
+        var b = "5";
+        console.log("5(number)과 5(string)는 일치한다 = " + (a === b));
+        //5(number)과 5(string)는 일치한다 = false
+
+        var a = 33;
+        var b = 55;
+        console.log(a > b);
+        //false
+
+        var a = 6;
+        var b = 5;
+        console.log(a > b);
+        //true
+
+        var a = 8;
+        var b = 9;
+        console.log(a >= b);
+        //false
+        console.log(a <= b);
+        //true
+
+       
+        var Sun;
+        console.log(Sun);
+        //undefined
+
+        var you = null;
+        console.log(you);
+        //null
+
+        var a = null;
+        var b;
+        console.log(a==b);
+        //false
+
+        console.log (true == 1);
+        //true
+        console.log (true === 1);
+        //false
+        console.log (NaN === NaN); 
+        //false
+
+
+    
+        var a = 7;
+        var b = 7;
+        console.log(a!=b);
+        //false
+
+        var a = 4;
+        var b = "4";
+        console.log(a!=b);
+        //false
+        console.log(a!==b);
+        //true
+
+
+        
+        //object
+
+        var person ={};
+        console.log(typeof person);
+        //object
+
+        person = {
+            greeting : "안녕하세요",
+            name : "김건호",
+            job : "학생",
+            address : "서울",
+            email : "iamkkh0503@naver.com",   
+            phone : "01029659395"
+        };
+        
+        person.email = "auekjhkkl@gmail.com";
+        person.address = "서대문구";
+        
+        person["email"] = "auekjhkkl@gmail.com";
+        console.log(person);
+        person.name = "김건호";
+        console.log(person.greeting + " " + person.name+"라고 "+"합니다.");
+
+
+
+        //자기소개
+
+            var hello = "안녕하십니까.";
+
+            var A = "13년도", B = "5월", C = "15년도", D = "2월", E = "3년차 ", F = "예비군";
+            var IM = E + F
+
+
+            var me = {
+                name : "김건호",
+                birth : "1993년 5월 3일",
+                age : "26",
+                school : "계원예술대학교",
+                s_study : "Digital Media",
+                work : "Design",
+                major : "Programming",
+                dream : "돈많은 백수",
+                goal : "창업"              
+            };          
+
+            var ME = {
+                IB : "인간불신",
+                DD : "다재다난",
+                dr : "그림", 
+                re : "독서",
+                fu : "학기 중",
+                sb : "왕복 4시간",
+                ti : "시간",
+            };   
+
+
+
+            console.log ( hello + " 저는 " + me.name + "입니다." 
+                + "\n" + me.birth + "[" + ((me.name.indexOf("김") + 1) == (D.indexOf("월"))) + "]" + "에 " + "태어나 " 
+                + "\n올 해 " + me.age + "세 입니다.\n\n" + A + " " + B + "에 입대하고," + C + " " + D +"에 전역," 
+                + "\n" + "올 해 " + IM + "입니다."
+
+                + "\n\n"+ me.school + " " + me.s_study + " " + me.work + "과에\n" + "입학하여 " + me.major 
+                + "을 전공하고 있습니다.\n\n워낙 " + ME.DD + "한 인생을 살다보니 " + ME.IB + "이 좀 심합니다.\n그래서 혼자여도 "
+                + me.work + "관련 업무에 지장이 없도록 " + me.major + "을 선택하였습니다.\n\n" + "현재 " + me.goal + "을 준비하고 "
+                + me.dream + "를 목표로 정진하고 있습니다.\n졸업 후, " + me.goal + "을 위해 " + ME.DD + "한 인생은 계속될 것 같습니다.\n\n"
+
+                + "취미로는 " + ME.dr + "과 " + ME.re + "이지만 "+ ME.fu + "에는 통학으로 " + ME.sb +"을 낭비도 하고 피로도 증가하니 좀처럼 " 
+                + ME.ti + "을 내기 힘들어집니다.\n" 
+                + Math.round( Math.random() *1000) + "%만큼 " + ME.sb + " 통학은 은근히 사람을 피말리게 합니다!");
+
+
+    </script>
+    <script src="./js/script.js"type="text/javascript"></script>
+</body>
+</html>

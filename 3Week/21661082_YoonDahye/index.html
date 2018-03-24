@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+	<html lang="ko">
+		<head>
+			<meta charset="UTF-8">
+			<title>3Week</title>
+
+			<style>
+			</style>
+
+		</head>
+
+		<body>
+			<h1>3WEEK - 03/22</h1>
+			<h2>Yoon Dahye</h2>
+
+			<script type="text/javascript">
+			    
+			// quest 1. 						
+				var a = 29;						// 교수님 안녕하세요!
+				var b = ( a += 2 );				// quest 1번은 아예 감이 안잡힙니다ㅠㅠ
+				console.log (b);				// 힌트 쪼금만 주세요...하트
+
+				a = 29;				
+				var c = ( a %= 9 );							
+
+				console.log (c);
+
+
+				if ( (b % c) === 1 ) {
+					console.log ("일치합니다.")
+				};
+
+
+
+			// quest 2.
+				var _alp = ['A', 'B', 'C', 'D', 'E', 
+							'F', 'G', 'H', 'I', 'J', 
+							'K', 'L', 'M', 'N', 'O', 
+							'P', 'Q', 'R', 'S', 'T', 
+							'U', 'V', 'W', 'X', 'Y',
+							'Z'];
+				var i = 0;
+				var a = '';
+
+
+				for (i; i < _alp.length; i++) {
+
+					console.log (_alp[i]);		// 따로 출력
+
+					if (i > 0) {
+						a += ' ';
+					};
+
+					a += _alp[i];
+
+				};
+
+				console.log (a);				// 한꺼번에 출력
+
+
+
+			// quest 3. 
+				var q = 1;
+
+				for (q; q < 51; q++) {
+
+					if ( (q % 2) === 0 ) {
+						console.log (q + " = 짝수");
+					}else {
+						console.log (q + " = 홀수");
+					};
+
+				};
+
+
+
+			</script>
+		</body>
+
+	</html>
