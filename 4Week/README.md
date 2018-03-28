@@ -8,7 +8,7 @@
 
 ### Quest 1.
 1) var _cars = ['Tesla', 'Audi', 'Volvo', 'Benz'];
-2) cars 배열의 문자열 원소를 아래 결과와 같은 문자열로 console 에 출력되도록 작성합니다.
+2) _cars 배열의 문자열 원소를 아래 결과와 같은 문자열로 console 에 출력되도록 작성합니다.
 3) -> Benz, Volvo, Audi, Tesla.
 
 ### Quest 2.
