@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>practice2</title>
+</head>
+<body>
+    <script type="text/javascript">
+    /*
+    //switch 조건문
+    //if else와 비슷함.
+    var greet = '';
+    switch(greet){ // 위에서 선언한 변수 중 하나를 넣어서 조건이 성립하는지 구분
+        case 'hello':
+        console.log(1);
+        //코드를 작성.
+        break;// 꼭 써줘야함.
+        case 'world':
+        console.log(2);
+        break;
+        default:
+        console.log(3);
+        break;
+    }
+
+    var i = 0;
+    while(i < 10){
+        console.log(i);
+        i++;
+    }
+
+    //배열의 제어.
+    var _heros = ['Iron Man','Hulk',"Thor",'Doctor Strange'];
+    console.log('original : ',_heros);
+    //unshift
+    //push
+    
+    _heros.unshift('Captain America'); //초기 배열 맨 앞에 추가.
+    console.log('unshift :',_heros);
+
+    _heros.push('Spider-Man');// 배열 맨 뒤에 추가.
+    console.log('push :',_heros);
+    //concat
+
+    var _heros2 = ['Black Panther','Ant-Man','Black Widow'];//다른배열 선언
+
+    var _heros3 = _heros.concat(_heros2); // 배열 병합
+    console.log('concat :',_heros3);
+
+    //shift
+    //pop
+    _heros3.shift();
+    console.log('shift :',_heros3); // 배열의 0번째 원소를 제거
+
+    _heros3.pop();
+    console.log('pop :',_heros3); // 배열의 마지막번째 원소를 제거
+
+    //splice
+    _heros3.splice(2,0,'Vision')
+    console.log('splice :',_heros3); // splice(start, deleteCount, String[]) 
+    //1. 기준이 될 원소의 index, 2. 1의 원소 index에서부터 삭제할 개수, 삭제하지 않을 경우 0, 3. string[] : 추가할 원소의 값.
+    _heros3.splice(3,2,'Loki');
+    console.log('splice2 :',_heros3);
+
+    //sort();
+    //reverse();
+    _heros3.sort();
+    console.log('sort :',_heros3);
+
+    var _array=[0, 201,'black', 30, 20, '안녕하세요', -10, 2,'apple']
+    _array.sort();
+    console.log(_array); // 숫자 - 부터 +까지, 영어 a-z, 영문 다음 국문
+
+
+    _heros3.reverse();
+    _array.reverse();
+    console.log('revers  :',_heros3);
+    console.log('revers  :',_array); // 반전, 역순 자동 정렬아님.
+    
+    //for in
+    // 반복문으로 배열 찾기.
+    var _array=['a','b','c','d'];
+    for (var i=0; i <_array.length; i++){
+        console.log(_array[i]);
+    }
+    
+    // 배열을 for in으로 찾을 때.
+    for(var index in _array){
+        console.log(index);
+    }
+    
+    for (var i in _array){//i : 원소의 순서
+        console.log(_array[i]);
+    }
+    
+    var _person = {
+        name: "명진웅",
+        job : "학생"
+    }
+
+    for ( var key in _person){
+        console.log(_person[key]);
+        console.log(key + ':' + _person[key]);
+    }
+
+    */
+    //Math
+    var abs = Math.abs(-200+100+200-1000+200); //절대값
+    console.log(abs);
+    // -200 + 100 = -100 -> 100
+
+    var min = Math.min(-10, -20, 0, 200, 100);
+    console.log(min); // 배열의 가장 작은 값을 출력
+    var max = Math.max(-10, -20, 0, 200, 100);
+    console.log(max); // 배열의 가장 높은 값을 출력
+
+    //(?) 배열안에서 숫자들을 넣어서 비교하고 싶다!!!!!!!
+    var numbers = [1,0,-3,4,-200,30,1012,910322];
+    var min = Math.min(numbers);
+    //Math.min(숫자)가 들어 있어야하나 Math.min([배열])배열이 들어가 수식이 성립되지 않아 NaN이 출력됨.
+    console.log(min);
+    var min = Math.min.apply(null, numbers);
+    console.log(min);
+    var max = Math.max.apply(null, numbers);
+    console.log(max);
+        </script>
+</body>
+</html>

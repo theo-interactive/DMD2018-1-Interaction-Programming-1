@@ -9,9 +9,9 @@
 <script type="text/javascript">
     var a = 29; // a에 29를 대입
     console.log(a);
-    var a1 = a + a%3; //a(29)에 + 2를 해 31 a1에 결과값 31을 대입
+    var a1 = a + 2; //a(29)에 + 2를 해 31 a1에 결과값 31을 대입
     console.log(a1);
-    var a2 = a1 % a; //a(31)값에 a를 나눈 나머지 값을 a2에 대입
+    var a2 = a % a1%3; //a(31)값에 a를 나눈 나머지 값을 a2에 대입
 
     // rh : 변수 a 는 질문에서 변하지 않는 값 29 입니다.
     // var a = 29; var b = 29 % (?) --> 2 값이 나오도록 해보세요. ? 의 값을 찾아야 합니다.
@@ -35,7 +35,7 @@
     var alpha = ['a','b','c','d','e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
         //a-z값을 alpha변수에 대입함.
         for (var i = 0; i < alpha.length; i++){//alpha변수의 갯수를 세어 그 만큼 i값을 증가시킴
-            b += alpha[i] //b에 alpha 배열의 값을 중첩시킴
+            b += alpha[i].toString().toUpperCase(); //b에 alpha 배열의 값을 중첩시킴 + 대문자 변경, 소문자 변경 : toLowerCase()
             if(i >= 0){ // i 값이 0보다 크거나 같으면 b에 빈칸을 중첩시킴
                 b += " ";
             }
@@ -56,7 +56,7 @@
 
     }
     //결과는 정확하게 나왔는데 이렇게 작성하는게 맞는지 잘 모르겠어요.. 
-
+    console.log("------------quest.2 end---------------")
 
 </script>
 </body>
