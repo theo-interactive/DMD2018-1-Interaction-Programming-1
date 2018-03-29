@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>4WEEK </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+>
+</head>
+<body>
+    <h1>4WEEK Quest! </h1>
+    <script type="text/javascript">
+
+
+
+    //Quest1.
+    //1)
+    var _cars = ['Tesla', 'Audi', 'Volvo', 'Benz'];
+    _cars.reverse();
+    //console.log(_cars);
+
+    //2)
+    var _Cars = '';  
+     for(var i = 0; i < _cars.length; i++){  
+            _Cars += _cars[i];  
+        if(i < _cars.length - 1){  
+            _Cars += ', ';  
+        }else{  
+            _Cars += '.';  
+        }  
+      }  
+    //3)
+      console.log('-> ', _Cars); 
+
+    
+    
+    //Quest2.
+
+    //1)
+    var _numbers = [5,9,7,4,2,15,26];
+
+    //2)
+    var _numbers1 = Math.max(5,9,7,4,2,15,26);
+        console.log(_numbers1);
+
+    //3)
+    var _numbers2= Math.min(5,9,7,4,2,15,26);
+        console.log(_numbers2);
+
+
+    //Quest3.
+
+    //1)
+    var _array =[3,5,7,1,2];
+    var _a =5;
+
+    //2)
+    function searchIndex( _array,_a){
+    
+        
+        for( var i=0;i<_array.length;i++){
+
+            if( _a === _array[i]){
+               //3)
+                console.log(i);
+            }  
+        }
+    }
+    //4)
+    searchIndex(_array,_a);
+
+    
+    
+    //Quest4.
+
+    //1)
+    var _four=[3,'a','c',['a',4],['e']];
+    function checkType(_four){
+        var _result=[]
+        for( var i=0;i<_four.length;i++){
+            console.log(_four[i]);
+            _result.push(typeof _four[i]);
+        }
+
+    console.log(_result);
+    }
+    checkType(_four);
+
+   
+    
+    
+    
+    </script>
+</body>
+</html>
