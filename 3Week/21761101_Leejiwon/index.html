@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>3WEEK</title>
+    </head>
+    <body>
+        <h1>3WEEK - 03/22</h1>
+            <script type="text/javascript">
+                
+                /* Quest 1 */
+
+                console.log("<Quest 1>");
+
+                var a = 29;
+                
+                console.log(a); // 29, 변수 a에 숫자 29를 할당 
+
+                var b = a+2;
+
+                console.log(b); // 31, b가 31이 되어야 하기 때문에 a + 2를 할당
+
+                var c = b%a; 
+
+                console.log(c); // 2, b를 a로 나누었을 때 나머지 값이 2가 나오도록 작성
+
+                if(d = 1){
+                    var d = b/c // b를 c로 나누었을 때 나머지가 1인 경우
+                    console.log("일치합니다."); // 일치합니다. 출력
+                }
+                
+                /* Quest 2 */
+
+                console.log("<Quest 2>");
+                
+                var array = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+                // a부터 z까지 배열
+                for (var i = 0; i < array.length; i++){
+                    // i가 array의 개수보다 커질 때까지 계속 반복 출력
+                    console.log(array[i]); // i의 숫자에 맞는 array 값 출력
+                  }
+                
+                  /* Quest 3 */
+
+                  console.log("<Quest 3>");
+                  
+                  var j = "";
+
+                  for(i=1; i<=50; i++){
+                      // 1에서 50까지 출력해야 하기 때문에 시작 값은 1, i가 50보다 작거나 같을 때 반복이 멈추도록 조건 설정
+                      j = i%2; // i를 2로 나눴을 때 나머지 값 = j
+                      if(j == 0){
+                        // j가 0과 같을 때 참, 아니면 거짓
+                          console.log(i+"는 짝수입니다.");
+                      }else{
+                          console.log(i+"는 홀수입니다.");
+                      }
+                  }
+
+             </script>
+    </body>
+</html>
