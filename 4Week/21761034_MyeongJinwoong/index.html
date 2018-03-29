@@ -61,6 +61,13 @@
             }else{
                 _arraycheck +="]"; // 제일 마지막에 ,대신 ]를 중첩시키고 for문을 종료한다.
             }   
+
+            // rh : 여기에서는 array 에 push() 를 이용하여 배열안에 typeof 결과값을 넣어야 합니다~
+            // 지금은 _arraycheck 가 처음에 Array 로 선언되고 이후부터 문자열 연산이 되면서 값이 재설정 되네요.
+            // Array 와 String 은 Data Type 이 달라요.
+            // push() 에 typeof 결과값을 넣은 후 배열 자체를 console 에 출력합니다.
+            // 문자열 연산이 아니고, 배열을 출력하면 그대로 결과가 나올 거에요.
+
         }
         console.log(_arraycheck); // _arraycheck에 중첩된 데이터를 출력한다.
     }
