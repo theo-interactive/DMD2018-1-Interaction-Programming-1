@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>4Week</title>
+</head>
+<body>
+
+    <h1>4Week - 03/29</h1>
+
+    <script type="text/javascript">
+        
+        //1.
+
+        var _cars = ['Tesla', 'Audi', 'Volvo', 'Benz'];
+
+        var a = "";
+
+        for(var i = 3; i >= 0 ; i--)
+        {
+        a+=_cars[i];
+        if(i>0)
+        {a+=", "}
+        }
+        console.log(a)
+
+
+        //2.
+        var _numbers = [1, 5, -8, 71, 50, -9, 3];
+        console.log(Math.max.apply(null, _numbers))
+        console.log(Math.min.apply(null, _numbers))
+
+
+        //3.
+        function searchIndex(_array, number)
+        {
+            for(var i=0; i < _array.length; i++)
+            {
+                if(number==_array[i])
+                {
+                    console.log(i)
+                }
+            }
+        }
+
+        searchIndex([10, 20, 30, 40, 50], 40);
+
+
+        //4.
+        function checkType (_array2)
+        {
+            var _array3=[];
+            for (var i = 0; i < _array2.length; i++)
+            {
+                _array3.push(typeof _array2[i]);
+            }
+            console.log(_array3)
+        }
+        
+        checkType([10, "text", {name: "sohyein"}, [10,20]]);
+        
+        
+
+    </script>
+</body>
+</html>
