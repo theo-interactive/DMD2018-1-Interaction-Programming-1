@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>3Week - Quest</title>
+</head>
+<body>
+<h1>3WEEK - Quest</h1>
+<script type="text/javascript">
+    /*
+     Quest 1.
+     1. 변수를 선언하고 숫자 '29' 를 할당합니다.
+     2. 변수를 하나 더 선언하고 1(순서) 에서 선언한 변수와 덧셈 대입을 이용해서 '31' 이 할당되도록 코드를 작성합니다.
+     3. 변수를 하나 더 선언하고 1(순서) 에서 선언한 변수와 나머지 연산 대입을 이용해서 '2' 를 할당하도록 코드를 작성합니다.
+     4. 만약 2(순서) 에서 생성한 변수를 3(순서) 에서 선언한 변수로 나누었을때 나머지가 '1' 인 경우 '일치합니다.' 라는 문자열이 console 에 출력되도록 작성합니다.
+     */
+    //1.
+    var a = 29;
+    //2.
+    var b = a + 2; //31.
+    //3.
+    var c = a % 27; //2.
+    var d = a % 9; //2.
+    var e = a % 3; //2.
+    //4.
+    if(a % c === 1){
+        console.log('일치합니다.');
+    }
+
+    /*
+     Quest 2.
+     ‘a' 부터 'z' 까지 순서대로 console 에 출력되도록 작성합니다.
+     */
+    var _alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+    var alphabet = '';
+    for(var i = 0; i < _alphabet.length; i++){
+        alphabet += _alphabet[i];
+        //alphabet += _alphabet[i].toString().toUpperCase(); //대문자로 출력시.
+        //alphabet += _alphabet[i].toString().toLowerCase(); //소문자로 출력시.
+        if(i < _alphabet.length - 1){
+            alphabet += ' ';
+        }else{
+            alphabet += '.';
+        }
+    }
+    console.log('Alphabet : ', alphabet);
+
+    /*
+     Quest 3.
+     '1' 부터 '50' 까지 순서대로 출력하고, 출력된 값의 짝/홀수 여부를 함께 표시합니다. console 에 출력  예시 : 1은 홀수!
+     */
+    for(var j = 1; j <= 50; j++){
+        if(j % 2 === 0){
+            console.log(j + ' - 짝수');
+        }else{
+            console.log(j + ' - 홀수');
+        }
+    }
+</script>
+</body>
+</html>
