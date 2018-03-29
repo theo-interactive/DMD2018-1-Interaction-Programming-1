@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+	<html lang="ko">
+		<head>
+			<meta charset="UTF-8">
+			<title>4Week</title>
+
+			<style>
+			</style>
+
+		</head>
+
+		<body>
+			<h1>4WEEK - 03/29</h1>
+			<h2>Yoon Dahye</h2>
+
+			<script type="text/javascript">
+
+
+
+			// quest 1.
+
+				var _cars = ['Tesla', 'Audi', 'Volvo', 'Benz'];
+
+				_cars.reverse();
+
+				var a = '';
+
+				for (var i = 0; i < _cars.length; i++) {
+
+					a += _cars[i]; 
+
+					if (i === _cars.length - 1) {
+						a += '.';
+
+					}else {
+						a += ', ';
+					};
+					
+				};
+
+				console.log (a);
+
+
+
+			// quest 2.
+
+				var _number = [-100, 20, -333, 30, 500, -19];
+
+				var max = Math.max.apply (null, _number);
+			 	console.log ('가장 큰 숫자 = ' + max);
+
+			 	var min = Math.min.apply (null, _number);
+			 	console.log ('가장 작은 숫자 = ' + min);
+
+
+
+			// quest 3.
+
+				var searchIndex = function (arr_01, num) {
+
+					for (var index in arr_01) {	
+			 			// console.log (arr[index]);
+
+			 			if (arr_01[index] === num){
+			 				console.log ('배열에서 num의 순서 = ' + index);
+			 			};
+
+			 		};
+
+				};
+
+				searchIndex ( [0, 6, 2, 1, 9], 9 );
+
+
+
+			// quest 4.
+
+				var checkType = function (arr_02) {
+
+					var _array = [];
+
+					for (var j = 0; j < arr_02.length; j++) {
+						_array.push (typeof arr_02[j]);	
+			 		};
+
+			 		console.log (_array);
+
+			 	};
+			 	
+			 	checkType ( [ {name : 'Dahye'}, 0606, 'HELLO', [01, 09, 11, 75], undefined] );
+
+
+				
+
+
+			</script>
+		</body>
+
+	</html>
