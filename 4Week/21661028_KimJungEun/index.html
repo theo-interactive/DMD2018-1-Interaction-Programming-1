@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>4주차 과제</title>
+</head>
+<body>
+	<h3>4주차 과제......ㅠ</h3>
+	<script type="text/javascript">
+
+
+    //문제 1-1
+	    var _cars = ['Tesla', 'Audi', 'Volvo', 'Benz'];
+	    console.log('original : ' , _cars);
+	//문제 1-2,3
+		_cars.reverse();
+		var a = '';
+		for(var i = 0; i<_cars.length; i++){
+			a += _cars[i];
+			if (i === _cars.length -1) {
+				a += '.';
+			} else {
+				a += ', ';
+			}
+		};
+		console.log (a);
+
+
+
+
+	//문제 2-1
+		var _numbers = [-1, 2, 5, 10, 1, -10, 8, 4];
+		console.log(_numbers);
+	//문제 2-2	
+		var _numbers = [-1, 2, 5, 10, 1, -10, 8, 4];
+		var max = Math.max.apply(null, _numbers);
+		console.log(max);
+	//문제 2-3
+		var min = Math.min.apply(null, _numbers);
+		console.log(min);
+
+
+
+
+
+	//문제 3
+
+		function searchIndex(_array, _number){
+			for(var index in _array){
+				//console.log(index);
+				if(_array[index]==_number){
+				console.log(index);
+				}
+			}
+		}
+		searchIndex([8, 10, 13, 55, 50], 10);
+
+
+
+//================================
+
+ 		 var searchIndex = function (_array, _number){
+			for(var index in _array){
+				//console.log(index);
+				if(_array[index]==_number){
+				console.log(index);
+				}
+			}
+		}
+		searchIndex([8, 10, 13, 55, 50], 8);
+
+
+
+
+		function checkType(_array){
+
+		};
+		checkType([10, 'Hello', 'World', {name : 'rh'}, [10, 20]])
+
+
+
+	//문제 4
+
+    var _je=[25, 'Hello', 'happy', {name : 'je'}, [3, 16]];
+    function checkType(_je){
+        var _me=[]
+        for( var i=0;i<_je.length;i++){
+            console.log(_je[i]);
+            _me.push(typeof _je[i]);
+        }
+    console.log(_me);
+    }
+
+
+	</script>
+</body>
+</html>
