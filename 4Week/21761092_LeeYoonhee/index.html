@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>4WEEK</title>
+</head>
+<body>
+    <h1>4WEEK - 03/29</h1>
+<script type="text/javascript">
+    //이 부분에 JavaScript 코드를 기입합니다.
+
+    //Quest 1.
+    var _cars = ['Tesla','Audi','Volvo','Benz'];
+    _cars.reverse();
+    var car = '';
+        for(var i=0; i<_cars.length; i++){
+            if(i>0){
+                car += ', ';
+            }
+            car+=_cars[i];
+            if(i ===_cars.length -1){
+                car += '.';
+            }
+        };
+    console.log(car);
+
+
+    //Quest 2.
+    var _numbers = [8, -16, 7, 4, 9, -1, 3];
+
+    var max = Math.max.apply(null, _numbers);
+    console.log(max);
+    var min = Math.min.apply(null, _numbers);
+    console.log(min);
+
+
+    //Quest 3.
+
+    function seachIndex(_array, a){
+        for(var i in _array){
+            if(_array[i] === a){
+                console.log(i);
+            }
+        }
+    }
+    seachIndex([1, 20, 4, 6, 10, 13], 10);
+    
+    
+
+
+    // Quest 4.
+
+    var array2 = [];
+    
+    function checkType(array){
+        for(var i in array){
+            array2.push(typeof array[i]);
+        }
+        console.log(array2);
+    }
+    
+    checkType([6, 'Sweet', 16, [3, 8], 'Sea']);
+   
+</script>
+</body>
+</html>
