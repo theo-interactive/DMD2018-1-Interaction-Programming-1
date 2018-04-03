@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var a = 29;
+
+    var b = a + 2;
+
+    var c = a % 27; // 2;
+    var d = a % 9; // 2;
+    var e = a % 3; // 2;
+
+        if(b % c === 1){
+            console.log('일치합니다');
+        }
+
+        var _alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's','t','u','v','w','x','y','z'];
+        for(var i = 0; i < _alphabet.length; i++){
+            console.log(_alphabet[i]);
+        }
+
+        var _alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's','t','u','v','w','x','y','z'];
+        var alphabet = ' ';
+        for(var i = 0; i < _alphabet.length; i++){
+            alphabet += _alphabet[i];
+            if(i < _alphabet.length -1){
+            alphabet += ' ';
+            }else{
+                alphabet += '.';
+            }
+        }
+        console.log(alphabet)
+
+
+        for(var i = 1; i <=50; i++){
+            if(i % 2){
+                console.log(i + ' - 홀수');
+            }else{
+                console.log(i + ' - 짝수');
+            }
+        }
+
+    </script>
+</body>
+</html>
