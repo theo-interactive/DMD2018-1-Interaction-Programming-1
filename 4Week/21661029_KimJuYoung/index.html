@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>4WEEK 03/29</title>
+
+</head>
+<body>
+
+    <h1>4WEEK - 21661029 김주영</h1>
+	<script type="text/javascript">
+
+
+
+
+    // Quest 1.
+
+
+    var _cars = ['Tesla', 'Audi', 'Volvo', 'Benz'];
+
+    var a='';
+
+
+    _cars.reverse();
+
+    for (var i=0; i<_cars.length; i++){
+        
+        a+=_cars[i];
+
+        if(i===_cars.length-1){
+           a+='.';
+        }else{
+            a+=',';
+        };
+    };
+
+    console.log(a);
+
+
+
+
+    // Quest 2.
+	
+
+    var _numbers = [-50,-20,10,30,70]
+	
+
+	var max=Math.max.apply(null, _numbers);
+
+    console.log(max);
+
+	
+	var min=Math.min.apply(null, _numbers);
+
+    console.log(min);
+
+
+
+
+	// Quest 3.
+
+
+	var searchIndex = function (arr, num) {
+
+		for (var index in arr){
+	
+			if ( arr[index] === num ){
+			console.log(index);
+
+			};
+		};
+
+	};
+
+	searchIndex ( [2,4,16,32,100], 32 );
+
+
+
+
+	// Quest 4.
+
+
+	var checkType = function (_arr){
+	
+
+		var _array = [];
+
+		for (var k=0; k<_arr.length; k++){
+		
+			_array.push (typeof _arr[k]);
+
+		};
+
+		console.log(_array);
+
+
+	}
+
+
+	checkType ([39, 'beyond', 'secene', {name : 'young'}, [93, 97], null]);
+
+
+
+
+</script>
+</body>
+</html>
