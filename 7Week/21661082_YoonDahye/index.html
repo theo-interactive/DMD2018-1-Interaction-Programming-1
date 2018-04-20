@@ -88,7 +88,7 @@
 
 	     var idTitle = document.getElementById ('title');
 	     
-	     idTitle.innerHTML += 'Hello World';
+	     idTitle.innerHTML = 'Hello World';
 
 
 
@@ -100,7 +100,7 @@
 	     var classTitle = document.getElementsByClassName ('title');
 
 	     for (var i = 0; i < classTitle.length; i++) {
-			classTitle[i].innerHTML += '안녕하세요';
+			classTitle[i].innerHTML = '안녕하세요';
 		 };
 
 	     
@@ -126,10 +126,23 @@
 	     2. 함수를 호출하여 console 에 개수를 출력되도록 작성합니다.
 	     */
 
-	     var classRow = document.getElementsByClassName ('row');
-	     var rowLength = classRow.length;
 
-	     console.log ('Quest 4 = ' + rowLength);
+     	 var classRow = document.getElementsByClassName ('row');
+	    
+	     var quest_05 = function (){
+	     	var rowLength = classRow.length;
+ 			console.log ('Quest 4 = ' + rowLength);
+	     };
+	    
+	     quest_05 ();
+
+
+	    // var quest_04 = function (){
+	    // 	var rowLength = classRow.length;
+ 		//	return rowLength;
+	    // };
+	    
+	    // console.log ('Quest 4 = ' + quest_04());
 
 
 
@@ -140,9 +153,21 @@
 	     */
 
 	     var userId = document.getElementById ('user_id');
-	     var idValue = userId.getAttribute('value');
+	     
+	     var quest_05 = function (){
+	     	var idValue = userId.getAttribute('value');
+ 			console.log ('Quest 5 = ' + idValue);
+	     };
+	    
+	     quest_05 ();
 
-	     console.log ('Quest 5 = ' + idValue);
+
+	    // var quest_05 = function (){
+		//	var idValue = userId.getAttribute('value');
+ 		//	return idValue;
+	    // };
+	    
+	    // console.log ('Quest 5 = ' + quest_05());
 
 
 
@@ -212,8 +237,8 @@
 	     var resetBtn = document.getElementById ('btn-reset');
 	     var userPw = document.getElementById ('user_pass')
 
-	     //userId.setAttribute ('value', ''); 
-		 //userPw.setAttribute ('value', ''); 
+	     // userId.setAttribute ('value', ''); 
+		 // userPw.setAttribute ('value', ''); 
 
 	     var quest_09 = function () {
 
