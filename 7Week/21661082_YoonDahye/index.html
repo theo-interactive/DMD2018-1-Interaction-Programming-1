@@ -305,6 +305,15 @@
 
 	     */
 
+		// rh : form 태그 안에 포함된 button 을 클릭할 때 그런 현상이 발생할 겁니다.
+		// form 은 서버와의 데이터 전송을 위한 태그이기 때문에, 내부의 button 을 클릭하면 기본으로 내장된 전송 옵션이 발생합니다.
+		// 그래서 그러한 현상을 막기 위해 기본 내장 기능이 실행되지 않도록 도와주는 명령어를 넣어야 합니다.
+		// event.preventDefault(); 라는 명령인데, 차주 수업시간에 설명하겠습니다.
+		// click 등 이벤트를 받는 리스너 함수에 적용할 수 있고, 리스너 함수에는 event 라는 파라메터가 항상 포함됩니다.
+		// function onClickBtn(event){
+		//    event.preventDefault();
+		// }
+
 	</script>
 </body>
 </html>
