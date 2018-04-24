@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var _cars = ['Tesla', 'Audi', 'Volvo', 'Benz'];
+        var cars='';
+        for(var i = 0; i < _cars.length; i++){
+            cars += _cars[i];
+            if(i < _cars.length-1){
+                cars += ', ';
+            }else{
+                cars += '. ';
+            }
+        }
+        console.log(cars);
+
+        cars="";
+        for( var index in _cars){
+            //* for in -> index를 찾거나 key를 찾을 때 '0' 문자열
+            // console.log(index);
+            console.log(_cars[index]);
+            if(index > 0){
+                cars += ', ';
+            }
+            cars += _cars[index];
+            if(parseInt(index, 10) ===_cars.length -1){
+                //parseInt('문자', 진수); : 숫자만 사용할 것
+                cars += '. '; 
+            }
+        }
+        console.log(cars);
+        console.log(parseInt('안녕하세요, 1234',10)); 
+
+
+        var _numbers = [-1,2,5,10,1,-10,8,4];
+        Math.max(-1,2,5,10,1,-10,8,4);
+        var max = Math.max.apply(null, _numbers);
+        var min = Math.min.apply(null, _numbers);
+
+        console.log(max);
+        console.log(min);
+
+
+
+        function searchIndex(array, number){
+            for(var i = 0; i <= array.length; i++){
+                if(array[i] === number){
+                    console.log(i);
+                }
+            }
+        };
+        searchIndex([8,10,13,30,50],30);
+        
+        function checkType(array){
+            var temp=[];
+
+            for (var i=0;i<array.length; i++){
+                temp.push(typeof array[i]);
+            }
+            return temp;
+        };
+        var check = checkType([10,'hello','world', {name:'rh'}, [10,20]]);
+        console.log(check);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
