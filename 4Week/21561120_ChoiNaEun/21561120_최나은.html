@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>week4</title>
+</head>
+<body>
+    <script type="text/javascript">
+    //Quest1 
+    var _cars = ['Tesla', 'Audi', 'Volvo','Benz'];
+    _cars.reverse();
+    var cars='';
+    for(var i=0; i<_cars.length; i++){
+        
+            cars+=_cars[i];
+            if(i < _cars.length-1)
+            { cars+=','; } else {cars+='.'}
+    }
+    console.log(cars);
+    //Quest2
+    var _numbers = [-10,-20,-30,0,10,20,30];
+    var max = Math.max.apply(null,_numbers);
+    var min = Math.min.apply(null,_numbers);
+    console.log(max);
+    console.log(min);
+    //Quest3
+    var array = [0,1,2,3,4];
+    var y = 3;
+    
+    function Searchindex() {
+        for(var i=0; i<array.length; i++) {
+            if(array[i] == y){
+                console.log(i)
+            }
+    } 
+    }
+    
+    Searchindex(array, y);
+    //Quest4
+    function checkType(array){
+        var _check=[];
+        for( var i=0;i<array.length;i++){
+            _check.push(typeof array[i]);
+        }
+    console.log(_check);
+    }
+    checkType(['hello','hi',[2,4,'b'],3,4]);
+
+    </script>
+</body>
+</html>

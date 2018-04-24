@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>4 WEEK QUEST</title>
+    </head>
+    <body>
+        <script type="text/javascript">{
+            /*
+            //<QUEST 1>
+            var _cars = ['Tesla', 'Audi', 'Volvo', 'Benz'];
+            console.log(_cars.reverse());
+
+            //<QUEST 2>
+            var _number = [1, 10, 100, -1, -10, -100];
+            var max = Math.max.apply(null, _number);
+            console.log(max);
+            var min = Math.min.apply(null, _number);
+            console.log(min);
+            
+            //<QUEST 3>
+            searchIndex([3, 6, 9, 12], 12);
+            function searchIndex(_array, _number){
+                for(var i = 0; i < _array.length; i++){
+                    var _result = _array[i];
+                    if(_result == _number){
+                        console.log("searchIndex result = ", i);
+                    }
+                }
+            }
+            */
+            //<QUEST 4>
+            checkType([10, 'Hello', 'World', {name : 'rh'}, [10, 20]]); 
+            function checkType(_array=[]){
+                _typeofArray = [];
+                for(var i = 0; i < _array.length; i++){
+                    var a = [typeof _array[i]];
+                    _typeofArray.push(a);
+                }
+                console.log(_typeofArray)
+            }
+            //교수님 콘솔창에 배열의 타입값이 [Array(1), Array(1), Array(1), Array(1), Array(1)] 이렇게나오고 해당콘솔메세지의 요약부분을 눌렀을때 
+                /*
+                0:["number"]
+                1:["string"]
+                2:["string"]
+                3:["object"]
+                4:["object"]
+                length:5
+                __proto__ : Array(0)
+                */
+            //이렇게 떠서 일단은 해결했다생각하긴했는데 뭔가 찜찜합니다. 원래 이렇게뜨는건지 아님 다른방식으로 콘솔메세지를 출력했어야하는건지 궁금합니다.
+        }
+            
+        </script>
+    </body>
+</html>

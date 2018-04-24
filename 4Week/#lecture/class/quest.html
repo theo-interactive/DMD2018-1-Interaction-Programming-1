@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>4Week - 0329</title>
+</head>
+<body>
+    <h1>4Week</h1>
+<script type="text/javascript">
+/*
+Quest 1.
+1. 변수를 선언하고 숫자 '29' 를 할당합니다.
+2. 변수를 하나 더 선언하고 1(순서) 에서 선언한 변수와 덧셈 대입을 이용해서 '31' 이 할당되도록 코드를 작성합니다.
+3. 변수를 하나 더 선언하고 1(순서) 에서 선언한 변수와 나머지 연산 대입을 이용해서 '2' 를 할당하도록 코드를 작성합니다.
+4. 만약 2(순서) 에서 생성한 변수를 3(순서) 에서 선언한 변수로 나누었을때 나머지가 '1' 인 경우 '일치합니다.' 라는 문자열이 console 에 출력되도록 작성합니다.
+*/
+var a = 29;
+//a + ? = 31
+var b = a + 2;
+//a % ? = 2
+//3개의 값.
+//29 % ? = 2; 29 - 2
+var c = a % 27; // 2;
+var d = a % 9; // 2;
+var e = a % 3; // 2;
+if(b % c === 1){
+    console.log('일치합니다.');
+}
+
+/*
+Quest 2.
+‘a' 부터 'z' 까지 순서대로 console 에 출력되도록 작성합니다.
+*/
+var _alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+var alphabet = '';
+//반복문을 통해서 출력.
+for(var i = 0; i < _alphabet.length; i++){
+    //console.log(_alphabet[i]);//0,1,2,3,4....
+    //alphabet += _alphabet[i];
+
+    //alphabet += _alphabet[i].toString().toUpperCase(); //toUpperCase : 대문자로 문자열을 치환함.
+    //alphabet += _alphabet[i].toString().toLowerCase(); //toLowerCase : 소문자로 문자열을 치환함.
+
+    //공백추가.
+    if(i < _alphabet.length - 1){ //25. 뒤쪽에 ' ';
+        alphabet += ' ';
+    }else{
+        //26.
+        alphabet += '.';
+    }
+}
+console.log(alphabet);
+/*
+Quest 3.
+'1' 부터 '50' 까지 순서대로 출력하고, 출력된 값의 짝/홀수 여부를 함께 표시합니다. console 에 출력  예시 : 1은 홀수!
+*/
+//for()
+//if()
+for(var i = 1; i <= 50; i++){
+    //console.log(i);
+    if(i % 2){ //0 - false, 1 - true.
+        console.log(i + ' -  홀수');
+    }else{
+        console.log(i + ' -  짝수');
+    }
+}
+</script>
+</body>
+</html>
