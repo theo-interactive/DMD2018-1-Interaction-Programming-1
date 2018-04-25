@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)file:///C:/Users/Administrator/Documents/DMD2018-1-Interaction-Programming-1/7Week/%23homework/index.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>7WEEK</title>
+    <style type="text/css" media="screen">
+        *{margin:0;padding:0;font-size:14px;line-height:20px}
+        h1{margin:30px 10px;font-size:20px;font-weight:400;line-height:30px}
+        h2,legend{font-size:18px;font-weight:400;line-height:26px}
+        form{width:600px}
+        .field-item{display:flex;margin:30px;padding:5px 10px}
+        .field-item .form-title{width:100px}
+        .field-item .form-input{flex:1}
+        .field-item .form-input input{width:100%;box-sizing:border-box}
+        .form-util{display:flex}
+        .form-util button{flex:1}
+        .form-fields + .form-util{margin-top:20px}
+        .row{display:block;margin:30px 10px}
+        ul{display:block;padding:30px 10px}
+        ul li{display:block}
+        ul li + li{padding-top:20px}
+        button{display:inline-block;height:40px;padding-right:20px;padding-left:20px;background-color:#222;border:1px solid #222;border-radius:2px;color:#fff;line-height:40px;cursor:pointer}
+        button:hover{background-color:#fff;color:#222;border:1px solid #222}
+        button + button{margin-left:10px}
+    </style>
+</head>
+<body>
+<h1>7WEEK - 04/19</h1>
+<hr>
+<div class="row">
+    <div id="title"></div>
+</div>
+<div class="row">
+    <div class="title"></div>
+    <div class="title"></div>
+    <div class="title"></div>
+</div>
+<div class="row">
+    <button id="btn-window-size">윈도우 사이즈 호출하기</button>
+</div>
+<form id="sign-in" action="index.html" class="row">
+    
+    <fieldset class="form-fields">
+        <legend>가입 정보 입력</legend>
+        <div class="field-item">
+            <div class="form-title"><label for="user_id">아이디</label></div>
+            <div class="form-input"><input id="user_id" type="text" name="user_id" placeholder="아이디 입력" value="User ID"></div>
+        </div>
+        <div class="field-item">
+            <div class="form-title"><label for="user_pass">비밀번호</label></div>
+            <div class="form-input"><input id="user_pass" type="password" name="user_pass" placeholder="비밀번호 입력" value=""></div>
+        </div>
+    </fieldset>
+    <div class="form-util">
+        <button id="btn-cancel">취소</button><button id="btn-apply">가입</button><button id="btn-reset">초기화</button>
+    </div>
+</form>
+<div id="cities" class="row">
+    <h2>도시 리스트</h2>
+    <ul id="city-list">
+        <li>Seoul</li>
+        <li>Tokyo</li>
+        <li>Beijing</li>
+    </ul>
+    <button id="btn-add-city">도시 추가하기</button>
+</div>
+<div class="row">
+    <button id="btn-top">맨 위로 가기</button>
+</div>
+<script type="text/javascript">
+    /*
+     Quest 1.
+     1. id 가 'title' 인 element 에 'Hello World' 문자열이 포함되도록 작성합니다.
+     */
+        var id_Element = document.getElementById("title");
+        id_Element.innerHTML = "Hello World";
+        console.log(id_Element);
+    /*
+     Quest 2.
+     1. class 가 'title' 인 element 에 '안녕하세요' 문자열이 포함되도록 작성합니다.
+     */
+        var class_Element = document.getElementsByClassName("title");
+        //1번 문제랑은 같이 쓰면 안돼는 이유 Class는 전체의 항목에 전부 접목시켜서 for문으로 묶어줘야 사용가능?
+        for(i = 0; i < class_Element.length; i++){
+            class_Element[i].innerHTML="안녕하세요";
+        }
+        
+    /*
+     Quest 3.
+     1. button#btn-window-size element 를 클릭했을 때 window 영역의 넓이와 높이값이 alert 으로 출력되도록 작성합니다.
+     */
+        var sizeElement = document.getElementById("btn-window-size");
+        sizeElement.addEventListener('click',function(){
+        alert(" x = "+window.innerWidth+" y = "+ window.innerHeight);})
+    /*
+     Quest 4.
+     1. class 속성 중 row 라는 이름이 포함되어 있는 element 의 수를 출력하는 함수를 작성합니다.
+     2. 함수를 호출하여 console 에 개수를 출력되도록 작성합니다.
+     */
+        var row_classElement = document.getElementsByClassName("row");
+        for(i = 0; i < row_classElement.length; i++);
+        
+        console.log(i); 
+    /*
+     Quest 5.
+     1. id 가 'user_id' 인 element 를 찾고 value 속성의 값을 출력하는 함수를 작성합니다.
+     2. 함수를 호출하여 console 에 속성 값이 출력되도록 작성합니다.
+     */
+    
+            var inputElement = document.getElementById("user_id");
+            console.log(inputElement.getAttribute("value"));
+
+    // var inputElement = document.getElementsByName('user_id');
+    // console.log(inputElement);   
+
+     // var inputElement = document.getElementById('user-id');
+        // console.log(inputElement.attributes);
+        // console.log(inputElement.getAttribute('type'));
+        // console.log(inputElement.getAttribute('value')); //초기 설정된 value 라는 속성의 값
+        // console.log(inputElement.value); //사용자가 변경 가능한 input 의 value
+        // var ulElement = document.getElementById('List');
+        // console.log(ulElement.childNodes); //자식의 모든 노드를 찾는다
+        // console.log(ulElement.children); //자식의 element 노드들만 찾아줌
+        //li 0.1.2 나눠지는건 공백이있어서      
+
+    /*
+     Quest 6.
+     1. 1 초 마다 'hello' 라는 문자열이 console 에 출력되도록 작성합니다.
+     2. 전역범위에 count 변수를 생성하여 매 출력시 console 에 몇 번의 출력이 되고있는지 번호가 함께 출력되도록 작성합니다.
+     3. 10 번의 출력 후 해당 기능이 실행되지 않도록 작성합니다.
+     */
+     var count = 0;  
+     var timer = setInterval(function(){ //주기적 함수가 실행되는 매서드 , hello 가 1초마다 실행 , 클리어가 안돼서 멈출수가 없음
+        if(count === 9){ //count가 0부터 시작해서 10이 됬을때 멈춤, = 100에서 멈추려면 98 
+            clearInterval(timer); //적으면 인터넷 콘솔쪽에 멈춤 timer 적용 카운트가 멈춤
+        }
+        count++; //1씩 증가
+        console.log('hello' + count)
+     },1000); // 시간은 단위가 ms(millseconds) 10 = 0.01 100 = 0.1 1000 = 1초
+     
+        
+    /*
+     Quest 7.
+     1. button#btn-cancel element 를 클릭했을 때 현재 창이 새로고침 되도록 이벤트를 할당합니다.
+     */
+     var cancel_Element = document.getElementById("btn-cancel");
+     cancel_Element.addEventListener("click", function(){
+     location.reload(true);});
+
+     //location.reload(); //현재 보고 있는 브라우저 창을 새로고침 *중요*
+
+    /*
+     Quest 8.
+     1. button#btn-apply element 를 클릭했을 때 '가입하시겠습니까?' 라는 메세지를 포함하고 있는 확인창(confirm) 을 출력합니다.
+     2. 사용자가 확인을 선택한 경우, '가입을 환영합니다!' 문구가 alert 으로 출력되도록 작성합니다.
+     */
+     var apply_Element = document.getElementById("btn-apply");
+        apply_Element.addEventListener("click", function(){
+        if(confirm("가입하시겠습니까?"))
+        {
+        window.alert("가입을 환영합니다!");
+            }
+        });
+        
+        //confirm('정확히 입력하셨나요?');
+        // confirm('정말로 삭제하시겠습니까?');
+        // if(confirm('정말로 삭제하시겠습니까?')){ //true
+        //     console.log('확인'); //삭제 기능 실행
+        // }
+        // else{ //flase
+        //     console.log('취소');
+        //     //취소
+        // }
+
+    /*
+     Quest 9.
+     1. button#btn-reset element 를 클릭했을 때 '초기화하시려면 100을 입력하세요.' 라는 메세지를 포함하고 있는 prompt 를 출력합니다.
+     2. 사용자가 100을 정확하게 입력할 경우, input#user_id 와 input#user_pass element 의 value 속성이 빈 값으로 초기화 되도록 작성합니다.
+     */
+        //  var reset_element = document.getElementById("btn-reset");  
+        //  reset_element.addEventListener("click", function(){ 
+        // reset = prompt("초기화 하시려면 100을 입력하세요."); //입력 창
+        // if(parseInt(reset_element) === 100){ //100 을 써야만 if문에 적용
+        //     console.log(reset); //Int 는 1,2,3 정수
+        // }
+        // else{ 
+        //     console.log('null');
+        // }
+        //  }); 이거 쓰는거 같은데... 교수님 잘모르겠습니다..
+        
+
+
+
+        //prompt("이름을 입력해주세요."); //입력 창
+        
+        // 프롬프트에 문자를 입력하고 OK 확인을 누르면 값이 설정
+        // cancel 취소를 누르면 null
+        // 문자열로만 취급
+        
+
+        // var number = prompt("좋아하는 숫자가 뭐니?");
+        // console.log(number);
+        // if(number == 100){ //100 을 써야만 if문에 적용
+        //     console.log('1 :' +number);  
+        // }
+
+        // if(parseInt(number) === 100){
+        //     console.log('2 :' +number);
+        // } //넘버 밑에있는거로 사용하라 하심
+
+        // //Int 는 1,2,3 정수 
+        // Float = 1.0, 2.0, 3.0 //의 소수포함 잘안쓰임
+        // if(Number(number) === 100){
+        //     console.log('2 :' +number);
+        // }
+    /*
+     Quest 10.
+     1. button#btn-add-city element 를 클릭했을 때 '도시명을 입력하세요.' 라는 메세지를 포함하고 있는 prompt 를 출력합니다.
+     2. 사용자가 도시명을 입력할 경우, ul#city-list 자식인 li element 로 추가되도록 작성합니다.
+     */
+            //죄송합니다 잘모르겠습니다ㅠㅠ
+    /*
+     Quest 11.
+     1. button#btn-top element 를 클릭했을 때 스크롤이 현재 화면의 최상단으로 이동되도록 이벤트를 할당합니다.
+     */
+            var _btn_top = document.getElementById("btn-top");
+            _btn_top.addEventListener("click", function(){
+                window.scrollTo(0,0);
+            })
+           
+
+</script>
+
+</body></html>
