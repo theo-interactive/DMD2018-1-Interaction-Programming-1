@@ -48,7 +48,7 @@
 
     console.log("--------------------quest.4---------------------")
 
-
+    /*
     function checkType(_array){ //checkType 함수에 매개변수 _array를 지정한다.
         var _arraycheck = []; // 데이터를 집어 넣어 줄 _arraycheck를 빈 배열로 선언한다.
         for(var index in _array){//index가 _array만큼 반복함.
@@ -70,9 +70,19 @@
 
         }
         console.log(_arraycheck); // _arraycheck에 중첩된 데이터를 출력한다.
-    }
+    }*/
+
+    function checkType(_array){
+        var _arraycheck = [];
+        for (var index in _array){
+            _arraycheck.push(typeof _array[index]);
+        }
+        console.log(_arraycheck);
+    };
 
     checkType([10,'HELLO','World',{name :'rh'},[10,20]]);
+
+    //완성했습니다 교수님 ㅎ_ㅎ
 </script>
 </body>
 </html>

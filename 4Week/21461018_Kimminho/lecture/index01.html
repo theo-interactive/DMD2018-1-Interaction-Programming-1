@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+    <title>4WEEK - 0329</title>
+</head>
+<body>
+    <h1>4Week</h1>
+    <script type="text/javascript">
+    
+
+    //----------------------------------------------------------------------------
+    /*
+
+
+    // 조건문
+
+
+    var a = 3;
+    var b = 10;
+    var c;
+
+    if(조건){ // true / flase.
+    // true 일 경우에만 if 안으로.
+    }else{
+    // false 일 때 else 안으로.
+    }
+    
+
+
+    if(조건){
+
+    }else if(조건2){
+
+    }else if(조건3){
+
+    }else{
+
+    }
+
+
+    // 조건 - 비교연산자를 통해서 true / false 찾는다.
+    
+    var a = 3;
+    var b = 10;
+    var c;
+    if(typeof c === 'undefined'){
+        c = a % b; // 3 % 10 = 3;
+    }
+
+    console.log(c);
+    */
+
+    // -----------------------------------------------------------------------
+
+
+    // 배열.
+
+
+    /*
+    var _array = [0,1,2,3,4];
+    var a = 10;
+    var b = 'apple';
+    var c = null;
+    var d = a;
+    var _array = [a,b,c,d];
+    // console.log(_array[3]); = 10
+    */
+
+
+    // ------------------------------------------------------------------------
+
+
+
+    // 반복문. for문.
+
+
+    /*
+    var _array = ['a','b',4,'10'];
+    for(var i = 0; i < 4; i++){
+        console.log(_array[i]) // _array[0], _array[1], _array[2], _array[3] 
+    }
+
+    for(var j = 3; j >= 0; j--){
+        console.log(_array[j]); // _array[3], _array[2], _array[1], _array[0] 
+    } 
+    */
+
+    // --------------------------------------------------------------------------
+
+    /*
+
+    // 함수
+
+    function funcName(){
+        // 코드를 기입. (scope - local); 지역범위.
+    }
+
+    var a = 20, b = 30, c = 10;
+    function addNumbers(){
+        c = a + b;
+        var d = 'Hello'; // local - 지역범위
+    }
+    addNumbers(); // 함수호출.
+    console.log(c); // 50.
+    console.log(d); // 변수가없어서 오류가 뜸. 선언 자체가 안됨. - 지역범위 안에서 지정된 변수이기 때문에.
+
+
+    */
+
+
+    // ----------------------------------------------------------------------------
+
+    /*
+    // 메서드.
+    
+
+    var _obj = {
+        name : '김민호',
+        phone : '010-9552-2955',
+        sayHello : function(){
+            // 오브젝트 안의 함수 - 메서드.
+            console.log('오브젝트 안의 함수 - 메서드');
+            return console.log('오브젝트 안의 함수 - 메서드');
+        },
+        // .
+        // .
+        // .
+    }
+    console.log(_obj.name);
+    console.log(_obj.sayHello()); // 함수이기 때문에 () 호출 부호.
+    function funcName(){
+
+    }
+
+    console.log(typeof funcName); // Data Type - function. 타입 중 하나.
+
+    // 함수, 메서드.
+    // 함수의 선언식. - 리터럴 함수.
+    var sayHello = function(){
+
+    }
+    sayHello(); // 함수 호출.
+    // ====== 방식만 다른 뿐 실행되는 코드는 같다.
+    // 명시적 함수.
+    function sayHello(){
+
+    }
+    sayHello(); // 함수 호출.
+
+    */
+
+    // ------------------------------------------------------------------------------------
+
+    /*
+
+    // 매개변수.
+    function sumPrice(number1, number2){ // 매개변수 - 함수가 실행될 때 자동으로 생성되는 변수.
+        console.log(number1 + number2);
+
+    } 
+    sumPrice(); // ....실행.
+    // 함수 안의 매개변수인 number1, number2 선언이 되었다.
+    // var number1; - undefined
+    // var number2; - undefined
+    sumPirce(10,20);
+    //매개변수의 전달인자.
+    // var number1; = 10
+    // var number2; = 20
+    sumPrice(10); // 수식이 성립이 안되어 NaN
+    //매개변수의 전달인자.
+    // var number1; = 10
+    // var number2; = undefined
+
+    */
+
+
+    // -----------------------------------------------------------------------------------
+
+    
+
+
+
+    // 함수값 반환.
+    
+    
+    
+    
+    function sayHello(){
+        var a = 1 + 2;
+        return 'Hello'; // 함수를 실행했을 경우, 밖으로 값을 반환시킨다.
+        // return '....'
+        return a;
+        // return 이후에는 실행이 안됨. 함수가 끝났다는 걸 알려주는 것.
+        var b = 3;
+    }
+    console.log(sayHello());
+
+    // 함수에 return 이라는 것을 넣지 않았을 경우.
+    function sayHello2(){
+
+    }
+    var result = sayHello2();
+    // 기본적으로 함수는 undefined 를 반환한다. - return 으로 실행하지 않았을 경우에.
+    var result2 = sayHello(); // 함수가 실행되고 반환값이 들어감.
+    var result2 = 3; // 개념
+    var result2 = 1 + 2; // 개념
+
+
+    function addNumbers(number1, number2){
+        return number1 + number2;
+
+    }
+    var result1 = 'string';
+    var result1 = 0;
+    var result1 = addNumbers(10,20); // 변수에 함수 반환값을 넣을 수 있다.
+    var result2 = addNumbers(30,50);
+    console.log(result1);
+    console.log(result2);
+    // 재사용. 함수의 재사용을 통해서 변칙적으로 값을 넣을 수 있다.
+
+
+    
+
+
+
+    // -------------------------------------------------------------------------------------------
+    
+
+
+
+    // 논리 연산자
+
+    // && and
+    // || or
+
+    // --------------------------------------------------------------------------------------------------
+
+
+
+
+    // Switch
+
+    // index2로    
+
+
+
+
+    </script>
+</body>
+</html>
