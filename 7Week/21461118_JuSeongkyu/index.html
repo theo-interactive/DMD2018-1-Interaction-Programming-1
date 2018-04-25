@@ -91,7 +91,7 @@
      */
      var _click = document.getElementById("btn-window-size");
      _click.addEventListener("click", function(){//addEventListener이벤트 연결
-        alert("넓이: = " +  window.innerWidth + "높이: =" +  window.innerHeight);
+        alert("넓이: " +  window.innerWidth +"\n"+ "높이: " +  window.innerHeight);
      });
     /*
      Quest 4.
@@ -126,7 +126,11 @@
      Quest 7.
      1. button#btn-cancel element 를 클릭했을 때 현재 창이 새로고침 되도록 이벤트를 할당합니다.
      */
-     //새로고침 하면 페이지가 이동됩니다. 무엇이 문제일까요......
+     var _btn_cancel = document.getElementById("btn-cancel");
+     var _reload = function(){
+         location.reload();
+     }
+     _btn_cancel.addEventListener("click", _reload);
     /*
      Quest 8.
      1. button#btn-apply element 를 클릭했을 때 '가입하시겠습니까?' 라는 메세지를 포함하고 있는 확인창(confirm) 을 출력합니다.
@@ -153,6 +157,13 @@
      Quest 11.
      1. button#btn-top element 를 클릭했을 때 스크롤이 현재 화면의 최상단으로 이동되도록 이벤트를 할당합니다.
      */
+     var _btn_top = document.getElementById("btn-top");
+     var topmove = function(){
+         window.scroll(0, 0);
+    }
+     _btn_top.addEventListener("click", topmove);
+     
+     
 </script>
 </body>
 </html>
