@@ -178,7 +178,7 @@
 
         function q7Reload ()
         {
-            location.reload();
+           location.reload();
         }
 
         //q7idElement.addEventListener("click", location.reload);
@@ -189,6 +189,9 @@
         184번 줄 q7idElement.addEventListener("click", location.reload);로 실행하니까
         작동은 되는데, 콘솔로그창에 잠깐동안 에러가 뜨는데 뭐가 잘못된건지 궁금합니다.
         */
+
+        // rh : 9번에서 나타나는 현상과 같습니다. 9번 답변에 확인하세요.
+        // event.preventDefault();
 
 
 /*
@@ -243,7 +246,18 @@
         value값 변경은 어떻게 작성하는건지 잘 모르겠습니다.
         */
         
-
+        // rh : 수업에서 다뤘던 기능 구현만 하면 됩니다.
+        // 그 부분을 막는 명령을 수업에서 아직 다루지 않았어요.
+        // 마우스제어가 가능한 callback 함수에는 event 라는 인자가 항상 첫 파라메터에 전달됩니다.
+        // preventDefault() 라는 기본 내장된 기능을 막아주는 명령어를 사용합니다. event.preventDefault(); 로 작성합니다.
+        // 또한, form 안에 button 이 있을 경우, submit 기능을 하는 버튼이 아니더라도 form 에 할당된 액션을 수행하도록 button 에 기본 기능이 할당됩니다.
+        // 따라서, 새로고침되는 이유가 그런 이유입니다.
+        // 이러한 기능까지도 막을 수 있도록 새로고침을 막기 위해서 event.preventDefault(); 라는 코드를 삽입해주세요.
+        // function q9Rrset(event){
+        //    event.preventDefault();
+        // }
+        // value 값 변경은 제대로 코드가 실행되고 있습니다.
+        
 /*
      Quest 10.
      1. button#btn-add-city element 를 클릭했을 때 '도시명을 입력하세요.' 라는 메세지를 포함하고 있는 prompt 를 출력합니다.
