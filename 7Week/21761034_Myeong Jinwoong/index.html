@@ -140,6 +140,12 @@
     /* 정상동작하는지 잘 모르겠습니다. form 구문의 action을 index.html 그대로 작성하면 정상적으로 리로드되고, 
     html을 다른걸로 바꾸면 페이지를 찾을 수 없다고 나오는데 이게 맞는건지 모르겠습니다................... */
 
+    // rh : form action 때문에 버튼이 가진 기능을 기능을 막아야합니다.
+    // 수업에서 아직 그걸 다루지 않아서 할 수 있는 정도만 하면 됩니다.
+    // function(event){
+    //    event.preventDefault();
+    // }
+    // 그리고 location.reload(); 로 명령하면 됩니다.
 
     /*
      Quest 8.
@@ -168,6 +174,22 @@
             getValue.user_pass = null;
         }});
 */
+
+    var resetElement = document.getElementById("btn-reset");
+    resetElement.addEventListener("click", function(event){
+        event.preventDefault();
+        var getValue;
+        var user_id = document.getElementById("user_id");
+        var user_pass = document.getElementById("user_pass");
+        getValue = prompt("초기화하시려면 100을 입력하세요.");
+        if(Number(getValue) === 100){
+            user_id.value = null;
+            user_pass.value = null;
+        }
+    });
+    // rh : 우선 프로퍼티가 잘 못 지정되었네요.
+    // 그리고 일치연산자이기 때문에 프롬프트의 문자열을 숫자로 치환해야 합니다.
+
         //이거 왜 안되요? 아              ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         // 교수님 살려주세요 ㅠㅠ
     /*
