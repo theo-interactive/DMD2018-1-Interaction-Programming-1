@@ -163,12 +163,16 @@
         var promptBtn = document.getElementById("btn-reset");
         var passElement = document.getElementById("user_pass");
         var userIdElement = document.getElementById("user_id");
-        var promptFunction = function(){
+        var promptFunction = function(event){
             var toReset = prompt("초기화하시려면 100을 입력하세요");
+            event.preventDefault();
             if(toReset == 100){
                 userIdElement.value = null;
                 passElement.value = null;
                 console.log(getValue);
+            }
+            var promptFunction = function(event){
+                event.preventDefault();
             }
         };
         //value값을 null로 만든것같습니다 그런데 다시 value값이 채워지는건지, 새로고침이되는건지 잘모르겠습니다. 필드의 user ID라는 글자(value)가 잠깐사라졌다가 다시 나타납니다..
@@ -182,6 +186,7 @@
         // var promptFunction = function(event){
         //    event.preventDefault();
         // }
+        //정현석 : 감사합니다 :)
 
     /*
      Quest 10.
