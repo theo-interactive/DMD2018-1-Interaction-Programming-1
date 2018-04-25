@@ -222,10 +222,12 @@
         // 교수님,, 값을 입력 했을 때 value가 초기화 된 상태로 유지되어야 되는 것 아닌가요?
         // 저는 잠깐 reset 되고 원래 기본값이 있던 상태로 되돌아갑니다 ㅠㅠ
 
+    // rh : .value 프로퍼티를 사용하면 됩니다.
+    // userId.value = ''; userId.value = null; 등으로 사용합니다.
         
-     var resetClick = function(){
+     var resetClick = function(event){
+         event.preventDefault(); // rh : 기본 버튼 기능 제거.
          var reset = prompt("초기화하시려면 100을 입력하세요.");
-
          if(Number(reset) === 100){
                  userId.setAttribute("value", "");
                  userPw.setAttribute("value", "");
