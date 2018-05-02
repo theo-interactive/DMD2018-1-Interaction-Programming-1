@@ -18,6 +18,11 @@ var _numClick = function () {
             일단 저 식을 지우면 원하는대로 구현이 된다는건 확인을 했는데
             왜 저 식을 넣으면 꼬여버리는 것일까요 ㅠㅠ??
             */
+
+            // rh : 첫 로드할 때와 radio checked 요소가 변경될 때 해당 코드가 실행되어야 할 것 같습니다.
+            // 현재 _numClick() 은 각 연산 클릭 이벤트 콜백함수에서 _num 의 값을 찾기 위해 사용 중이므로 원하는 방식으로는 사용할 수 없겠네요.
+            // radio input 의 change 이벤트 콜백시에만 _num 의 값이 바뀌고 난 후 divIdResult.innerHTML = Number (_num); 코드가 실행되어야 할 것 같습니다.
+            
         };
     };
 };
