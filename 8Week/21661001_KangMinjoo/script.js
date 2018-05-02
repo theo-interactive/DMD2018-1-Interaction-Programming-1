@@ -55,3 +55,5 @@
     
     
     </script>
+    
+ // rh : script 파일에는 script 태그를 쓰는게 아닙니다.
