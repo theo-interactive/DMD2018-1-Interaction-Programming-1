@@ -72,7 +72,7 @@ var getBtnName = function(){
 };
 function onClickStuNum(e){
     event.preventDefault();
-    var Stuname = getBtnNumb();
+    var Stunum = getBtnNumb();
     if(result[0] !== 'undefined'){
         var studentNumElement =
             document.createElement('span');
