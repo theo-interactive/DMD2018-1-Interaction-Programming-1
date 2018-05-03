@@ -1,4 +1,4 @@
-<script type="text/javascript" >
+
 //1.숫자(1-5) 중 현재 선택된 숫자에 따라 연산자(+, -, *, /, %) 버튼을 클릭시 연산 처리가 가능하도록 구현합니다.
     
     var resultElement = document.getElementById("result");
@@ -53,7 +53,6 @@
     
     
     
-    
-    </script>
+
     
  // rh : script 파일에는 script 태그를 쓰는게 아닙니다.
