@@ -99,7 +99,6 @@ btnColor.addEventListener('click', function(){
 
 });
 
-
 function _number(num){
     if(num !== Number){
         alert('숫자만 입력가능합니다.');
