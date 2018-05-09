@@ -2,9 +2,11 @@
 
 10주차 과제입니다.
 
-## github.io 사이트 만들기.
+## GitHub Pages 사이트 만들기.
 
-개정 생성 후 홈페이지 주소(ryonghwon.github.io) 게시판 과제 공지글의 댓글로 제출.
+GitHub Pages 사이트 생성 후 게시판 과제 공지글의 댓글로 제출.
+
+본인이름 : ryonghwon.github.io
 
 ## 기말 프로젝트 - 인터랙션 사이트
 
