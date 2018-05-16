@@ -4,6 +4,7 @@
 - 애니메이션 제어하기
 - 이미지 갤러리 만들기.
 - 영상 로드하기.(Youtube)
+- YT iframe Player API [링크](https://developers.google.com/youtube/iframe_api_reference?hl=ko)
 
 ## Image Gallery
 
