@@ -186,12 +186,92 @@ btnSumElement.addEventListener('click', onClickBtnSum);
 // 1. button#btn-color-1 를 클릭할 경우, box 라는 클래스 이름을 가진 모든 div 요소의 배경색 스타일을 'red', 글자색 스타일을 'white' 로 변경합니다.
 // 3. button#btn-color-2 를 클릭한 경우, box 라는 클래스 이름을 가진 div 요소 중 3번째 요소의 배경색 스타일을 'blue', 글자색 스타일을 'black' 으로 변경합니다.
 
+var btnColorElement1 = document.getElementById('btn-color-1');
+var btnColorElement2 = document.getElementById('btn-color-2');
+var boxElements = document.getElementsByClassName('box');
+console.log(boxElements);
+function onClickBtnColor1(){
+    for(var i = 0; i < boxElements.length; i++){
+        //css background-color -> backgroundColor // 낙타구문.
+        boxElements[i].style.backgroundColor = 'red';
+        boxElements[i].style.color = 'white';
+    }
+}
+function onClickBtnColor2(){
+    //초기화.
+    // for(var i = 0; i < boxElements.length; i++){
+    //     boxElements[i].style.backgroundColor = 'white';
+    //     boxElements[i].style.color = 'black';
+    // }
+    //배열의 색인을 이용하여 요소를 찾는다.
+    boxElements[2].style.backgroundColor = 'blue';
+    boxElements[2].style.color = 'black';
+}
+btnColorElement1.addEventListener('click', onClickBtnColor1);
+btnColorElement2.addEventListener('click', onClickBtnColor2);
+
+
 // ### 문제 6.
 // 아래의 요건에 따라 코드를 작성하고 예시와 같은 결과값이 출력되도록 함수를 작성합니다.
 // 1. 하나의 숫자(Number) 타입 매개변수를 입력받는 함수를 생성합니다.
 // 2. 입력된 전달인자의 수에 따라 예시 형태와 같은 결과로 문자열을 반환합니다.
 // 3. button#btn-star 을 클릭할 경우, '숫자를 입력해주세요.' 라는 문구와 입력창이 포함된 다이얼로그창을 출력합니다.
 // 4. (1)의 Number 타입 매개변수의 전달인자로 사용자가 입력한 숫자를 할당하고 (2)의 문자열 결과값이 pre#star-result 의 내부에 입력될 수 있도록 작성합니다.
+
+function getStars(_number){ //전달인자가 5인 경우.
+    var result = '';
+    //반복문이 증가.
+    //반복문 in 반복문(2배).
+    for(var i = 0; i < _number; i++){
+        //5줄.
+        for(var j = 0; j < _number; j++){
+            //'★★★★★' 1줄의 문자열을 만든다.
+            if(i >= j){
+                result += '★';
+            }else{
+                result += '☆';
+            }
+        }
+        //result += '<br/>'; // html 태그.
+        result += '\n'; // 정규식 줄바꿈 처리.
+    }
+    //반복문이 감소.
+    //반목문에서 초기값에 따라 변화.
+    for(var i = _number - 2; i >= 0; i--){
+        for(var j = 0; j < _number; j++){
+            if(i >= j){
+                result += '★';
+            }else{
+                result += '☆';
+            }
+        }
+        result += '\n';
+    }
+    return result;
+    //★
+    //★★
+    //★★★
+    //★★★★
+    //★★★★★
+
+    //★★★★★
+    //★★★★★
+    //★★★★★
+    //★★★★★
+    //★★★★★
+}
+// getStars(5);
+var btnStarElement = document.getElementById('btn-star');
+var starResultElement = document.getElementById('star-result');
+function onClickBtnStar(){
+    var number = prompt('숫자를 입력해주세요.');
+    var result = getStars(number);
+    starResultElement.innerHTML = result;
+}
+btnStarElement.addEventListener('click', onClickBtnStar);
+
+
+
 // ~~~~
 // func(5)
 // 결과 :
