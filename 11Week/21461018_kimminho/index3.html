@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding:0;}
+        ul,li{list-style:none;}
+        #slide{height:500px;position:relative;overflow:hidden;}
+        #slide ul{width:800%;height:100%;transition:1s;}
+        #slide ul:after{content:"";display:block;clear:both;}
+        #slide li{float:left;width:12.5%;height:100%;}
+        /*
+        #slide li:nth-child(1){background:#faa;}
+        #slide li:nth-child(2){background:#ffa;}
+        #slide li:nth-child(3){background:#faF;}
+        #slide li:nth-child(4){background:#aaf;}
+        */
+        #slide input{display:none;}
+        #slide label{display:inline-block;vertical-align:middle;width:10px;height:10px;border:2px solid #666;background:#fff;transition:0.3s;border-radius:50%;cursor:pointer;}
+        #slide .pos{text-align:center;position:absolute;bottom:10px;left:0;width:100%;text-align:center;}
+
+        #pos1:checked~ul{margin-left:0%;}
+        #pos2:checked~ul{margin-left:-100%;}
+        #pos3:checked~ul{margin-left:-200%;}
+        #pos4:checked~ul{margin-left:-300%;}
+        #pos5:checked~ul{margin-left:-400%;}
+        #pos6:checked~ul{margin-left:-500%;}
+        #pos7:checked~ul{margin-left:-600%;}
+
+        #pos1:checked~.pos>label:nth-child(1){background:#666;}
+        #pos2:checked~.pos>label:nth-child(2){background:#666;}
+        #pos3:checked~.pos>label:nth-child(3){background:#666;}
+        #pos4:checked~.pos>label:nth-child(4){background:#666;}
+        #pos5:checked~.pos>label:nth-child(5){background:#666;}
+        #pos6:checked~.pos>label:nth-child(6){background:#666;}
+        #pos7:checked~.pos>label:nth-child(7){background:#666;}
+
+        #slide{width:800px;margin:0 auto;padding-top:80px}
+    </style>
+</head>
+<body>
+    <div id="slide">
+        <input type="radio" name="pos" id="pos1" checked>
+        <input type="radio" name="pos" id="pos2">
+        <input type="radio" name="pos" id="pos3">
+        <input type="radio" name="pos" id="pos4">
+        <input type="radio" name="pos" id="pos5">
+        <input type="radio" name="pos" id="pos6">
+        <input type="radio" name="pos" id="pos7">
+        <ul>
+            <li><img src="./img/bitles.jpg"></li>
+            <li><img src="./img/ledzep.jpg"></li>
+            <li><img src="./img/queen2.jpg"></li>
+            <li><img src="./img/oasis.jpg"></li>
+            <li><img src="./img/raidohead.jpg"></li>
+            <li><img src="./img/Muse-2016.jpg"></li>
+            <li><img src="./img/cold.png"></li>
+        </ul>
+        <p class="pos">
+            <label for="pos1"></label>
+            <label for="pos2"></label>
+            <label for="pos3"></label>
+            <label for="pos4"></label>
+            <label for="pos5"></label>
+            <label for="pos6"></label>
+            <label for="pos7"></label>
+        </p>
+    </div>
+</body>
+</html>

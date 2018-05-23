@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Slick Slider Fade Zoom</title>                  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">               
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700'>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+    <style>
+    body,
+    html {
+        height: 100%;
+        /* background: #333; */
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .slideshow {
+        /* position: relative; */
+        z-index: 1;
+        height: 100%;
+        max-width: 1000px;
+        margin: 50px auto;
+    }
+    .slideshow * {
+        outline: none;
+    }
+    /* .slideshow .slider {
+        box-shadow: 0 20px 50px -25px black;
+    } */
+    .slideshow .slider-track {
+        transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+    }
+    .slideshow .item {
+        height: 100%;
+        /* position: relative; */
+        z-index: 1;
+    }
+    .slideshow .item img {
+        width: 100%;
+        transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    .slideshow .item.slick-active img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    /* img{
+        width: 1000px;
+        height: 550px;
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+    } */
+</style>
+</head>
+<body>
+    <div class="slideshow">
+        <div class="slider">
+            <div class="item">
+                <img src="./img/bitles.jpg" />
+            </div>
+            <div class="item">
+                <img src="./img/ledzep.jpg" />
+            </div>
+            <div class="item">
+                <img src="./img/queen2.jpg" />
+            </div>
+            <div class="item">
+                <img src="./img/oasis.jpg" />
+            </div>
+            <div class="item">
+                <img src="./img/raidohead.jpg" />
+            </div>  
+            <div class="item">
+                <img src="./img/Muse-2016.jpg" />
+            </div>
+            <div class="item">
+                <img src="./img/cold.png" />
+            </div>          
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
+              
+<script type="text/javascript">
+    $('.slider').slick({
+        draggable: true,
+        arrows: false,
+        dots: true,
+        fade: true,
+        speed: 900,
+        infinite: true,
+        cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+        touchThreshold: 100
+  })
+</script>
+</body>
+</html>

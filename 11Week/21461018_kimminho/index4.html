@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    #cssSlider {
+    width: 800px;
+	height: 500px;
+    overflow: hidden;
+    width:800px;margin:0 auto;padding-top:80px;
+}
+
+    #sliderImages {
+        width : 5600px;
+        height: 500px;
+        overflow: hidden;
+        
+        /* animation duration: 16s : 5x ~3s display image + 5x ~0.2s slide */
+        animation: slide 16s infinite;
+        -moz-animation: slide 16s infinite;
+        -webkit-animation: slide 16s infinite;
+        -o-animation: slide 16s infinite;
+    }
+
+    #sliderImages img {
+        float: left;
+    }
+
+    /* @keyframes slide{
+        0%{margin-left: 0px;}
+        12%{margin-left: 0px;}
+        20%{margin-left: -800px;}
+        37%{margin-left: -800px;}
+        40%{margin-left: -1600px;}
+        57%{margin-left: -1600px;}
+        60%{margin-left: -2400px;}
+        77%{margin-left: -2400px;}
+        80%{margin-left: -3200px;}
+        97%{margin-left: -3200px;}
+        100%{margin-left: 0px;}
+    } */
+
+        @keyframes slide{
+        0%{margin-left: 0px;}
+        12%{margin-left: 0px;}
+        14%{margin-left: -800px;}
+        26%{margin-left: -800px;}
+        28%{margin-left: -1600px;}
+        40%{margin-left: -1600px;}
+        42%{margin-left: -2400px;}
+        54%{margin-left: -2400px;}
+        56%{margin-left: -3200px;}
+        68%{margin-left: -3200px;}
+        70%{margin-left: -4000px;}
+        82%{margin-left: -4000px;}
+        84%{margin-left: -4800px;}
+        96%{margin-left: -4800px;}
+        98%{margin-left: 0px;}
+    }
+
+    /* @-moz-keyframes slide{
+        0%{margin-left: 0px;}
+        17%{margin-left: 0px;}
+        20%{margin-left: -800px;}
+        37%{margin-left: -800px;}
+        40%{margin-left: -1600px;}
+        57%{margin-left: -1600px;}
+        60%{margin-left: -2400px;}
+        77%{margin-left: -2400px;}
+        80%{margin-left: -3200px;}
+        100%{margin-left: -3200px;}
+    }
+
+    @-webkit-keyframes slide{
+        0%{margin-left: 0px;}
+        17%{margin-left: 0px;}
+        20%{margin-left: -800px;}
+        37%{margin-left: -800px;}
+        40%{margin-left: -1600px;}
+        57%{margin-left: -1600px;}
+        60%{margin-left: -2400px;}
+        77%{margin-left: -2400px;}
+        80%{margin-left: -3200px;}
+        100%{margin-left: -3200px;}
+    }
+
+    @-o-keyframes slide{
+        0%{margin-left: 0px;}
+        17%{margin-left: 0px;}
+        20%{margin-left: -800px;}
+        37%{margin-left: -800px;}
+        40%{margin-left: -1600px;}
+        57%{margin-left: -1600px;}
+        60%{margin-left: -2400px;}
+        77%{margin-left: -2400px;}
+        80%{margin-left: -3200px;}
+        100%{margin-left: -3200px;}
+    } */
+    </style>
+</head>
+<body>
+    <div id="cssSlider">
+        <div id="sliderImages">
+            <img id="si_1" src="./img/bitles.jpg" alt="" />
+            <img id="si_2" src="./img/ledzep.jpg" alt="" />
+            <img id="si_3" src="./img/queen2.jpg" alt="" />
+            <img id="si_4" src="./img/oasis.jpg" alt="" />
+            <img id="si_5" src="./img/raidohead.jpg" alt="" />
+            <img id="si_6" src="./img/Muse-2016.jpg" alt="" />
+            <img id="si_7" src="./img/cold.png" alt="" />
+            <div style="clear:left;"></div>
+        </div>
+    </div>
+</body>
+</html>
