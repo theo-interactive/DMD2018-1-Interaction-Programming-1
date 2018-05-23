@@ -67,8 +67,12 @@ function btnListClick (id) {
 			_c = 0;
 		}
 
+		var bgNum = id + 1;
+
 		viewItem[_num].classList.remove('selected');
 		viewItem[id].classList.add ('selected');
+
+		bg.style.backgroundImage = 'url(img/'+bgNum+'.jpg)';
 
 		preItem[_sum].classList.remove('selected');
 		preItem[_b].classList.add ('selected');
