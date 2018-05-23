@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Tab Menu</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+    *{margin:0;padding:0}
+    body{font-family:'Roboto', sans-serif}
+    a{text-decoration:none}
+    ul{list-style-type:none}
+    .tab-menu{width:800px;margin:0 auto;margin-top:50px}
+    .tab-menu ul{display:flex}
+    .tab-menu li{flex:1;height:30px}
+    .tab-menu li a{position:relative;display:block;width:100%;height:100%;background-color:#999;text-transform:uppercase;text-align:center;color:#fff;line-height:30px}
+    .tab-menu li a.selected{background-color:#000;cursor:default}
+    .tab-container{width:800px;margin:0 auto;border:1px solid #000;box-sizing:border-box}
+    .tab-container .tab-content{display:none;padding:30px;height:500px;box-sizing:border-box}
+    .tab-container .tab-content.selected{display:block}
+  </style>
+</head>
+<body>
+  <div id="tab-menu" class="tab-menu">
+      <ul>
+        <li><a href="#" class="selected">Tab 1</a></li>
+        <li><a href="#">Tab 2</a></li>
+        <li><a href="#">Tab 3</a></li>
+        <li><a href="#">Tab 4</a></li>
+      </ul>
+  </div>
+  <div class="tab-container">
+    <div class="tab-content selected">
+      Tab 1 Content.
+    </div>
+    <div class="tab-content">
+      Tab 2 Content.
+    </div>
+    <div class="tab-content">
+      Tab 3 Content.
+    </div>
+    <div class="tab-content">
+      Tab 4 Content.
+    </div>
+  </div>
+</body>
+</html>
