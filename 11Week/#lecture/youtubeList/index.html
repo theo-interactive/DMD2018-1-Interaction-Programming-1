@@ -39,13 +39,11 @@
     var listItemEl = listEl.getElementsByTagName('li');
     var listItemAEl = listEl.getElementsByTagName('a');
     var videoEl = viewEl.getElementsByClassName('video');
-    
     var _cuId = 0;
     var _exId = _cuId;
     var _videoList = ["CHBFLG9aYz4", "RSTa8qhyNvw", "lCPsMawKJLQ", "65OvRb9cKhY"];
     var _players = [];
     var _defaults = {autoplay:0, controls:0, rel:0, fs:0, modestbranding:0, showinfo:0};
-    
     function btnListClick(id){
       listItemAEl[id].addEventListener('click',function(e){
         e.preventDefault();
@@ -66,8 +64,6 @@
     for(var i = 0; i < listItemAEl.length; i++){
       btnListClick(i);
     }
-
-
     var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
     var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -100,9 +96,6 @@
       }else if(e.data == state.CUED) {
       }
     }
-    // function stopVideo() {
-    //   //player.stopVideo();
-    // }
   </script>
 </body>
 </html>
