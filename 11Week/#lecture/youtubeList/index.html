@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Youtube List</title>
+  <style>
+    *{margin:0;padding:0}
+    a{text-decoration:none}
+    .gallery{position:relative;width:800px;height:450px;margin:0 auto;}
+    ul{list-style-type:none}
+    .view{overflow:hidden;position:relative;width:100%;height:100%}
+    .view-item{display:none;position:absolute;width:100%;height:100%}
+    .view-item.selected{display:block}
+    /* .view-item .video{position:absolute;width:100%;height:100%} */
+    .view-item .video{display:none;position:absolute}
+    .view-item .dim{position:absolute;width:100%;height:100%;background-color:transparent;z-index:100}
+    .list{position:relative;z-index:200;width:100%;bottom:30px;text-align:center;line-height:10px}
+    .list li{display:inline-block;width:10px;vertical-align:top}
+    .list li + li{padding-left:20px}
+    .list li a{display:block;position:relative;width:10px;height:10px;border-radius:50%;background-color:#fff;box-sizing:border-box}
+    .list li.selected a{border:2px solid #000;cursor:default}    
+  </style>
+</head>
+<body>
+  <div id="gallery" class="gallery">
+    <div class="view">
+      <div class="view-item selected"><div id="player1" class="video"></div><div class="dim">&nbsp;</div></div>
+      <div class="view-item"><div id="player2" class="video"></div><div class="dim">&nbsp;</div></div>
+      <div class="view-item"><div id="player3" class="video"></div><div class="dim">&nbsp;</div></div>
+      <div class="view-item"><div id="player4" class="video"></div><div class="dim">&nbsp;</div></div>
+    </div>
+    <ul class="list"><li class="selected"><a href="#">&nbsp;</a></li><li><a href="#">&nbsp;</a></li><li><a href="#">&nbsp;</a></li><li><a href="#">&nbsp;</a></li></ul>
+  </div>
+  <script type="text/javascript">
+    var galleryEl = document.getElementById('gallery');
+    var viewEl = galleryEl.getElementsByClassName('view')[0];
+    var viewItemEl = viewEl.getElementsByClassName('view-item');
+    var listEl = galleryEl.getElementsByClassName('list')[0];
+    var listItemEl = listEl.getElementsByTagName('li');
+    var listItemAEl = listEl.getElementsByTagName('a');
+    var videoEl = viewEl.getElementsByClassName('video');
+    
+    var _cuId = 0;
+    var _exId = _cuId;
+    var _videoList = ["CHBFLG9aYz4", "RSTa8qhyNvw", "lCPsMawKJLQ", "65OvRb9cKhY"];
+    var _players = [];
+    var _defaults = {autoplay:0, controls:0, rel:0, fs:0, modestbranding:0, showinfo:0};
+    
+    function btnListClick(id){
+      listItemAEl[id].addEventListener('click',function(e){
+        e.preventDefault();
+        _cuId = id;
+        changeVideo();
+      });
+    }
+    function changeVideo(){
+      listItemAEl[_exId].parentElement.classList.remove('selected');
+      viewItemEl[_exId].classList.remove('selected');
+      _players[_exId].tv.pauseVideo();
+      _players[_exId].tv.seekTo(0);
+      listItemAEl[_cuId].parentElement.classList.add('selected');
+      viewItemEl[_cuId].classList.add('selected');
+      _players[_cuId].tv.playVideo();
+      _exId = _cuId;
+    }
+    for(var i = 0; i < listItemAEl.length; i++){
+      btnListClick(i);
+    }
+
+
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    function onYouTubeIframeAPIReady() {
+      for(var i in videoEl){
+        var tv = new YT.Player(videoEl[i], {videoId : _videoList[i], suggestedQuality :  "hd1080", events: {"onReady": onPlayerReady, "onStateChange": onPlayerStateChange}, playerVars: _defaults});
+        _players.push({
+          el : videoEl[i],
+          tv : tv
+        });
+      }
+    }
+    function onPlayerReady(e) {
+      for(var i in _players){
+        _players[i].tv.setSize(800, 450);
+        _players[i].el.style.display = 'block';
+        if(_cuId == i){
+          _players[i].tv.playVideo();
+        }
+      }
+    }
+    function onPlayerStateChange(e) {
+      var state = YT.PlayerState;
+      if(e.data == state.UNSTARTED) {
+      }else if(e.data == state.ENDED) {
+      }else if(e.data == state.PLAYING) {
+      }else if(e.data == state.PAUSED) {
+      }else if(e.data == state.BUFFERING) {
+      }else if(e.data == state.CUED) {
+      }
+    }
+    // function stopVideo() {
+    //   //player.stopVideo();
+    // }
+  </script>
+</body>
+</html>
