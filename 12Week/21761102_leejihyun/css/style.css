@@ -1,0 +1,104 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css?family=Gaegu');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Gugi');
+
+body{
+    font-family: 'Gugi', cursive;
+    background-color: #FF0600;
+    }
+p{
+    padding-top:60px;font-family: 'Gugi', cursive;
+    text-align: center;
+    color:#F6FFFF;
+    font-size: 40pt;
+}
+a{
+    text-decoration:none;
+}
+ul{
+    list-style-type:none;
+}
+.tab-menu{
+    width:900px;
+    margin:0 auto;
+    margin-top:50px;
+    padding-top: 20px;
+}
+.tab-menu ul{
+    display:flex
+}
+.tab-menu li{
+    flex:1;
+    height:30px
+}
+.tab-menu li a{
+    position:relative;
+    display:block;
+    width:100%;
+    height:100%;
+    background-color:#FFFF01;
+    text-transform:uppercase;
+    text-align:center;
+    color:black;
+    line-height:30px;
+}
+.tab-menu li a.selected{
+    background-color:#F6FFFF;
+    cursor:default
+}
+.tab-container{
+    width:900px;
+    margin:0 auto;
+    box-sizing:border-box;
+    background-color: #0000FE;
+    text-align: center;
+    font-size: 28pt;
+}
+.tab-container .tab-content{
+    display:none;
+    padding:30px;
+    height:460px;
+    box-sizing:
+    border-box;
+}
+.tab-container .tab-content.selected{
+    display:block;
+    font-family: 'Do Hyeon', sans-serif;
+    color: #F6FFFF;
+} 
+.gallery {
+    width: 640px;
+    margin: 0 auto;
+    padding-top: 70px;
+    box-sizing: border-box;
+} 
+.gallery > div {
+    position: relative;
+    float: left;
+    padding: 5px;
+}  
+.gallery > div > img {
+    display: block;
+    width: 200px;
+    transition: .1s transform;
+    transform: translateZ(0); /* hack */
+}  
+.gallery > div:hover {
+    z-index: 1;
+}  
+.gallery > div:hover > img {
+    transform: scale(1.7,1.7);
+    transition: .3s transform;
+  }  
+.cf:before, .cf:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}  
+.cf:after {
+    clear: both;
+}
+  
+
+
+ 

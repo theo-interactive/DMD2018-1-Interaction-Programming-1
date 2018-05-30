@@ -1,0 +1,101 @@
+/* google fonts load. */
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+*{margin:0;padding:0}
+
+body{
+    font-family:'Julius Sans One', sans-serif;
+}
+
+a{
+    text-decoration:none
+}
+
+ul{
+    list-style-type:none
+}
+
+.tab-menu{
+    width:1000px;
+    margin:0 auto;
+    margin-top:60px;
+}
+
+.tab-menu ul{
+    display:flex
+}
+
+.tab-menu li{
+    flex:1;
+    height:40px;
+}
+
+.tab-menu li a{
+    font-size: 13px;
+    position:relative;
+    display:block;
+    width:100%;
+    height:100%;
+    background-color:black;
+    text-transform:uppercase;
+    text-align:center;
+    color:white;
+    line-height:40px;
+    border:1px solid black;
+}
+
+.tab-menu li a.selected{
+    font-weight: bold;
+    background-color: #fdd046;
+    color: black;
+    cursor:default
+}
+
+.tab-container{
+    width:1000px;
+    margin:0 auto;
+    border:1px solid black;
+    box-sizing:border-box;
+}
+
+.tab-container iframe{
+    padding-top: 6%;
+    padding-left: 7%;
+}
+
+.tab-container .tab-content{
+    display:none;padding:40px;
+    height:700px;
+    box-sizing:border-box
+}
+
+.tab-container .tab-content.selected{
+    display:block
+}
+
+.video-title{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 13%;
+    padding-top: 5%;
+}
+
+.video-title-2nd{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 8%;
+    padding-top: 5%;
+}
+
+.video-title-3rd{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 25%;
+    padding-top: 5%;
+}
+
+.video-title-4th{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 10%;
+    padding-top: 5%;
+}

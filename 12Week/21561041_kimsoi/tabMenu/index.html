@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Tab Menu</title>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Work+Sans" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0}
+    body{font-family: 'Work Sans', sans-serif;}
+    p {font-family: 'Nanum Myeongjo', serif;}
+    a{text-decoration:none}
+    ul{list-style-type:none}
+    .tab-menu{width:800px;margin:0 auto;margin-top:50px}
+    .tab-menu ul{display:flex}
+    .tab-menu li{flex:1;height:40px;}
+    .tab-menu li a{position:relative;display:block;width:100%;height:100%;background-color:#ffffff;text-align:center;color:#006933;line-height:40px}
+    .tab-menu li a.selected{background-color:#006933;cursor:default;color:#ffffff;border-radius: 20px;}
+    .tab-container{width:800px;margin:0 auto;box-sizing:border-box;}
+    .tab-container .tab-content{display:none;padding:30px;height:500px;box-sizing:border-box}
+    .tab-container .tab-content.selected{display:block}
+  </style>
+</head>
+<body>
+  <div id="tab-menu" class="tab-menu">
+      <ul>
+        <li><a href="#" class="selected">Tyler the creator</a></li>
+        <li><a href="#">Odd future</a></li>
+        <li><a href="#">Golf wang</a></li>
+        <li><a href="#">Music</a></li>
+      </ul>
+  </div>
+  <div class="tab-container">
+    <div class="tab-content selected">
+      <div>
+        <h1>Tyler the creator</h1>
+        <br>
+        <p>
+            미국의 래퍼, 프로듀서, 패션 디자이너, 뮤직 비디오 감독.<br>
+            LA를 기반으로 두고 활동하고 있는 크루 오드퓨처의 수장.
+        </p>
+      </div>
+      <br>
+      <div>
+        <img src="./img/tyler.jpeg">
+      </div>
+    </div>
+    <div class="tab-content">
+      <div>
+        <h1>Odd future</h1>
+        <br>
+        <p>
+            오드 퓨처 (OFWGKTA, Odd Future Wolf Gang Kill Them All)은 미국의 힙합 그룹.<br>
+            오드 퓨처는 래퍼 겸 프로듀서인 타일러 더 크리에이터, 래퍼 겸 싱어송라이터인 프랭크 오션,<br>
+            등을 포함한 60여명으로 이루어져있다.
+        </p>
+      </div>
+      <br>
+      <div>
+        <img src="./img/oddf.jpg">
+      </div>
+    </div>
+    <div class="tab-content">
+      <div>
+        <h1>Golg wang</h1>
+        <br>
+        <p>
+            자신의 크루 이름 일부를 가져와 만든 브랜드. <br>
+            평소 스케이트 보드, 그래피티 등 서브컬처를 좋아했으며 그 문화를 바탕으로 브랜드를 제작. <br>
+            꾸준한 컬렉션을 공개했고 반스, 컨버스 등 자신이 평소 즐겨 신던 신발 브랜드와 다수 협업.
+        </p>
+      </div>
+      <br>
+      <div>
+        <img src="./img/golf.jpg" width="600px">
+      </div>
+    </div>
+    <div class="tab-content">
+        <div>
+            <h1>Music</h1>
+            <br>
+            <h3>Bastard (2009)</h3>
+          </div>
+          <br>
+          <div>
+            <img src="./img/2009.jpeg" width="300px">
+          </div>
+        <div>
+          <br>
+          <h3>Gobline (2011)</h3>
+        </div>
+        <br>
+        <div>
+            <img src="./img/2011.jpeg" width="300px">
+        </div>
+        <div>
+          <br>
+          <h3>Wolf (2013)</h3>
+        </div>
+        <br>
+        <div>
+            <img src="./img/2013.jpeg" width="300px">
+        </div>
+        <div>
+          <br>
+          <h3>Cherry bomb (2015)</h3>
+        </div>
+        <br>
+        <div>
+            <img src="./img/2015.png" width="300px">
+        </div>
+        <div>
+          <br>
+          <h3>Flower Boy (2017)</h3>
+        </div>
+        <br>
+        <div>
+            <img src="./img/2017.jpeg" width="300px">
+        </div>
+    </div>
+  </div>
+
+<script src="js/script.js" type="text/javascript"></script>
+
+</body>
+</html>

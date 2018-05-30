@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Accordion Menu</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+    *{margin:0;padding:0}
+    body{font-family:'Roboto', sans-serif}
+    a{text-decoration:none}
+    .accordion-menu{width:800px;height:400px;margin:0 auto;padding-top:80px}
+    .menu-item{position:relative;float:left;width:200px;height:100%;-webkit-transition:width 180ms ease-in-out;-moz-transition:width 180ms ease-in-out;-ms-transition:width 180ms ease-in-out;-o-transition:width 180ms ease-in-out;transition:width 180ms ease-in-out}
+    .menu-item:nth-of-type(1){background-color:red}
+    .menu-item:nth-of-type(2){background-color:blue}
+    .menu-item:nth-of-type(3){background-color:green}
+    .menu-item:nth-of-type(4){background-color:purple}
+    .menu-item figure{overflow:hidden;position:absolute;width:100%;height:100%}
+    .menu-item figure img{width:100%;height:100%;object-fit:cover}
+    .menu-item a{display:flex;position:relative;width:100%;height:100%;color:#fff;text-transform:uppercase;text-align:center;font-size:14px;line-height:20px;justify-content:center;align-items:center}
+    .menu-item a span{display:block;position:relative}
+    .menu-item a span::after{content:'';display:block;position:absolute;left:50%;width:0;height:1px;background-color:#fff;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);-webkit-transition:width 180ms ease-in-out;-moz-transition:width 180ms ease-in-out;-ms-transition:width 180ms ease-in-out;-o-transition:width 180ms ease-in-out;transition:width 180ms ease-in-out}
+    .menu-item a:hover span::after{width:100%}
+  </style>
+</head>
+<body>
+  <div id="accordion-menu" class="accordion-menu">
+      <div class="menu-item"><figure><img src="./img/1.jpg"/></figure><a href="#"><span>Menu 1</span></a></div>
+      <div class="menu-item"><figure><img src="./img/2.jpg"/></figure><a href="#"><span>Menu 2</span></a></div>
+      <div class="menu-item"><figure><img src="./img/3.jpg"/></figure><a href="#"><span>Menu 3</span></a></div>
+      <div class="menu-item"><figure><img src="./img/4.jpg"/></figure><a href="#"><span>Menu 4</span></a></div>
+  </div>
+</body>
+</html>

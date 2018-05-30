@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Tab Menu</title>
+  <!-- google fonts load. standard -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet"> -->
+  <style>
+    /* google fonts load. */
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+    /* @import url('https://fonts.googleapis.com/css?family=Roboto'); */
+    *{margin:0;padding:0}
+    /* body{font-family:'Roboto', sans-serif} */
+    /* 적용 */
+    body{font-family: 'Noto Sans', sans-serif}
+    a{text-decoration:none}
+    ul{list-style-type:none}
+    .tab-menu{width:800px;margin:0 auto;margin-top:50px}
+    .tab-menu ul{display:flex}
+    .tab-menu li{flex:1;height:30px}
+    .tab-menu li a{position:relative;display:block;width:100%;height:100%;background-color:rgb(14, 12, 12);text-transform:uppercase;text-align:center;color:#fff;line-height:30px}
+    .tab-menu li a.selected{background-color:rgb(129, 16, 16);cursor:default}
+    .tab-container{background-color:rgb(129, 16, 16); width:800px;margin:0 auto;;box-sizing:border-box}
+    .tab-container .tab-content{display:none;padding:30px;height:500px;box-sizing:border-box}
+     .tab-container .tab-content.selected{display:block} 
+     #information{
+       display:block; float:right;
+     }
+     .gallery{
+       width:700px;
+      display: table; margin-left: 70px; margin-top: 50px;
+
+     }
+     div.img {
+ 
+    margin: 60px;
+    border: 1px solid #ccc;
+    float: right;
+    width: 180px;
+    }
+    .poster{
+      width:700px;
+      display:table; margin-left:70px; margin-top:70px;
+
+    }
+     
+  </style>
+</head>
+<body>
+  <div id="tab-menu" class="tab-menu">
+      <ul>
+        <li><a href="#" class="selected">Information</a></li>
+        <li><a href="#">Stillcut</a></li>
+        <li><a href="#">Posters</a></li>
+        <li><a href="#">character</a></li>
+      </ul>
+  </div>
+  <div class="tab-container">
+    <div class="tab-content selected">
+      <span id="information"><img src="img/deadpool1.jpg"></span>
+      <h3>DEAD POOL</h3>
+      <p>After surviving a near fatal bovine attack, a disfigured cafeteria chef (Wade Wilson) struggles to fulfill his dream of becoming Mayberry’s hottest bartender while also learning to cope with his lost sense of taste. Searching to regain his spice for life, as well as a flux capacitor, Wade must battle ninjas, the yakuza, and a pack of sexually aggressive canines, as he journeys around the world to discover the importance of family, friendship, and flavor – finding a new taste for adventure and earning the coveted coffee mug title of World’s Best Lover.</p>
+    </div>
+    <div class="tab-content">
+      <div class="gallery"><img src="img/1.jpg" width="300"><img src="img/2.jpg"width="300"><img src="img/3.jpg"width="300"><img src="img/4.jpg"width="300"></div>
+    </div>
+    <div class="tab-content">
+      <div class="poster"><img src="img/p1.jpg"width="200"><img src="img/p2.jpg"width="200"><img src="img/p3.jpg"width="200"></div>
+    </div>
+    <div class="tab-content">
+      <div><strong>Real Name</strong> <p>Wade Wilson</p></div> 
+      <div><strong>Height</strong> <p>6'2"</p></div>
+      <div><strong>Weight</strong> <p>210 lbs.</p></div>
+          <div>
+              <strong>Powers</strong>
+              <p class="possibleTruncation"  data-blurb="8675309"><span>Deadpool possesses a superhuman healing factor derived from that of the mutant Wolverine that allows him to regenerate damaged or destroyed areas of his cellular structure at a rate far greater than that of an ordinary human. As such, he can regrow severed limbs or vital organs. The speed at which this healing factor works varies in direct proportion to the severity of the damage Deadpool suffers. This healing factor also affords Deadpool a virtual immunity to poisons and most drugs, as well as an enhanced resistance to diseases and an extended life span. Unlike Wolverine (James Howlett), Wolverine’s natural healing factor, Deadpool’s is mentally driven to a partial extent.  Due to the presence of this superhuman healing ability, many of Deadpool's natural physical attributes have been enhanced. Deadpool's musculature generates considerably less fatigue toxins than the muscles of an ordinary human being, granting him superhuman levels of stamina in all physical activities. His natural strength, agility and reflexes have been enhanced to levels that are beyond the natural limits of the human body. Deadpool's agility and reaction time are superior to those of even the finest human athlete.</span>
+              <p data-blurb="8675309" style="display: none"><span>Deadpool possesses a superhuman healing factor derived from that of the mutant Wolverine that allows him to regenerate damaged or destroyed areas of his cellular structure at a rate far greater than that of an ordinary human. As such, he can regrow severed limbs or vital organs. The speed at which this healing factor works varies in direct proportion to the severity of the damage Deadpool suffers. This healing factor also affords Deadpool a virtual immunity to poisons and most drugs, as well as an enhanced resistance to diseases and an extended life span. Unlike Wolverine (James Howlett), Wolverine’s natural healing factor, Deadpool’s is mentally driven to a partial extent.  Due to the presence of this superhuman healing ability, many of Deadpool's natural physical attributes have been enhanced. Deadpool's musculature generates considerably less fatigue toxins than the muscles of an ordinary human being, granting him superhuman levels of stamina in all physical activities. His natural strength, agility and reflexes have been enhanced to levels that are beyond the natural limits of the human body. Deadpool's agility and reaction time are superior to those of even the finest human athlete.</span>
+          </div>
+          <div>
+            
+
+    </div>
+  </div>
+  <script src="./js/script.js" type="text/javascript"></script>
+</body>
+</html>

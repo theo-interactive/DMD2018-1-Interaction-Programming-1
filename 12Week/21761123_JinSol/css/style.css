@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Nanum+Gothic');
+*{margin:0;padding:0}
+html {width: 100%; height: 100%; background-color: white;}
+body{font-family: 'Nanum Gothic', sans-serif;}
+a{text-decoration:none}
+ul{list-style-type:none}
+.tab-menu{width:1000px;margin:0 auto;margin-top:50px}
+.tab-menu ul{display:flex}
+.tab-menu li{flex:1;height:50px}
+.tab-menu li a{position:relative;display:block;width:100%;height:100%;background : #683876;
+    font-family:'Slabo 27px', serif; text-transform:uppercase;text-align:center;color: lightgrey;line-height:50px}
+
+.tab-menu li a.selected {font-weight: 700; font-size: 1.2em;}
+.tab-menu li:first-child a.selected{background-color: #F4AFB6;cursor:default; color: #fff;}
+.tab-menu li:nth-child(2) a.selected{background-color:#91D5F6; cursor:default; color: #fff;}
+.tab-menu li:nth-child(3) a.selected{background-color:#F8BE8D;cursor:default; color: #fff;}
+.tab-menu li:last-child a.selected{background-color:#F2987D;cursor:default; color: #fff;}
+
+.tab-container{width:1000px;margin:0 auto;}
+
+.tab-container .tab-content{display:none;padding:30px;height: auto;}
+.tab-container .tab-content:first-child {background-color: #F4AFB6; cursor:default; color: #fff;}
+.tab-container .tab-content:nth-child(2) {background-color: #91D5F6; cursor:default; color: #fff;}
+.tab-container .tab-content:nth-child(3) {background-color:#F8BE8D;cursor:default; color: #fff;}
+.tab-container .tab-content:last-child {background-color:#F2987D;cursor:default; color: #fff;}
+
+.tab-container .tab-content img{float: left; padding-right: 50px;}
+.tab-container .tab-content .textbox::after {content: ""; display: block; clear: both;}
+.tab-container .tab-content .textbox ul {font-weight: 700; margin: 20px 0; font-size: 15px;}
+.tab-container .tab-content .textbox ul li {display: inline-block; line-height: 22px; margin-bottom: 5px;}
+.tab-container .tab-content .textbox ul li span {margin-left: 39px;}
+
+.tab-container .tab-content h1 {font-family: 'Slabo 27px', serif; font-size: 23px;}
+.tab-container .tab-content.selected{display:block;}
