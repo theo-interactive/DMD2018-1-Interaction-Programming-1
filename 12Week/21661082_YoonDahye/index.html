@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Tab Menu</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+  <style>
+   @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+    *{margin:0;padding:0}
+    body{font-family: 'Open Sans Condensed', sans-serif;}
+    a{text-decoration:none}
+    ul{list-style-type:none}
+
+    .tab-menu{width:850px;margin:0 auto;margin-top:50px}
+    .tab-menu ul{display:flex}
+    .tab-menu li{flex:1;height:50px}
+    .tab-menu li a{position:relative;display:block;width:100%;height:100%;background-color:#ccc;text-transform:uppercase;text-align:center;color:#fff;line-height:50px;font-size:15px;}
+    .tab-menu li a.selected{background-color:pink;cursor:default;font-weight:bold;font-size:17px;letter-spacing:1px;}
+    .tab-container{width:850px;margin:0 auto 150px; border:1px solid #ccc;box-sizing:border-box}
+    .tab-container .tab-content{display:none;padding:30px;height:700px;box-sizing:border-box}
+    .tab-container .tab-content.selected{display:block}
+
+    .tab-container .tab-content span { display:block; width:100%; height:400px; background-color:red; overflow:hidden; margin-bottom:50px; }
+    .tab-container .tab-content span img { display:none; width:100%; }
+    .tab-container .tab-content h3 { font-size:25px; color:#333; }
+    .tab-container .tab-content h4 { line-height:50px; color:#333; }
+    .tab-container .tab-content p { font-size:12px; color:#555; }
+
+    #maria { background:url(img/maria.jpg) center center no-repeat; background-size:cover; }
+    #olivia { background:url(img/olivia.jpg) center center no-repeat; background-size:cover; }
+    #yoshinori { background:url(img/yoshinori.jpg) center center no-repeat; background-size:cover; }
+    #james { background:url(img/james.jpg) center center no-repeat; background-size:cover; }
+    #marina { background:url(img/marina.jpg) center center no-repeat; background-size:cover; }
+  </style>
+
+</head>
+
+
+
+<body>
+  <div id="tab-menu" class="tab-menu">
+      <ul>
+        <li><a href="#" class="selected">Maria Svarbova</a></li>
+        <li><a href="#">Olivia Bee</a></li>
+        <li><a href="#">Yoshinori Mizutani</a></li>
+        <li><a href="#">James Nizam</a></li>
+        <li><a href="#">Marina Richter</a></li>
+      </ul>
+  </div>
+  <div class="tab-container">
+    <div class="tab-content selected">
+      <span id="maria"><img src="img/maria.jpg"></span>
+      <h3>마리아 스바르보바</h3>
+      <h4>Maria Svarbova (1988~)</h4>
+      <p>마리아 스바르보바는 체코슬로바키아 벨벳혁명(1989)이 일어나기 1년 전인 1988년에 출생했다. 직접 사회주의 시대를 체험하지 못했지만 작가의 주변 인물, 건축물, 공공 장소 등에 잔존한 역사의 흔적이 일종의 노스탤지어로 남아 그녀의 작업에 영향을 주었다. 작가는 공간과 색채, 분위기를 다소 냉담하게 제시하며 사진을 포착하는 순간과 그 안의 피사체를 직관적이며 절제된 색조로 담아 낸다. 슬로바키아의 사회주의 시대에 지어진 공공 수영장에서 영감을 받아 작업한 대표작 《Swimming Pool》(2014~) 시리즈에서는 수영장 타일처럼 절제되고 굳은 포즈와 표정을 취하고 있는 사람들을 볼 수 있다. 오래된 수영장 외관의 척박하면서도 기하학적인 아름다움은 시리지만 경쾌한 푸른 색조와 대비를 이뤄 실제 삶에서는 볼 수 없는 독특한 시각적 즐거움을 주는 한편 고독과 고립과 같은 인간적인 경험을 상기시키기도 한다.</p>
+    </div>
+
+    <div class="tab-content">
+      <span id="olivia"><img src="img/olivia.jpg"></span>
+      <h3>올리비아 비</h3>
+      <h4>Olivia Bee (1994~)</h4>
+      <p>평범한 날들의 기억과 그 아름다움에 관심을 갖는 사진작가 올리비아 비는 주로 자신의 일상과 그 시간을 함께하는 친구들의 모습을 낭만적으로 기록한다. 대표작 중 하나인 《Kids in Love》 시리즈는 하루하루의 기억에 몽환적이면서 다채로운 빛을 더해 꿈처럼 그린 작품이다. 이 작품이 삶의 일부분인 우정과 사랑에 대한 기록이라면 또 다른 시리즈인 《Enveloped in a Dream》은 친구들과의 우정, 파티, 자아 탐구와 같은 십대의 달콤하지만은 않은 향수를 전하고 있다. 올리비아 비는 미국 오리건 포틀랜드 출신으로, 현재 뉴욕 브루클린과 캘리포니아 로스엔젤레스를 오가며 활동하고 있다.</p>
+    </div>
+
+    <div class="tab-content">
+      <span id="yoshinori"><img src="img/yoshinori.jpg"></span>
+      <h3>요시노리 미즈타니</h3>
+      <h4>Yoshinori Mizutani (1987~)</h4>
+      <p>일본 후쿠이에서 태어나 도쿄에서 활동하는 사진작가 요시노리 미즈타니는 감각적인 색감과 구도를 통해 도시 풍경을 독자적으로 재맥락화(re-contextualization)한다. 자연과 함께한 유년시절을 보낸 작가에게 자연은 예술적 소재이자 각별한 존재로 자리한다. 그가 기억하는 나무들 사이의 반딧불, 은빛으로 변하며 내리던 눈 등에 관한 소소한 심상들은 삶의 터전을 도시로 옮긴 후에도 그가 끊임없이 탐색하고 무의식적으로 포착하는 주제이다. 관련 대표작으로는 도쿄에 거주하는 라임색 앵무새 무리를 촬영해 낯선 도시 풍경이 야기하는 기묘한 감정에 집중한 《Tokyo Parrots》(2013)와 도시에서 조우한 ‘유수리카’라는 날벌레들을 여름에 내리는 눈처럼 비현실적인 풍경으로 포착한 《Yusurika》(2014) 시리즈가 있다.</p>
+    </div>
+
+    <div class="tab-content">
+     <span id="james"><img src="img/james.jpg"></span>
+      <h3>제임스 니잠</h3>
+      <h4>James Nizam (1977~)</h4>
+      <p>제임스 니잠은 영국에서 태어나 캐나다 밴쿠버를 중심으로 조각, 사진, 설치 그리고 건축 분야에서 활동하는 작가이다. 작가는 빛의 물질적 실체화와 그것이 어떻게 우리의 지각과 기억, 공간, 시간 그리고 형태에 대한 이해를 확장할 수 있는지에 관심을 둔다. 작가는 전작 《From Sunrise》(2016), 《To Sunset》(2016)에서 태양의 궤적을 실내에 그려내고 비추기 위해 카메라 옵스큐라 기술을 이용했으며, 한 장의 이미지당 여섯 시간 동안의 노출을 주어 태양의 이동 경로를 사진에 담았다. 니잠의 작업은 육안으로 볼 수 없는 현상들, 이를테면 건축에 내리는 태양광과 천문학적 과정으로서의 시간의 관계를 기록한다. 작업을 통해 시각화된 시간은 우리가 물리적, 은유적으로 살아가는 낮 동안의 보이지 않는 대기를 볼 수 있도록 이끈다.</p>
+    </div>
+
+    <div class="tab-content">
+      <span id="marina"><img src="img/marina.jpg"></span>
+      <h3>마리나 리히터</h3>
+      <h4>Marina Richter (1980~)</h4>
+      <p>마리나 리히터는 자유와 실험을 추구하는 사진작가로 사람과 그들 주변의 일상적인 것들을 연결하는 메타 내러티브(Meta Narrative) 작업을 보여준다. 작가는 어슴푸레한 빛과 찰나의 순간을 포착하고 사진을 통해 “인생에서 우리의 감정을 움직이는 것은 무엇인가?”, “저 멀리 어슴푸레 나타나는 것은 무엇인가?”와 같은 질문을 던지며 이를 둘러싼 감성적 내러티브를 만든다. 특정 시간대의 빛이 담긴 이미지는 프레임 너머 개인의 감정과 기억을 자극하여 일상적인 것들의 아름다움을 드러낸다.</p>
+    </div>
+  </div>
+
+  <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
