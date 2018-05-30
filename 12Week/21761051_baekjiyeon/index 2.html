@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Image Gallery</title>
+  <style>
+    *{margin:0;padding:0}
+    .gallery{width:800px;margin:0 auto;padding-top:80px}
+    ul{list-style-type:none}
+    .view{position:relative;width:800px;height:500px}
+    .view-item{display:none;position:absolute;width:100%}
+    .view-item.selected{display:block}
+    .view-item img{display:block;width:100%}
+    .list{position:relative;width:760px;padding:30px 20px}
+    .list li{display:inline-block;width:15px;vertical-align:top;}
+    .list li + li{padding-left:20px}
+    .list li a{display:block;position:relative}
+    .list li.selected a{cursor:default}
+    .list li.selected a::after{content:'';display:block;position:absolute;top:0;left:0;width:20px;height:20px}
+    .list li img{display:block;width:20px; padding: 20px;}
+  </style>
+</head>
+<body>
+  <div id="gallery" class="gallery">
+    <div class="view">
+      <div class="view-item selected"><img src="./img/대지 1-100.jpg"></div>
+      <div class="view-item"><img src="./img/qq.jpg"></div>
+      <div class="view-item"><img src="./img/sds-100.jpg"></div>
+      <div class="view-item"><img src="./img/eee-100.jpg"></div>
+    </div>
+    <ul class="list"><li class="selected"><a href="#"><img src="./img/aa.png"></a></li><li><a href="#"><img src="./img/aa.png"></a></li><li><a href="#"><img src="./img/aa.png"></a></li><li><a href="#"><img src="./img/aa.png"></a></li></ul>
+  </div>
+  <script type="text/javascript">
+  var galleryEl = document.getElementById('gallery');
+       var viewEl = galleryEl.getElementsByClassName('view')[0];
+    var viewItemEl = viewEl.getElementsByClassName('view-item');
+    var listEl = galleryEl.getElementsByClassName('list')[0];
+    var listItemEl = listEl.getElementsByTagName('li');
+    var listItemAEl = listEl.getElementsByTagName('a');
+
+    var _cuId = 0;
+    var _exId = _cuId;
+
+    function btnListClick(id) {
+      listItemAEl[id].addEventListener('click', function(event) {
+        event.preventDefault();
+        _cuId = id;
+        changeImage();
+      });
+    }
+
+    function changeImage() {
+      viewItemEl[_exId].classList.remove('selected');
+      viewItemEl[_cuId].classList.add('selected');
+            _exId = _cuId;
+    }
+
+
+    for (var i = 0; i < listItemEl.length; i++) {
+      btnListClick(i);
+    }
+  </script>
+</body>
+</html>
