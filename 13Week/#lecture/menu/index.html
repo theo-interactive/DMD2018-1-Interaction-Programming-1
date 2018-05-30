@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Menu</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+    *{margin:0;padding:0}
+    body{overflow:hidden;min-height:100vh;font-family:'Roboto', sans-serif}
+    ul,li{list-style:none}
+    a{text-decoration:none}
+    .btn-menu{display:block;position:relative;top:0;left:0;width:20px;height:20px;padding:15px;cursor:pointer;transition:background-color 180ms ease-in-out}
+    .btn-menu span{display:block;position:absolute;top:50%;width:calc(100% - 30px);height:0;border-bottom:1px solid #666;transform:translateY(-50%);transition:border-color 180ms ease-in-out}
+    .btn-menu span::before,.btn-menu span::after{content:'';display:block;position:absolute;top:0;width:100%;height:0;border-bottom:1px solid #666;transition:border-color 180ms ease-in-out}
+    .btn-menu span::before{transform:translateY(-8px)}
+    .btn-menu span::after{transform:translateY(8px)}
+    .btn-menu:hover{background-color:#222}
+    .btn-menu:hover span,.btn-menu:hover span::before,.btn-menu:hover span::after{border-color:#fff}
+    .side-menu{overflow-x:hidden;overflow-y:auto;position:fixed;top:0;left:0;width:250px;height:100vh;background-color:#fff;box-shadow:1px 0 2px rgba(0,0,0,0.15);transform:translateX(-100%);transition:transform 400ms ease-in-out}
+    .side-menu.open{transform:translateX(0)}
+    .side-menu ul{margin-top:70px;padding-left:40px}
+    .side-menu li{}
+    .side-menu li + li{padding-top:15px}
+    .side-menu li a{display:inlin-block;position:relative;vertical-align:top;color:#222;text-transform:uppercase;font-size:20px;font-weight:500;letter-spacing:0.5px;line-height:30px;opacity:0}
+    .side-menu li a::after{content:'';display:block;position:absolute;bottom:-2px;left:0;width:0;height:0;border-bottom:2px solid #222;transition:width 180ms ease-in-out}
+    .side-menu li a:hover::after{width:100%}
+    .side-menu .btn-close{display:block;position:absolute;top:0;right:0;width:20px;height:20px;padding:15px;cursor:pointer;transition:background-color 180ms ease-in-out, transform 250ms 400ms ease-in-out;transform:translateX(100%) rotate(45deg)}
+    .side-menu.open .btn-close{transform:translateX(0) rotate(0deg)}
+    .side-menu .btn-close span{overflow:hidden;display:block;position:relative;width:100%;height:100%}
+    .side-menu .btn-close span::before,.side-menu .btn-close span::after{content: '';position:absolute;height:1px;width:200%;top:50%;left:-50%;background-color:#222;transition:background-color 180ms ease-in-out}
+    .side-menu .btn-close span::before{-webkit-transform:translateY(-50%) rotate(45deg);-moz-transform:translateY(-50%) rotate(45deg);-ms-transform:translateY(-50%) rotate(45deg);-o-transform:translateY(-50%) rotate(45deg);transform:translateY(-50%) rotate(45deg)}
+    .side-menu .btn-close span::after{-webkit-transform:translateY(-50%) rotate(-45deg);-moz-transform:translateY(-50%) rotate(-45deg);-ms-transform:translateY(-50%) rotate(-45deg);-o-transform:translateY(-50%) rotate(-45deg);transform:translateY(-50%) rotate(-45deg)}    
+    .side-menu .btn-close:hover{background-color:#222}
+    .side-menu .btn-close:hover span::before,.side-menu .btn-close:hover span::after{background-color:#fff} 
+    .side-menu li.ani > a{opacity:1.0;animation:menuAni 250ms ease-in-out}
+    @keyframes menuAni{
+      0%{opacity:0}
+      100%{opacity:1.0}
+    }
+</style>
+</head>
+<body>
+  <b id="btn-menu" class="btn-menu"><span></span></b>
+  <div id="side-menu" class="side-menu">
+    <ul>
+      <li><a href="#menu1">Menu 1</a></li>
+      <li><a href="#menu2">Menu 2</a></li>
+      <li><a href="#menu3">Menu 3</a></li>
+      <li><a href="#menu4">Menu 4</a></li>
+      <li><a href="#menu5">Menu 5</a></li>
+      <li><a href="#menu6">Menu 6</a></li>
+    </ul>
+    <b id="btn-close" class="btn-close"><span></span></b>
+  </div>
+</body>
+</html>
