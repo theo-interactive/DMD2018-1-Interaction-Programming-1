@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Main_loading</title>
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+    <style>
+html, body, .background {
+  height: 100%;
+  width: 100%;
+}
+h1 {
+    font-family: 'Black Han Sans', sans-serif;
+  font-size: 45px;
+  font-weight: normal;
+  color: ivory;
+  position: absolute;
+  top:50%;
+  left:50%;
+  opacity:0;
+  transform: translate(-50%, -50%);
+  animation: appear 1s 1s forwards;
+  margin: 0;
+}
+body {
+  background: ivory;
+}
+.background {
+  position: relative;
+  background: url('https://pbs.twimg.com/media/Dc1NRf0VMAUjByw.jpg:large');
+  background-size:cover;
+  animation: circle 15s forwards;
+}
+
+@keyframes circle {
+  from {
+    clip-path: circle(100vh at center);
+  }
+  to {
+    clip-path: circle(40vh at center);
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+    </style>
+</head>
+<body>
+        <div class="background clip-me">
+                <h1>
+                  오<br>목<br>소<br>녀
+                </h1>
+        </div>
+        
+<script type="text/javascript">
+var ClicktheCircle = document.getElementsByClassName('background clip-me');
+ClicktheCircle.addEventListner('click',function(e){
+    e.preventDefault();
+    window.location.href ="file:///C:/Users/user/Desktop/2%ED%95%99%EB%85%841%ED%95%99%EA%B8%B0/%EC%9D%B8%ED%84%B0%EB%9E%99%EC%85%98%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/0527%EA%B3%BC%EC%A0%9C/index_tabmenu.html#";
+})
+</script>
+</body>
+</html>

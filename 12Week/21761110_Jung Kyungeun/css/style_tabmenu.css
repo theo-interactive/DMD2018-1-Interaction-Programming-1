@@ -1,0 +1,41 @@
+/*tab menu*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+/* @import url('https://fonts.googleapis.com/css?family=Roboto'); */
+*{margin:0;padding:0}
+/* body{font-family:'Roboto', sans-serif} */
+/* 적용 */
+body{font-family: 'Bevan', cursive;}
+a{text-decoration:none}
+ul{list-style-type:none}
+/* .tab-menu{margin:0 auto; margin-top:5px} menu 너비, 메뉴 마진 */
+.tab-menu ul{display:flex}
+.tab-menu li{flex:1;height:40px}
+.tab-menu li a{display:block;width:100%;height:100%;background-color:#f63c51;text-transform:uppercase;text-align:center;color:#fff; line-height:40px}
+.tab-menu li a.selected{background-color:#f63c70;cursor:default}
+/* .tab-container{width:800px;margin:0 auto;border:1px solid #000;box-sizing:border-box} */   /*tab 있는 박스테두리*/
+.tab-container .tab-content{display:none;padding:30px;height:500px;box-sizing:border-box}
+ .tab-container .tab-content.selected{display:block; text-align:center;} /*text*/
+
+ /*Film*/
+
+
+ /*gallery*/
+    .gallery{width:800px;margin:0 auto;padding-top:30px}
+    ul{list-style-type:none}
+    .view{overflow:hidden;position:relative;width:800px;height:500px}
+    .view-container{position:absolute;top:0;left:0;width:100%;height:100%}
+    .view-container::after{content:'';display:block;position:relative;clear:both}
+    .view-item{position:relative;float:left;width:100%}
+    .view-item img{display:block;width:100%}
+    .list{position:relative;width:760px;padding:30px 20px}
+    .list li{display:inline-block;width:175px;vertical-align:top}
+    .list li + li{padding-left:0px}
+    /* li + li{} */
+    .list li a{display:block;position:relative}
+    .list li.selected a{cursor:default}
+    .list li.selected a::after{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%;border:2px solid #000;box-sizing:border-box}
+    .list li img{display:block;width:100%}
+
+    body {
+        background: ivory;
+      }
