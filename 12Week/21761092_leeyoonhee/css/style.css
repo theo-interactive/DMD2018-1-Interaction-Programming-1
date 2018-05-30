@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:700');
+@import url( "http://fonts.googleapis.com/earlyaccess/notosanskr.css");
+html,body,div,span,applet,object,iframe,h1,h2,h3, h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,dialog,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{
+
+    margin: 0; padding: 0; border: 0; outline: 0;  vertical-align: baseline;
+   
+    }
+    *{margin:0;padding:0}
+    body{font-family:'Fredoka One', cursive;}
+    h1{position: relative;font-size:60px;left:43%;padding-top:1em;background:linear-gradient(to bottom, #fcd48b, #472709);background-clip: text;-webkit-background-clip: text;color: transparent}
+    a{text-decoration:none}
+    ul{list-style-type:none}
+    .tab-menu{width:900px;margin:0 auto;margin-top:50px}
+    .tab-menu ul{display:flex}
+    .tab-menu li{flex:1;height:50px;font-size:20px}
+    .tab-menu li a{position:relative;display:block;width:100%;height:100%;background-color:#d6a853;text-transform:uppercase;text-align:center;color:#fff;line-height:52px;transition:0.3s ease}
+    .tab-menu li a:hover{background-color:#61360f}
+    .tab-menu li a.selected{background-color:#61360f;cursor:default}
+    .tab-container{width:900px;margin:0 auto;border:1px solid #d6a853;box-sizing:border-box}
+    .tab-container .tab-content{display:none;height:600px;box-sizing:border-box}
+    .tab-container .tab-content.selected{display:block}
+    #pd1{position: relative; left: 22%;margin-top:45px}
+    p{font-family: 'Nanum Gothic', sans-serif; text-align:center; margin-left:200px; margin-top:30px; font-size:14px; width:500px}
+    .ex{
+        width: 500px;
+        height: 65px;
+        background-color: #202020;
+        text-align: center;
+        color: #fff;
+        margin-left: 198px;
+    }
+    .ex_title, .ex_en{
+        letter-spacing: 3px;
+    }
+    .ex_title{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 25px;
+    }
+    .ex_en{
+        font-family: 'Comfortaa', cursive;
+        font-size: 15px;
+    }
+    h3{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 5px;
+    }
+    h3 a:link{color: #202020;}
+    h3 a:visited{color: #202020;}
+    h3 a:hover{color: #61360f;}
+    #pd2{position: relative;width:900px;height:500px;}
