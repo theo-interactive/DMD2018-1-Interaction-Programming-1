@@ -1,0 +1,39 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+  
+*{margin:0;padding:0}
+
+body{font-family: 'Anton', sans-serif; background-color: aliceblue; background-image:url('../img/c.png'); background-repeat:no-repeat;
+}
+.logo {width: 100px; padding: 30px;}
+a{text-decoration:none}
+ul{list-style-type:none}
+.tab-menu{width:800px;margin:0 auto;margin-top:20px}
+.tab-menu ul{display:flex}
+.tab-menu li{flex:1;height:30px}
+.tab-menu li a{position:relative;display:block;width:100%;height:100%;text-transform:uppercase;text-align:center;color:#000;line-height:30px;}
+.tab-menu li a.selected{color:#59a0d8;cursor:default; text-decoration: line-through; font-size: 20px;}
+.tab-container{width:800px; padding: 70px; }
+.tab-container .tab-content{display:none;padding:30px 150px 30px 150px;height:500px;}
+.tab-container .tab-content.selected{display:block}
+footer {
+    left:0px;
+    bottom:0px;
+    width:100%;
+    background:#eae7e4;
+    line-height:30px;
+    color:#fff;
+    height: 80px;
+    margin-top: 30px;
+    
+}
+p {
+    margin: 0px 30px;
+    font-size: 12px; 
+    color: black;
+    
+    
+}
+
+

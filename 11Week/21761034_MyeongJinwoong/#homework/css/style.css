@@ -1,0 +1,26 @@
+*{margin:0;padding:0}
+.gallery{width:100%; margin:0 auto;}
+ul{list-style-type:none}
+.view{position:relative;width:100%; height:960px;overflow: hidden; top:0%;}
+.view-item{display:none;position:absolute;width:100%;top:-20%;}
+.view-item.selected{display:block}
+.list{position:relative;width:150px;margin:0 auto; top:-100px;}
+.list li{display:inline-block;width:10px;vertical-align:top}
+.list li + li{padding-left:20px} /*처음 것을 빼고 스타일을 줄 때 사용.*/
+.list li a{display:block;position:relative}
+.list li.selected a{cursor:default}
+.list li.selected a::after{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%;border:2px solid #000;box-sizing:border-box}
+.list li img{display:block;width:100%}
+.circle{
+  width:10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color:white;
+  margin-top:2px;
+}
+.circle.selected{
+  border-radius: 8px;
+  border:solid white 2px;
+  background-color: rgba(0,0,0,0);
+  margin:0;
+}

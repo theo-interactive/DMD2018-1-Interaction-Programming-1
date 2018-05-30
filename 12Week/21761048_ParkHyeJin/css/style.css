@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    width:1530px;
+    background-color:white;
+    font-family:'Fjalla One', sans-serif;
+    font-family:'Nanum Gothic', sans-serif;
+}
+#background {
+    width:765px;
+    height:758px;
+}
+a {
+    text-decoration:none;
+}
+ul {
+    list-style-type:none;
+}
+.tab-menu {
+    width:50px;
+    position:relative;
+    top:5px;
+    left:1210px;
+}
+.tab-menu2 {
+    position:absolute;
+    top:0px;
+    left:911px;
+}
+.tab-menu ul {
+    position:relative;
+    top:175px;
+    left:83px;
+}
+.tab-menu li {
+    width:42px;
+    height:40px;
+}
+.tab-menu li a {
+    position:relative;
+    display:block;
+    width:100%;
+    height:100%;
+    background-color:#ffc896;
+    font-family:'Fjalla One', sans-serif;
+    text-align:center;
+    color:#fff;
+    line-height:30px;
+    writing-mode:vertical-rl;
+    padding-right:8px;
+}
+.tab-menu li a:hover {
+    background-color:#ffae63;
+    text-decoration:line-through;
+    transition:all 1s ease;
+}
+.tab-menu li a.selected {
+    background-color:#ffae63;
+    text-decoration:line-through;
+    cursor:default;
+}
+.tab-container {
+    width:550px;
+    height:400px;
+    position:relative;
+    top:60px;
+    left:750px;
+    border:7px solid #ffae63;
+    background-color:white;
+    box-sizing:border-box;
+}
+.tab-container .tab-content {
+    font-family:'Nanum Gothic', sans-serif;
+    font-size:13px;
+    color:#3f3f3f;
+}
+.tab-container .tab-content img {
+    margin-top:10px;
+    margin-left:10px;
+}
+.tab-container .tab-content ul {
+    margin-top:28px;
+    margin-right:10px;
+}
+.tab-container .tab-content ul li {
+    text-align:right;
+    line-height:25px;
+}
+.tab-container .tab-content span:first-child {
+    display:inline-block;
+    color:#ffae63;
+    font-weight:bold;
+    padding-right:5px;
+}
+.tab-container .tab-content span:nth-child(2) {
+    display:inline-block;
+    color:#999;
+    font-weight:bold;
+    padding-left:5px;
+}
+.tab-container .tab-content:nth-child(2) ul {
+    margin-top:17px;
+    margin-left:5px;
+}
+.tab-container .tab-content:nth-child(2) ul:last-child {
+    position:absolute;
+    top:29px;
+    left:280px;
+}
+.tab-container .tab-content:nth-child(2) ul li {
+    font-family:'Fjalla One', sans-serif;
+    font-size:12px;
+    text-align:left;
+    line-height:30px;
+    padding-right:10px;
+}
+.tab-container .tab-content:nth-child(2) ul li a {
+    color:#3f3f3f;
+}
+.tab-container .tab-content:nth-child(2) ul li a:hover {
+    color:#ffae63;
+    transition:all 0.5s ease;
+}
+.tab-container .tab-content:last-child p {
+    color:#ffae63;
+    font-family:'Fjalla One', sans-serif;
+    font-size:35px;
+    letter-spacing:5px;
+    margin-top:34px;
+    margin-left:12px;
+}
+.tab-container .tab-content:last-child img.short1 {
+    position:absolute;
+    top:58px;
+    right:40px;
+}
+.tab-container .tab-content:last-child img.short2 {
+    margin-top:55px;
+}
+.tab-container .tab-content img:hover {
+    filter:grayscale(100%);
+    transition:all 0.8s ease;
+}
+.tab-container2 {
+    width:1050px;
+    height:100%;
+    position:absolute;
+    z-index:-9999;
+    top:0px;
+    left:0px;
+    background:url("../img/LongDream_2.jpg") no-repeat;
+}
+.tab-container2 .tab-content2 p {
+    color:white;
+    font-family:'Fjalla One', sans-serif;
+    font-size:80px;
+    font-weight:bold;
+    letter-spacing:15px;
+    opacity:0.8;
+    margin-top:40px;
+    margin-left:50px;
+}
+.tab-container2 .tab-content2 p.explain {
+    width:340px;
+    font-size:12px;
+    font-weight:normal;
+    text-align:justify;
+    line-height:20px;
+    letter-spacing:5px;
+    margin-top:360px;
+}
+.tab-container .tab-content, .tab-container2 .tab-content2 {
+    display:none;
+    padding:30px;
+    height:500px;
+    box-sizing:border-box;
+}
+.tab-container .tab-content.selected, .tab-container2 .tab-content2.selected {
+    display:block;
+}
