@@ -4,34 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<div id="wrap">
+<div id="wrap" class="container">
     <h1 class="blind">DOM</h1>
-    <header id="header">
-        <nav id="gnb">
-            <ul>
-                <li><a href=""><span>Menu 1</span></a></li>
-                <li><a href=""><span>Menu 2</span></a></li>
-                <li><a href=""><span>Menu 3</span></a></li>
-                <li><a href=""><span>Menu 4</span></a></li>
-                <li><a href=""><span>Menu 5</span></a></li>
-                <li><a href=""><span>Menu 6</span></a></li>
-            </ul>
-        </nav>
+    <header id="header" class="container">
+        <div class="component">
+            <nav id="gnb">
+                <ul>
+                    <li><a href=""><span>Menu 1</span></a></li>
+                    <li><a href=""><span>Menu 2</span></a></li>
+                    <li><a href=""><span>Menu 3</span></a></li>
+                    <li><a href=""><span>Menu 4</span></a></li>
+                    <li><a href=""><span>Menu 5</span></a></li>
+                    <li><a href=""><span>Menu 6</span></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div id="content">
-        <article>
-            <section><h2>section 1</h2></section>
+    <div id="content" class="container">
+        <article class="container">
+            <div class="image-container">
+                <img src="./img/1.jpg" alt="section 1">
+            </div>
+            <section class="component"><h2>section 1</h2></section>
         </article>
-        <article>
-            <section><h2>section 2</h2></section>
+        <article class="container">
+            <section class="component"><h2>section 2</h2></section>
         </article>
-        <article>
-            <section><h2>section 3</h2></section>
+        <article class="container">
+            <section class="component"><h2>section 3</h2></section>
         </article>
     </div>
-    <footer id="footer"><h2>2018 &copy; Interaction Programming 1</h2></footer>
+    <footer id="footer" class="container">
+        <div class="component">
+            <h2>2018 &copy; Interaction Programming 1</h2>
+        </div>
+    </footer>
 </div>    
 </body>
 </html>
