@@ -115,7 +115,7 @@ a{text-decoration:none; color:#222}
     opacity:0.0;
     color:#f00;
 }
-.side-menu.open li.ani a{
+.side-menu li.ani a{
     opacity:1.0;
     color:#222;
     animation:menu 250ms ease-in-out
@@ -125,7 +125,7 @@ a{text-decoration:none; color:#222}
         opacity:0.0;
         color:#f00;
     }
-    40%{
+    80%{
         color:#f00;
     }
     100%{
