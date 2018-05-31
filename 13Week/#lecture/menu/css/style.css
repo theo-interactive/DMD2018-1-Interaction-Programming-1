@@ -61,7 +61,7 @@ a{text-decoration:none; color:#222}
 .btn-menu{
     display:block; position:relative;
     width:60px; height:60px;
-    padding:15px; cursor:pointer; box-sizing:border-box; transition:background-color 200ms ease-in-out
+    padding:15px; cursor:pointer; box-sizing:border-box; transition:background-color 200ms ease-in-out;
 }
 
 .btn-menu:hover{background-color:#222}
@@ -83,7 +83,6 @@ a{text-decoration:none; color:#222}
 .btn-menu:hover span::after{
     border-color:#fff
 }
-
 .side-menu{
     position:absolute;
     z-index:1000;
@@ -92,7 +91,12 @@ a{text-decoration:none; color:#222}
     width:250px;
     height:100%;
     background-color:#fff;
-    box-shadow:1px 0 2px rgba(0,0,0,0.15)
+    box-shadow:1px 0 2px rgba(0,0,0,0.15);
+    transform:translateX(-100%);
+    transition:transform 400ms ease-in-out
+}
+.side-menu.open{
+    transform:translateX(0)
 }
 .side-menu ul{
     margin-top:60px;
@@ -107,8 +111,29 @@ a{text-decoration:none; color:#222}
     color:#222;
     font-size:20px;
     font-weight:500;
-    line-height:30px
+    line-height:30px;
+    opacity:0.0;
+    color:#f00;
 }
+.side-menu.open li.ani a{
+    opacity:1.0;
+    color:#222;
+    animation:menu 250ms ease-in-out
+}
+@keyframes menu{
+    0%{
+        opacity:0.0;
+        color:#f00;
+    }
+    40%{
+        color:#f00;
+    }
+    100%{
+        opacity:1.0;
+        color:#222
+    }
+}
+
 .side-menu li a::before{
     content:'';
     display:block;
@@ -148,7 +173,22 @@ a{text-decoration:none; color:#222}
     display:block;
     position:relative;
     width:100%;
-    height:100%
+    height:100%;
+    transform:rotate(45deg);
+    transition:transform 200ms 380ms ease-in-out
+    /*
+    축약형
+    2개 축약. transition:속성(all, 스타일 속성) 속도(ms, s) : - 가속도 linear
+    3개 축약. transition:속성 속도(ms, s) 가속도 : - 딜레이 0
+    4개 축약. transition:속성 속도(ms, s) 딜레이(ms, s) 가속도
+
+    multiple.(2개 이상의 속성을 넣을 때)
+    transition:속성 속도(ms, s) 딜레이(ms, s) 가속도, 속성 속도(ms, s) 딜레이(ms, s) 가속도, 속성 속도(ms, s) 딜레이(ms, s) 가속도, 속성 속도(ms, s) 딜레이(ms, s) 가속도
+    */
+}
+.side-menu.open .btn-close span{
+    transform:rotate(0deg);
+    transition:transform 200ms 180ms ease-in-out
 }
 .btn-close span::before,.btn-close span::after{
     content:'';
