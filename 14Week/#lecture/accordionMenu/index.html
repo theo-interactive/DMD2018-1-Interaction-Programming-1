@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Accordion Menu</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+    *{margin:0;padding:0}
+    body{font-family:'Roboto', sans-serif}
+    a{text-decoration:none}
+    .accordion-menu{width:800px;height:400px;margin:0 auto}
+    .menu-item{position:relative;float:left;width:200px;height:100%;-webkit-transition:width 180ms ease-in-out;-moz-transition:width 180ms ease-in-out;-ms-transition:width 180ms ease-in-out;-o-transition:width 180ms ease-in-out;transition:width 180ms ease-in-out}
+    .accordion-menu.resize .menu-item{-webkit-transition:none;-moz-transition:none;-ms-transition:none;-o-transition:none;transition:none}
+    .menu-item:nth-of-type(1){background-color:red}
+    .menu-item:nth-of-type(2){background-color:blue}
+    .menu-item:nth-of-type(3){background-color:green}
+    .menu-item:nth-of-type(4){background-color:purple}
+    .menu-item figure{overflow:hidden;position:absolute;width:100%;height:100%}
+    .menu-item figure img{width:100%;height:100%;object-fit:cover}
+    .menu-item b.btn-menu{display:flex;position:relative;width:100%;height:100%;color:#fff;text-transform:uppercase;text-align:center;font-size:14px;font-weight:400;line-height:20px;justify-content:center;align-items:center}
+    .menu-item b.btn-menu span{display:block;position:relative}
+    .menu-item b.btn-menu span::after{content:'';display:block;position:absolute;left:50%;width:0;height:1px;background-color:#fff;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);-webkit-transition:width 180ms ease-in-out;-moz-transition:width 180ms ease-in-out;-ms-transition:width 180ms ease-in-out;-o-transition:width 180ms ease-in-out;transition:width 180ms ease-in-out}
+    .menu-item b.btn-menu:hover span::after,.menu-item.selected b.btn-menu span::after{width:100%}
+    .menu-item b.btn-close{display:none;position:absolute;top:0;right:0;width:10px;height:10px;padding:10px;opacity:0.0;cursor:pointer;-webkit-transition:background-color 180ms ease-in-out;-moz-transition:background-color 180ms ease-in-out;-ms-transition:background-color 180ms ease-in-out;-o-transition:background-color 180ms ease-in-out;transition:background-color 180ms ease-in-out}
+    .menu-item.selected b.btn-menu{display:none}
+    .menu-item.selected b.btn-close{display:block;opacity:1.0}
+    .menu-item b.btn-close:hover{background-color:#000}
+    .menu-item b.btn-close span{overflow:hidden;display:block;position:relative;width:100%;height:100%}
+    .menu-item b.btn-close span::before,.menu-item b.btn-close span::after{content: '';position:absolute;height:1px;width:200%;top:50%;left:-50%;background:#fff}
+    .menu-item b.btn-close span::before{-webkit-transform:translateY(-50%) rotate(45deg);-moz-transform:translateY(-50%) rotate(45deg);-ms-transform:translateY(-50%) rotate(45deg);-o-transform:translateY(-50%) rotate(45deg);transform:translateY(-50%) rotate(45deg)}
+    .menu-item b.btn-close span::after {-webkit-transform:translateY(-50%) rotate(-45deg);-moz-transform:translateY(-50%) rotate(-45deg);-ms-transform:translateY(-50%) rotate(-45deg);-o-transform:translateY(-50%) rotate(-45deg);transform:translateY(-50%) rotate(-45deg)}    
+  </style>
+</head>
+<body>
+  <div id="accordion-menu" class="accordion-menu">
+      <div class="menu-item">
+        <figure><img src="./img/1.jpg"/></figure>
+        <b class="btn-menu"><span>Menu 1</span></b>
+        <b class="btn-close"><span>&nbsp;</span></b>
+      </div>
+      <div class="menu-item">
+        <figure><img src="./img/2.jpg"/></figure>
+        <b class="btn-menu"><span>Menu 2</span></b>
+        <b class="btn-close"><span>&nbsp;</span></b>
+      </div>
+      <div class="menu-item">
+        <figure><img src="./img/3.jpg"/></figure>
+        <b class="btn-menu"><span>Menu 3</span></b>
+        <b class="btn-close"><span>&nbsp;</span></b>
+      </div>
+      <div class="menu-item">
+        <figure><img src="./img/4.jpg"/></figure>
+        <b class="btn-menu"><span>Menu 4</span></b>
+        <b class="btn-close"><span>&nbsp;</span></b>
+      </div>
+  </div>
+</body>
+</html>
