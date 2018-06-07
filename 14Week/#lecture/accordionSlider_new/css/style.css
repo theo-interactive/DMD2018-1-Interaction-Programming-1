@@ -69,6 +69,7 @@ body{
 .accordion-menu .menu-item a{
     display:block;
     position:absolute;
+    z-index:100;
     top:0;
     right:0;
     bottom:0;
@@ -84,10 +85,12 @@ body{
 .accordion-menu .menu-item a span{
     display:inline-block;
     position:absolute;
-    top:50%;
+    top:35%;
     left:50%;
-    transform:translateX(-50%) translateY(-50%);
-    vertical-align:top
+    /* transform:translateX(-50%) translateY(-50%); */
+    transform:translateX(-50%);
+    vertical-align:top;
+    text-shadow:0 1px 1px rgba(0,0,0,0.15)
 }
 .accordion-menu .menu-item a span::before{
     content:'';
@@ -103,4 +106,27 @@ body{
 }
 .accordion-menu .menu-item a:hover span::before{
     width:100%
+}
+.accordion-menu .menu-item p{
+    display:block;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%
+}
+.accordion-menu .menu-item p span{
+    display:block;
+    position:absolute;
+    width:100%;
+    top:50%;
+    padding-right:30px;
+    padding-left:30px;
+    text-align:center;
+    word-break:break-all;
+    box-sizing:border-box;
+    opacity:0.95;
+    text-shadow:0 1px 1px rgba(0,0,0,0.15)
 }
