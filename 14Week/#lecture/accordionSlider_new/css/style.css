@@ -39,9 +39,10 @@ body{
     position:relative;
     float:left;
     width:25%;
-    height:100%
+    height:100%;
+    transition:width 300ms ease-in-out
 }
-.accordion-menu .menu-item:nth-of-type(1){
+/* .accordion-menu .menu-item:nth-of-type(1){
     background-color:red
 }
 .accordion-menu .menu-item:nth-of-type(2){
@@ -52,7 +53,7 @@ body{
 }
 .accordion-menu .menu-item:nth-of-type(4){
     background-color:gray
-}
+} */
 .accordion-menu .menu-item figure{
     position:absolute;
     top:0;
